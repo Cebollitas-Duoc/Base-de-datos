@@ -17,6 +17,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Password" id="EC86A7F6-F46B-A399-DF54-FB19A48D8B41">
