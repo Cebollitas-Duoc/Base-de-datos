@@ -23,6 +23,8 @@
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Password" id="0D86F98B-FD5C-2789-7070-531926A6623E">
@@ -45,8 +47,9 @@
 <createdBy>andres</createdBy>
 <createdTime>2022-08-23 22:22:27 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
