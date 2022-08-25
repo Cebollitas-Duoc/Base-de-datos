@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2979F4BF-7F3D-D995-705C-92671936BFFC" name="Reserva">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="11B50512-4E7F-3C07-70B1-F7A4B6DCEA87" name="Departamento">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:04:54 UTC</createdTime>
+<createdTime>2022-08-25 21:25:33 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_Reserva" id="D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A">
+<Attribute name="ID_Departamento" id="D33F68F2-6328-9263-BA41-DE8D1E644FAB">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:05:11 UTC</createdTime>
+<createdTime>2022-08-25 21:25:43 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -27,51 +27,9 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Usuario" id="1D812954-F4B5-4876-DA27-5B79BBD0FB10">
+<Attribute name="Direccion" id="5A8A9636-55D7-719C-620E-CC87A9F4A681">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:05:58 UTC</createdTime>
-<generatorID>C2E3AFFB-8FB3-5AB5-4A4F-824C76E72FD4</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>C460184C-47D0-9AFB-EFBA-EC0A0B85EAB3</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_Departamento" id="C127AC74-1700-77D3-42F9-715C6FDBFB18">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:36:38 UTC</createdTime>
-<generatorID>3F20329D-7877-E2BA-857F-9D61E2557C24</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>D33F68F2-6328-9263-BA41-DE8D1E644FAB</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_EstadoReserva" id="48050026-9CF1-F389-7F3D-1C4808DA6134">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:19:15 UTC</createdTime>
-<generatorID>E0A038AD-F7CE-1ADC-7DF0-3A0BAE7DCB93</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>E75EB4AA-23A5-F186-4EF4-D098C324B80A</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Fecha_Desde" id="13387769-084E-B31A-A0C0-BC3D2C92DCDB">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:09:21 UTC</createdTime>
+<createdTime>2022-08-25 21:27:41 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -79,12 +37,13 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Fecha_Hasta" id="E51C80A6-4F9F-8C9D-ED58-EE34E99E6346">
+<Attribute name="Longitud" id="5575C7E6-8449-D6A2-369C-1CB7D7254BE0">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:10:14 UTC</createdTime>
+<createdTime>2022-08-25 21:29:59 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -92,12 +51,27 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Valor_Total" id="C8FDC605-35A3-6A59-EC96-43D3042C798A">
+<Attribute name="Latitud" id="3A5D9044-F7CE-EE4C-0BA7-12A7014C3821">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:11:43 UTC</createdTime>
+<createdTime>2022-08-25 21:33:06 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Habitaciones" id="86E972C5-2A05-98DD-B034-046BF3FB031B">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-25 21:33:23 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -107,19 +81,60 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Banios" id="EFD03FB6-BAC5-3414-D0F4-D8AE2B9C59ED">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-25 21:33:47 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tamanio" id="FD734955-9F8A-49DF-5739-C5F3CCF3D782">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-25 21:34:11 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Valor" id="B3BC41B3-C6FA-C421-B8EF-95C7331DC32A">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-25 21:35:00 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="66965462-A710-2B9F-D532-FB35EE9C1BCA" name="Reserva PK">
+<identifier id="90C2967D-E9B5-F6F8-D0C9-70F08220B9ED" name="Departamento PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:05:30 UTC</createdTime>
+<createdTime>2022-08-25 21:25:58 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A</attributeRef>
+<attributeRef>D33F68F2-6328-9263-BA41-DE8D1E644FAB</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

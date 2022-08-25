@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A7FC3561-8C1A-E90B-A614-B6F9D394F9C7" name="EstadoUsuario">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="620847FF-C1D1-F57D-3170-DCCF89C06043" name="Categoria_Servicio">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:47:05 UTC</createdTime>
+<createdTime>2022-08-25 22:04:47 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_EstadoUsuario" id="2ECD942D-2368-9B5F-6959-42C852AD53B0">
+<Attribute name="ID_CategoriaServicio" id="6B4DB440-F3EF-6164-9305-CD280359C452">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:47:11 UTC</createdTime>
+<createdTime>2022-08-25 22:06:07 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -27,9 +27,9 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcion" id="EC32C543-A4E3-90FB-9030-B9FB21F47E8B">
+<Attribute name="Descripcion" id="A17C6D55-3AFC-E016-8DBB-72FE3178DDF3">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:47:24 UTC</createdTime>
+<createdTime>2022-08-25 22:06:37 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -38,21 +38,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8AFD0862-9F13-85CB-1E8A-9C330FE7D917" name="Estado PK">
+<identifier id="3344F83C-A232-9DF7-FDE8-FCC1E0C9D5F0" name="Categoria_Servicio PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:47:17 UTC</createdTime>
+<createdTime>2022-08-25 22:06:25 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>2ECD942D-2368-9B5F-6959-42C852AD53B0</attributeRef>
+<attributeRef>6B4DB440-F3EF-6164-9305-CD280359C452</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

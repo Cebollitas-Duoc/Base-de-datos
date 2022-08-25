@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07161C8B-8D35-CF9D-EA7E-7EC031E124D2" name="Usuario">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="493EEB6B-CB00-4B0A-EB69-80A1629DB0BB" name="Conector_Departamento_ServicioExtra">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:20:30 UTC</createdTime>
+<createdTime>2022-08-25 22:23:55 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -15,35 +15,37 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_Usuario" id="7239F48E-B3B8-8271-8FA8-2B214FD3A53F">
+<Attribute name="ID_Departamento" id="AF7E746B-60E9-2576-A404-5EBC3CD1FB39">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:21:55 UTC</createdTime>
+<createdTime>2022-08-25 22:25:28 UTC</createdTime>
+<generatorID>CAB34F1F-24E7-25F8-6463-C538C608FAE0</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
+<referedAttribute>D33F68F2-6328-9263-BA41-DE8D1E644FAB</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Permiso" id="4F373B27-7F5E-B496-1D13-D1A6BABED2ED">
+<Attribute name="ID_ServicioExtra" id="BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:44:49 UTC</createdTime>
-<generatorID>069603A8-1797-42EE-4FFE-422694028C04</generatorID>
+<createdTime>2022-08-25 22:25:33 UTC</createdTime>
+<generatorID>394732D5-E076-568A-386D-A2FDB565780E</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<referedAttribute>6F41DA4F-EB57-861C-8D9C-38AD637DF24D</referedAttribute>
+<referedAttribute>CE6D9FEA-41C8-3ABB-95DE-C0F216AACBA3</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Password" id="0D86F98B-FD5C-2789-7070-531926A6623E">
+<Attribute name="Valor" id="C27A38F3-C9D8-CDCC-54F3-6E0D4E57405F">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:22:34 UTC</createdTime>
+<createdTime>2022-08-25 22:31:05 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -51,37 +53,36 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>80</dataTypeSize>
-<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_EstadoUsuario" id="36385D04-FED6-D1CC-EB31-8415D5633084">
+<Attribute name="Estado" id="D759F9A5-8B13-F773-5073-F152CD4C1064">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:48:34 UTC</createdTime>
-<generatorID>6539A6B8-97FA-7667-1DD2-A0F876E60E3E</generatorID>
+<createdTime>2022-08-25 22:38:40 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<referedAttribute>2ECD942D-2368-9B5F-6959-42C852AD53B0</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="5A88D74F-791A-D3C3-8CCA-CAD4DDAB39C1" name="Usuario PK">
+<identifier id="9E6FE519-C347-8DBE-9291-B1775C71BAAA" name="Conector_Departamento_ServicioExtra PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:22:27 UTC</createdTime>
+<createdTime>2022-08-25 22:30:56 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>7239F48E-B3B8-8271-8FA8-2B214FD3A53F</attributeRef>
+<attributeRef>AF7E746B-60E9-2576-A404-5EBC3CD1FB39</attributeRef>
+<attributeRef>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

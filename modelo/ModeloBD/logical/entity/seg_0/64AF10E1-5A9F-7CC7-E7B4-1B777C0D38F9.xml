@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07161C8B-8D35-CF9D-EA7E-7EC031E124D2" name="Usuario">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="64AF10E1-5A9F-7CC7-E7B4-1B777C0D38F9" name="Servicio">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:20:30 UTC</createdTime>
+<createdTime>2022-08-25 22:03:34 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_Usuario" id="7239F48E-B3B8-8271-8FA8-2B214FD3A53F">
+<Attribute name="ID_Servicio" id="DC05AD78-0960-A17B-5FF1-66C533C1DE3A">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:21:55 UTC</createdTime>
+<createdTime>2022-08-25 22:03:47 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -27,23 +27,9 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Permiso" id="4F373B27-7F5E-B496-1D13-D1A6BABED2ED">
+<Attribute name="Descripcion" id="3038BB4B-F806-8829-76F4-017C112BA59E">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:44:49 UTC</createdTime>
-<generatorID>069603A8-1797-42EE-4FFE-422694028C04</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>6F41DA4F-EB57-861C-8D9C-38AD637DF24D</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Password" id="0D86F98B-FD5C-2789-7070-531926A6623E">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:22:34 UTC</createdTime>
+<createdTime>2022-08-25 22:07:18 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -52,18 +38,18 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>80</dataTypeSize>
-<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_EstadoUsuario" id="36385D04-FED6-D1CC-EB31-8415D5633084">
+<Attribute name="ID_CategoriaServicio" id="BBD7D28F-793A-33EB-95AF-6811462DD777">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:48:34 UTC</createdTime>
-<generatorID>6539A6B8-97FA-7667-1DD2-A0F876E60E3E</generatorID>
+<createdTime>2022-08-25 22:20:48 UTC</createdTime>
+<generatorID>CD277D86-8338-9D5D-E7E1-9FCBB503F7A6</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<referedAttribute>2ECD942D-2368-9B5F-6959-42C852AD53B0</referedAttribute>
+<referedAttribute>6B4DB440-F3EF-6164-9305-CD280359C452</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
@@ -71,17 +57,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="5A88D74F-791A-D3C3-8CCA-CAD4DDAB39C1" name="Usuario PK">
+<identifier id="03114CA5-D5CE-B98A-6290-1833A6C6B3A4" name="Servicio PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-23 22:22:27 UTC</createdTime>
+<createdTime>2022-08-25 22:03:58 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>7239F48E-B3B8-8271-8FA8-2B214FD3A53F</attributeRef>
+<attributeRef>DC05AD78-0960-A17B-5FF1-66C533C1DE3A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

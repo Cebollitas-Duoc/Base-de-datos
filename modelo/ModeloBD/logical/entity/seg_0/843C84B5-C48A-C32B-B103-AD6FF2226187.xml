@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2979F4BF-7F3D-D995-705C-92671936BFFC" name="Reserva">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="843C84B5-C48A-C32B-B103-AD6FF2226187" name="Mantencion">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:04:54 UTC</createdTime>
+<createdTime>2022-08-25 22:39:34 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_Reserva" id="D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A">
+<Attribute name="ID_Mantencion" id="24E58D87-5AED-99DB-51C0-2360F51FF75F">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:05:11 UTC</createdTime>
+<createdTime>2022-08-25 22:39:44 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -27,24 +27,24 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Usuario" id="1D812954-F4B5-4876-DA27-5B79BBD0FB10">
+<Attribute name="ID_CategoriaMantencion" id="53FDF253-2009-8BC8-4C8F-687308BF6752">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:05:58 UTC</createdTime>
-<generatorID>C2E3AFFB-8FB3-5AB5-4A4F-824C76E72FD4</generatorID>
+<createdTime>2022-08-25 22:42:20 UTC</createdTime>
+<generatorID>6CAA28B9-511A-23EC-4F28-CA4A4F032C74</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<referedAttribute>C460184C-47D0-9AFB-EFBA-EC0A0B85EAB3</referedAttribute>
+<referedAttribute>6FDAD78C-8AAE-C32A-354F-4B3BC1A54086</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Departamento" id="C127AC74-1700-77D3-42F9-715C6FDBFB18">
+<Attribute name="ID_Departamento" id="98F8FB21-0879-D60B-A64A-8293DB697559">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:36:38 UTC</createdTime>
-<generatorID>3F20329D-7877-E2BA-857F-9D61E2557C24</generatorID>
+<createdTime>2022-08-25 22:42:39 UTC</createdTime>
+<generatorID>5466D4A3-1BFE-9F83-B0FC-2A214D15D0CD</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -55,23 +55,37 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_EstadoReserva" id="48050026-9CF1-F389-7F3D-1C4808DA6134">
+<Attribute name="Descripcion" id="34E162D5-0CBB-869F-A9E1-5081BD24ED13">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:19:15 UTC</createdTime>
-<generatorID>E0A038AD-F7CE-1ADC-7DF0-3A0BAE7DCB93</generatorID>
+<createdTime>2022-08-25 22:43:05 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<referedAttribute>E75EB4AA-23A5-F186-4EF4-D098C324B80A</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Fecha_Desde" id="13387769-084E-B31A-A0C0-BC3D2C92DCDB">
+<Attribute name="Valor" id="208344CF-724B-5502-48CD-1B92CA459723">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:09:21 UTC</createdTime>
+<createdTime>2022-08-25 22:43:23 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaInicio" id="D40E9D8C-77D5-1623-DC7F-4FD486274FF2">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-25 22:44:39 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -82,9 +96,9 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Fecha_Hasta" id="E51C80A6-4F9F-8C9D-ED58-EE34E99E6346">
+<Attribute name="FechaFin" id="02839C20-8C10-3A89-C548-AE11ED23C501">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:10:14 UTC</createdTime>
+<createdTime>2022-08-25 22:45:15 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -93,33 +107,20 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Valor_Total" id="C8FDC605-35A3-6A59-EC96-43D3042C798A">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:11:43 UTC</createdTime>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="66965462-A710-2B9F-D532-FB35EE9C1BCA" name="Reserva PK">
+<identifier id="25DD6FC8-7DE8-648C-4D6F-3E1006553095" name="Mantencion PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:05:30 UTC</createdTime>
+<createdTime>2022-08-25 22:39:54 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A</attributeRef>
+<attributeRef>24E58D87-5AED-99DB-51C0-2360F51FF75F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
