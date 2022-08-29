@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="579D8F31-2AFC-8B6A-EF1E-5327603A2199" name="Permiso">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81DF3D29-EBE8-28B2-0707-AA0FFA9CBEBF" name="EstadoPago">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>CE05353E-15E6-60FE-A3C2-5B87CEE4D791</generatorID>
+<createdTime>2022-08-29 22:01:04 UTC</createdTime>
+<generatorID>7486CD13-9FA4-EA47-97DC-7911E7F23EF0</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_Permiso" id="08B1714B-EC01-0670-601C-083B68318904">
+<Column name="ID_EstadoPago" id="C7956A91-E811-C812-42DD-84A4CDFB5050">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>6F41DA4F-EB57-861C-8D9C-38AD637DF24D</generatorID>
+<createdTime>2022-08-29 22:01:04 UTC</createdTime>
+<generatorID>86887B36-4571-E51F-0B38-F2307D2BBCFC</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -19,42 +19,44 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Nombre" id="E3E637BC-6C02-7D20-7F82-E77E13AEA046">
+<Column name="Nombre" id="C8067A46-AF66-BE56-B725-2B1DE90EA0BE">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>0D7731F7-75CF-B4DB-9AD4-BE5402950100</generatorID>
+<createdTime>2022-08-29 22:01:04 UTC</createdTime>
+<generatorID>5383CB5D-E663-7D7A-238B-FC33CEE50604</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Descripcion" id="4CCFC397-DE79-1BCF-A4A4-7F817052193C">
+<Column name="Descripcion" id="C1BD69AB-CA0B-F3AC-13CE-663D3AE8C4FA">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>072FA9CE-8F66-E4DE-F06C-B004697D1B9F</generatorID>
+<createdTime>2022-08-29 22:01:04 UTC</createdTime>
+<generatorID>CC1C66F3-B986-1860-A92E-761A49979A26</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2173747E-D76C-8472-B162-076E466330CF" name="Permiso_PK">
+<ind_PK_UK id="15A3767F-0F0C-FC71-0AFE-6E7B43F1B0D1" name="EstadoPago_PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>5D29E273-280A-3381-DD45-79CA6229A3D0</generatorID>
+<createdTime>2022-08-29 22:01:04 UTC</createdTime>
+<generatorID>800AF638-D4ED-FCE5-A0EB-7193D351D4FE</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="08B1714B-EC01-0670-601C-083B68318904"/>
+<colUsage columnID="C7956A91-E811-C812-42DD-84A4CDFB5050"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

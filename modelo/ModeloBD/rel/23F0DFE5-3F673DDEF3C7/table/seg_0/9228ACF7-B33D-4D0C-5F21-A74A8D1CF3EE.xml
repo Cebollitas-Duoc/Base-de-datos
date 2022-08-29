@@ -60,6 +60,18 @@
 <colAssociation fkAssociation="922D5224-219F-34CC-F083-B8B449D0BA38" referredColumn="D90FB4BD-6F3D-DE45-F394-01D63472D697"/>
 </associations>
 </Column>
+<Column name="FechaCreacion" id="66969E90-BFAD-4FFF-A7F8-2F6E774918B0">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 23:12:12 UTC</createdTime>
+<generatorID>D65B63D9-80CD-FA7C-3277-1D5BE6C87F00</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="21E885C8-7348-DCE5-02D2-DEDECBC76BEC" name="Sesion_PK">
