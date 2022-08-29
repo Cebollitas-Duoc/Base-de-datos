@@ -54,6 +54,20 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_Departamento" id="4B5B2083-8483-844C-0E21-9C729D67BBCC">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:54:41 UTC</createdTime>
+<generatorID>CCCA6B12-9D32-0701-1EBB-1A27082F5CDA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<referedAttribute>D33F68F2-6328-9263-BA41-DE8D1E644FAB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="446DDC7C-2692-E22B-CEDC-8CB465096F38" name="Iventario PK">

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Inventario_Departamento" directorySegmentName="seg_0" id="CCCA6B12-9D32-0701-1EBB-1A27082F5CDA">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:54:41 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<sourcePk>90C2967D-E9B5-F6F8-D0C9-70F08220B9ED</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>11B50512-4E7F-3C07-70B1-F7A4B6DCEA87</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0D8C923E-51FE-5A15-829C-504CC37BF0A0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
