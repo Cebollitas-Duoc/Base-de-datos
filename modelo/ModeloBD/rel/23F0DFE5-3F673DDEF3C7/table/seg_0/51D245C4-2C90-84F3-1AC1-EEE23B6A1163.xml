@@ -18,12 +18,13 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="04755BAA-6172-1EC9-3FE6-9D994D33AE12" referredColumn="D90FB4BD-6F3D-DE45-F394-01D63472D697"/>
 </associations>
 </Column>
-<Column name="Primer_Nombre" id="893FE627-2CF8-D0D1-E3CF-84B6FEFAE737">
+<Column name="PrimerNombre" id="893FE627-2CF8-D0D1-E3CF-84B6FEFAE737">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>0B80DA9A-8E2D-4B5C-91D5-CB05DA250C2A</generatorID>
@@ -36,7 +37,7 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="segundo_Nombre" id="4B0B3D1D-1CC6-B23F-0365-F43ADD54F03B">
+<Column name="segundoNombre" id="4B0B3D1D-1CC6-B23F-0365-F43ADD54F03B">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>C58BE9FA-25D6-D621-E1D8-6E165F9ABC82</generatorID>
@@ -49,7 +50,7 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Primer_Apellido" id="34AC5C0B-FEC9-81AC-72C7-3E137FF58596">
+<Column name="PrimerApellido" id="34AC5C0B-FEC9-81AC-72C7-3E137FF58596">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>92654B9D-6200-AAC1-B787-E3E7BA1DE67D</generatorID>
@@ -62,7 +63,7 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Segundo_Apellido" id="5F88B7F0-49C0-3475-A98B-C4D01DE75E1F">
+<Column name="SegundoApellido" id="5F88B7F0-49C0-3475-A98B-C4D01DE75E1F">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>5C401A58-4584-71E4-E4BE-528B8B83DA8A</generatorID>

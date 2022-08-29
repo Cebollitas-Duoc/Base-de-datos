@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="814135FB-80E1-DDC8-D443-E0F464CB4427" name="Error">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 21:08:27 UTC</createdTime>
+<generatorID>F98C923E-C605-3E0E-6844-65AE293EDD86</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Error" id="88559A60-FEB8-8EDC-CEA4-E88AE184EC19">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 21:08:27 UTC</createdTime>
+<generatorID>8C3F1523-738F-E2A6-0DA3-DA00C30F7832</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NombreError" id="D6D1420C-674A-1745-F7F3-6667726417DE">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 21:08:27 UTC</createdTime>
+<generatorID>05C1AC11-ABAF-7EAA-9B4E-99F2F0818A34</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="731835CD-316E-3202-2B48-B3BBF5856B63">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 21:08:27 UTC</createdTime>
+<generatorID>5FB1DC2B-4A5D-8A82-266E-C2675A310B65</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaHora" id="BDCA01A2-1288-512D-67DE-7D29BBBE9FFE">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 21:08:27 UTC</createdTime>
+<generatorID>F0249CB7-7208-83FF-7B1C-8CB1FD070925</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zona" id="3F4333C3-674F-521D-4F56-B726A9DFB7C4">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 21:08:27 UTC</createdTime>
+<generatorID>E18C8410-231D-91AD-D188-98B6158BCAD9</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="296C9DD5-A80C-EED9-6115-A9D3890B0E1B" name="Error_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 21:08:27 UTC</createdTime>
+<generatorID>84FCE2D0-CB56-6C2E-2609-D00BAA3684EA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88559A60-FEB8-8EDC-CEA4-E88AE184EC19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

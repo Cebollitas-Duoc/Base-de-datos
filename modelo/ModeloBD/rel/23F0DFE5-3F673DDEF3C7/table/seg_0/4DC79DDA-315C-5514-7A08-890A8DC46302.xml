@@ -17,6 +17,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_Usuario" id="75D527AD-8EA1-09FC-20F6-E7B21C36FD12">
@@ -64,7 +65,7 @@
 <colAssociation fkAssociation="4252B5AD-6499-98BB-2F80-3E27BA287FD1" referredColumn="C42A262F-36CC-3C89-CF40-A9AE6EF90BF4"/>
 </associations>
 </Column>
-<Column name="Fecha_Desde" id="1DDB5B30-2DD7-D615-EEE1-4027112D24E5">
+<Column name="FechaDesde" id="1DDB5B30-2DD7-D615-EEE1-4027112D24E5">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>13387769-084E-B31A-A0C0-BC3D2C92DCDB</generatorID>
@@ -76,7 +77,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Fecha_Hasta" id="FD189E0E-789D-14C8-D445-F328135FDE2F">
+<Column name="FechaHasta" id="FD189E0E-789D-14C8-D445-F328135FDE2F">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>E51C80A6-4F9F-8C9D-ED58-EE34E99E6346</generatorID>
@@ -88,7 +89,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Valor_Total" id="51AC3C60-5D5F-D3B5-824E-439A44A19AF1">
+<Column name="ValorTotal" id="51AC3C60-5D5F-D3B5-824E-439A44A19AF1">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>C8FDC605-35A3-6A59-EC96-43D3042C798A</generatorID>
