@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D68DB75-6798-0222-46A9-1D01A27003C1" name="Mantencion">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>843C84B5-C48A-C32B-B103-AD6FF2226187</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Mantencion" id="44FBBC3E-A6C4-80AD-7F73-D57F6DBB2598">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>24E58D87-5AED-99DB-51C0-2360F51FF75F</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CategoriaMantencion" id="D67C8CC8-AF96-1E2F-0AFB-927BFDB98DA3">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>53FDF253-2009-8BC8-4C8F-687308BF6752</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3215852-5FE4-8F15-D08A-B3B50E963484" referredColumn="D7C47845-3C75-B043-1A9C-095F878109AC"/>
+</associations>
+</Column>
+<Column name="ID_Departamento" id="B8650A8E-FA4B-92A4-7220-A0FBF10884A9">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>98F8FB21-0879-D60B-A64A-8293DB697559</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08CA6E09-EAC0-E736-BB3E-06C625437709" referredColumn="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
+</associations>
+</Column>
+<Column name="Descripcion" id="986C04F8-A7B6-9FA6-4C8B-40C81690857D">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>34E162D5-0CBB-869F-A9E1-5081BD24ED13</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor" id="CAD1617C-3990-1254-7833-C514D70C8A73">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>208344CF-724B-5502-48CD-1B92CA459723</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaInicio" id="03BF115A-611A-8F2D-52F7-6286EE0E7997">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>D40E9D8C-77D5-1623-DC7F-4FD486274FF2</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaFin" id="787C3DCB-6A8B-04F7-12D8-FD096DBFF280">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>02839C20-8C10-3A89-C548-AE11ED23C501</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="90AB0115-3A13-64E2-4DA8-82E27465C888" name="Mantencion_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>25DD6FC8-7DE8-648C-4D6F-3E1006553095</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44FBBC3E-A6C4-80AD-7F73-D57F6DBB2598"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45F30C37-C9DE-48FC-9BCB-56B1BF0A92A2" name="Mantencion_CategoriaMantencion_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>6CAA28B9-511A-23EC-4F28-CA4A4F032C74</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D67C8CC8-AF96-1E2F-0AFB-927BFDB98DA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FE352FF-7BCD-B3FA-F3CF-C87175B339F2" name="Mantencion_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>5466D4A3-1BFE-9F83-B0FC-2A214D15D0CD</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8650A8E-FA4B-92A4-7220-A0FBF10884A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DC79DDA-315C-5514-7A08-890A8DC46302" name="Reserva">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>2979F4BF-7F3D-D995-705C-92671936BFFC</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Reserva" id="70114586-6D5C-1A31-D811-2CC03256D517">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Usuario" id="75D527AD-8EA1-09FC-20F6-E7B21C36FD12">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>1D812954-F4B5-4876-DA27-5B79BBD0FB10</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9407A40-ADD3-2C65-0BB6-D40E048C5626" referredColumn="F7FC4748-694F-C619-ABDC-1A328F07E62E"/>
+</associations>
+</Column>
+<Column name="ID_Departamento" id="B952DB8A-4F35-1B0F-DA05-26BEAB159F6A">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>C127AC74-1700-77D3-42F9-715C6FDBFB18</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="861D260B-D69C-C351-9A44-D3A6B349003A" referredColumn="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
+</associations>
+</Column>
+<Column name="ID_EstadoReserva" id="04F2E257-ED3D-25A7-853A-F41EF3B01870">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>48050026-9CF1-F389-7F3D-1C4808DA6134</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4252B5AD-6499-98BB-2F80-3E27BA287FD1" referredColumn="C42A262F-36CC-3C89-CF40-A9AE6EF90BF4"/>
+</associations>
+</Column>
+<Column name="Fecha_Desde" id="1DDB5B30-2DD7-D615-EEE1-4027112D24E5">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>13387769-084E-B31A-A0C0-BC3D2C92DCDB</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Hasta" id="FD189E0E-789D-14C8-D445-F328135FDE2F">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>E51C80A6-4F9F-8C9D-ED58-EE34E99E6346</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor_Total" id="51AC3C60-5D5F-D3B5-824E-439A44A19AF1">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>C8FDC605-35A3-6A59-EC96-43D3042C798A</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8D4F8A3-205E-F4B5-C73E-06B35124F433" name="Reserva_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>66965462-A710-2B9F-D532-FB35EE9C1BCA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70114586-6D5C-1A31-D811-2CC03256D517"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42F78CCA-E634-A1C6-692E-7EE2F508F090" name="Reserva_EstadoReserva_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>E0A038AD-F7CE-1ADC-7DF0-3A0BAE7DCB93</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04F2E257-ED3D-25A7-853A-F41EF3B01870"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D82FC1B8-8C4A-0C53-5579-A68815E375F4" name="Reserva_Cliente_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>C2E3AFFB-8FB3-5AB5-4A4F-824C76E72FD4</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75D527AD-8EA1-09FC-20F6-E7B21C36FD12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50B5353F-7E88-37B0-EB4B-D73C1337EE54" name="Reserva_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>3F20329D-7877-E2BA-857F-9D61E2557C24</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B952DB8A-4F35-1B0F-DA05-26BEAB159F6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

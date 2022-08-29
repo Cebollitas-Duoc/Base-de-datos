@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5B6F252-DC03-D733-7C86-6B80888FCE95" name="Iventario">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>0D8C923E-51FE-5A15-829C-504CC37BF0A0</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Inventario" id="C1E5C922-F550-215D-037C-DCA39AF608AB">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>3BBE8FE4-D78B-5281-6A21-9C25A31E0DC0</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="E5AF90DA-4F70-5682-5B99-4EDEB64F8F9B">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>3B8866DD-5F97-A7E5-DBE0-D6FC02E09E76</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad" id="FD74BC90-9B4A-FDE3-28E0-935F4F85DF74">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>8A94095E-43A9-FBE0-A72F-9FE849C69341</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Departamento" id="B51FB0A3-E233-EDEB-8B8D-E63F5A1A252E">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>4B5B2083-8483-844C-0E21-9C729D67BBCC</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AADD05F2-30BC-8600-7C82-29B00D7E63B8" referredColumn="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A583EE58-8B1E-A741-FA5A-C8CB271E6C9B" name="Iventario_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>446DDC7C-2692-E22B-CEDC-8CB465096F38</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1E5C922-F550-215D-037C-DCA39AF608AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="112A0B85-D827-89A8-3EFF-FF64DF52E145" name="Iventario_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>CCCA6B12-9D32-0701-1EBB-1A27082F5CDA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B51FB0A3-E233-EDEB-8B8D-E63F5A1A252E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

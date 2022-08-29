@@ -33,6 +33,49 @@
 <ownDataTypeParameters>80,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_Permiso" id="A9B7BD04-C055-6901-3971-EADF68972BC9">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>4F373B27-7F5E-B496-1D13-D1A6BABED2ED</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DFB9FD7-8047-AD54-3A92-359495D8644F" referredColumn="08B1714B-EC01-0670-601C-083B68318904"/>
+</associations>
+</Column>
+<Column name="ID_EstadoUsuario" id="0B068F1F-CD2A-C259-6709-54AC6BB9FF8A">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>36385D04-FED6-D1CC-EB31-8415D5633084</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="756FC981-0955-5930-ED54-874E081563B3" referredColumn="0CE18B17-4B93-0E4D-9AD7-966B7AF3DF2C"/>
+</associations>
+</Column>
+<Column name="Email" id="B2D49A4B-CC98-E6DE-57A5-101EEE6907DB">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>A3014AC2-FC30-9D6C-8DC5-D13CB0999B78</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="F9ECBA28-8049-EBAA-8487-F4162ADE2ED4" name="Usuario_PK">
@@ -45,6 +88,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D90FB4BD-6F3D-DE45-F394-01D63472D697"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF4481A9-B1AC-2AF6-2CAD-9EC9826AD8A8" name="Usuario_EstadoUsuario_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>6539A6B8-97FA-7667-1DD2-A0F876E60E3E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B068F1F-CD2A-C259-6709-54AC6BB9FF8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56719BBD-7296-CD0B-A42A-A271F0772B29" name="Usuario_Permiso_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>069603A8-1797-42EE-4FFE-422694028C04</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9B7BD04-C055-6901-3971-EADF68972BC9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

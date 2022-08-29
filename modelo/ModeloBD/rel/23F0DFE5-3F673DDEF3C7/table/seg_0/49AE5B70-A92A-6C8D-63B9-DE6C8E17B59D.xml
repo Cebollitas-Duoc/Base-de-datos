@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49AE5B70-A92A-6C8D-63B9-DE6C8E17B59D" name="Conector_Departamento_Servicio">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>45FED627-FB0B-3273-AB6F-2107C4DF9E1E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Servicio" id="21DF251C-374D-EF44-DE6B-FF7BFA9949CB">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>4DB3D8E4-4009-1625-FD18-D35B9A74F23D</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F775DC6-7B3E-3EF8-9D96-8B012E49B043" referredColumn="FDBFD0CF-F527-9C5E-CBB5-49053793A1CC"/>
+</associations>
+</Column>
+<Column name="ID_Departamento" id="10DAC8BA-3087-4E23-7A30-FE4515A8FDA4">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>3941F1FE-DC72-DF92-102C-66215C4CAA69</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA6DE501-9CE4-3B8A-9383-2C8AE7F67B51" referredColumn="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
+</associations>
+</Column>
+<Column name="Cantidad" id="ADB79266-4778-4118-03EC-D3A91A3C356D">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>D2105EF6-AE5A-B653-877C-4861FB91FB53</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="40A453E1-35D6-0435-E152-E727DA1C673F">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>81BA193B-E0BF-7CAF-9FA4-E9447584AD56</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="809EC8D1-A08F-FFCE-6CED-E0788EAC0630" name="Conector_Departamento_Servicio_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>BE8C38B4-AF4F-9D5C-A927-C9F0931B281B</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21DF251C-374D-EF44-DE6B-FF7BFA9949CB"/>
+<colUsage columnID="10DAC8BA-3087-4E23-7A30-FE4515A8FDA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09F673EB-D9E6-EACA-DB6B-60344EF112CF" name="Conector_Departamento_Servicio_Servicio_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>E9C2F543-B4DF-1C94-CF2D-443160601D58</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21DF251C-374D-EF44-DE6B-FF7BFA9949CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1351ED7-87CD-DBB6-1713-2DE1481612BE" name="Conector_Departamento_Servicio_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-08-29 20:58:56 UTC</createdTime>
+<generatorID>11D4285C-C588-AF78-3109-6276D87BD81E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10DAC8BA-3087-4E23-7A30-FE4515A8FDA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
