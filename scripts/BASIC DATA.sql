@@ -22,9 +22,12 @@ INSERT INTO CategoriaMantencion (ID_CategoriaMantencion, Descripcion) VALUES (0,
 INSERT INTO CategoriaReporte (ID_Categoria, Nombre) VALUES (0, 'Documento generico');
 INSERT INTO CategoriaReporte (ID_Categoria, Nombre) VALUES (1, 'Check In');
 INSERT INTO CategoriaReporte (ID_Categoria, Nombre) VALUES (2, 'Check Out');
+INSERT INTO CategoriaReporte (ID_Categoria, Nombre) VALUES (2, 'Boleta');
 
 INSERT INTO usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
 VALUES ('01#40#asdfasdf#e3e3316c1536b6d21976e118222334778854deeab0ff3f24303ad4f1f6fbffd2', 0, 1, 'jose@mrmeme.cl');
 
 INSERT INTO usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
 VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 'andres@mrmeme.cl');
+
+Commit;
