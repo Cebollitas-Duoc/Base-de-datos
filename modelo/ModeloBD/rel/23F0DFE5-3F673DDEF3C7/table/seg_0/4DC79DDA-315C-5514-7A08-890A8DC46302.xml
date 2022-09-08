@@ -13,9 +13,9 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -25,9 +25,9 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>1D812954-F4B5-4876-DA27-5B79BBD0FB10</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -40,9 +40,9 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>C127AC74-1700-77D3-42F9-715C6FDBFB18</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -55,9 +55,9 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>48050026-9CF1-F389-7F3D-1C4808DA6134</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -73,8 +73,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FechaHasta" id="FD189E0E-789D-14C8-D445-F328135FDE2F">
@@ -85,8 +86,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ValorTotal" id="51AC3C60-5D5F-D3B5-824E-439A44A19AF1">
@@ -106,9 +108,9 @@
 <createdTime>2022-08-29 22:01:04 UTC</createdTime>
 <generatorID>7C676009-81D1-D148-967C-CFCE1734D28B</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>

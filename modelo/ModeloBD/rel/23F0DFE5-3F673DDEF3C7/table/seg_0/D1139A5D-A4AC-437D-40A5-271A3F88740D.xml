@@ -13,9 +13,9 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>AF7E746B-60E9-2576-A404-5EBC3CD1FB39</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -28,9 +28,9 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -75,7 +75,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1FFAB4A1-912E-A6B7-1470-FCE3C0B115EE"/>
-<colUsage columnID="CB159279-B648-45B9-9194-0F667B6C53ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="0E5D17E6-6A26-B3C5-ECAF-8357F2D8E41E" name="Conector_Departamento_ServicioExtra_ServicioExtra_FK">
