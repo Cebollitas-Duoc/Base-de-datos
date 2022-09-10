@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E76184F-01C5-864E-8D50-411B1D56AB22" name="Chofer">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>E4DB26A8-172B-3E50-19BF-7B746EA51CD9</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Chofer" id="EE85C0C9-8036-1998-DC82-5C83619EB242">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>19B408FD-851C-B5AF-C4EC-FF777FF35F6F</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombres" id="6A83D8C5-02B2-6955-59F9-4A3FFB5840ED">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>5795C646-5922-2CE6-C868-1B879D6CD9EA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="9D8091CC-1EE2-2892-C5A9-030B1383BE64">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>02DEDDA5-D776-8F37-BE6C-4820EFD05E48</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PatenteVehiculo" id="86BE5C90-7004-C327-0B6A-903CA4A3526D">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>B25A0CB2-0FBA-040D-6763-BC69E1B13ACF</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96FDC1B7-F927-363C-FFF4-122C90689BA7" name="Chofer_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>E0A533A7-B37F-8F3A-EF1F-720142E2FD9F</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE85C0C9-8036-1998-DC82-5C83619EB242"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
