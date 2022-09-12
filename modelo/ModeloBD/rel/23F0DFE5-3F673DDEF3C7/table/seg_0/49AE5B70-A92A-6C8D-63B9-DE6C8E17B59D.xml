@@ -14,8 +14,9 @@
 <generatorID>4DB3D8E4-4009-1625-FD18-D35B9A74F23D</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -29,8 +30,9 @@
 <generatorID>3941F1FE-DC72-DF92-102C-66215C4CAA69</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -74,6 +76,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="21DF251C-374D-EF44-DE6B-FF7BFA9949CB"/>
 <colUsage columnID="10DAC8BA-3087-4E23-7A30-FE4515A8FDA4"/>
 </indexColumnUsage>
 </ind_PK_UK>

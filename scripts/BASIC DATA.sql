@@ -25,9 +25,15 @@ INSERT INTO CategoriaReporte (ID_Categoria, Nombre) VALUES (2, 'Check Out');
 INSERT INTO CategoriaReporte (ID_Categoria, Nombre) VALUES (3, 'Boleta');
 
 INSERT INTO usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
-VALUES ('01#40#asdfasdf#e3e3316c1536b6d21976e118222334778854deeab0ff3f24303ad4f1f6fbffd2', 0, 1, 'jose@mrmeme.cl');
+VALUES ('01#40#asdfasdf#e3e3316c1536b6d21976e118222334778854deeab0ff3f24303ad4f1f6fbffd2', 1, 1, 'jose@mrmeme.cl');
 
 INSERT INTO usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
-VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 'andres@mrmeme.cl');
+VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 1, 'andres@mrmeme.cl');
+
+INSERT INTO usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
+VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 'diego@mrmeme.cl');
+
+INSERT INTO cliente (ID_USUARIO, PRIMERNOMBRE, SEGUNDONOMBRE, PRIMERAPELLIDO, SEGUNDOAPELLIDO, DIRECCION, TELEFONO, FOTO)
+VALUES (2, 'Andres', ' ', 'Groselj', 'Pausic', '308 Belmont Avenue', '+569 1234 4321', '/fotos/defaultprofile.jpg');
 
 Commit;

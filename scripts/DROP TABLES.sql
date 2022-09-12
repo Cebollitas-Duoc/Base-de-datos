@@ -18,9 +18,10 @@ DROP TABLE permiso CASCADE CONSTRAINTS;
 DROP TABLE reporte CASCADE CONSTRAINTS;
 DROP TABLE reserva CASCADE CONSTRAINTS;
 DROP TABLE servicio CASCADE CONSTRAINTS;
-DROP TABLE servicioextra CASCADE CONSTRAINTS;
+DROP TABLE categoriaservicioextra CASCADE CONSTRAINTS;
 DROP TABLE sesion CASCADE CONSTRAINTS;
 DROP TABLE usuario CASCADE CONSTRAINTS;
+DROP TABLE chofer CASCADE CONSTRAINTS;
 
 DROP SEQUENCE cliente_id_usuario_seq;
 DROP SEQUENCE departamento_id_departamento;
@@ -32,8 +33,7 @@ DROP SEQUENCE pago_id_pago_seq;
 DROP SEQUENCE reporte_id_reporte_seq;
 DROP SEQUENCE reserva_id_reserva_seq;
 DROP SEQUENCE servicio_id_servicio_seq;
-DROP SEQUENCE servicioextra_id_servicioextra;
+DROP SEQUENCE categoriaservicioextra_id_serv;
 DROP SEQUENCE sesion_id_sesion_seq;
 DROP SEQUENCE usuario_id_usuario_seq;
-
 

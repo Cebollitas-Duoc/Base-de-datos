@@ -14,8 +14,9 @@
 <generatorID>C460184C-47D0-9AFB-EFBA-EC0A0B85EAB3</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
@@ -100,6 +101,19 @@
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <dataTypeSize>25</dataTypeSize>
 <ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Foto" id="7F8AE674-D721-2E9B-E64F-48208EB0C458">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:27:03 UTC</createdTime>
+<generatorID>BB508EF8-E744-5299-0054-A929F9743071</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

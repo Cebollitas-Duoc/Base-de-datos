@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ServicioExtra_1" id="E736FF5C-6715-ED91-62C0-92BD410811B1">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:34:27 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="ID_Departamento" id="AF7E746B-60E9-2576-A404-5EBC3CD1FB39">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:25:28 UTC</createdTime>
@@ -38,6 +50,20 @@
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <referedAttribute>CE6D9FEA-41C8-3ABB-95DE-C0F216AACBA3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Chofer" id="C0659572-5F6A-E906-2503-84240B13DA38">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:38:30 UTC</createdTime>
+<generatorID>BF432A9F-47A1-D3FE-7D0E-4F0F93A3C1C4</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<referedAttribute>19B408FD-851C-B5AF-C4EC-FF777FF35F6F</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
@@ -81,8 +107,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>AF7E746B-60E9-2576-A404-5EBC3CD1FB39</attributeRef>
-<attributeRef>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</attributeRef>
+<attributeRef>E736FF5C-6715-ED91-62C0-92BD410811B1</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

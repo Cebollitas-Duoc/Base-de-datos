@@ -24,34 +24,20 @@
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <referedAttribute>D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Departamento" id="F1F93E9E-A8DD-81DE-8DC9-75DDE4D99375">
+<Attribute name="ID_ServicioExtra_1" id="454DD6DC-CE4E-5608-4038-05B84EC317ED">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 22:31:58 UTC</createdTime>
+<createdTime>2022-09-10 19:34:43 UTC</createdTime>
 <generatorID>3BA0B708-C517-B8C0-7373-695AA4F87ECB</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<referedAttribute>AF7E746B-60E9-2576-A404-5EBC3CD1FB39</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_ServicioExtra" id="19A2CBF7-4255-95F9-DA20-123EA7335673">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 22:31:58 UTC</createdTime>
-<generatorID>3BA0B708-C517-B8C0-7373-695AA4F87ECB</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</referedAttribute>
+<referedAttribute>E736FF5C-6715-ED91-62C0-92BD410811B1</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
@@ -63,14 +49,14 @@
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:32:38 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>8740BF40-F430-7343-2E3B-953827D10B3C</attributeRef>
-<attributeRef>F1F93E9E-A8DD-81DE-8DC9-75DDE4D99375</attributeRef>
-<attributeRef>19A2CBF7-4255-95F9-DA20-123EA7335673</attributeRef>
+<attributeRef>454DD6DC-CE4E-5608-4038-05B84EC317ED</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

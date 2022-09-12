@@ -13,9 +13,9 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>8740BF40-F430-7343-2E3B-953827D10B3C</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -34,9 +34,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C687B804-BCBB-A02E-A4A3-0094D6F21482" referredColumn="1FFAB4A1-912E-A6B7-1470-FCE3C0B115EE"/>
-</associations>
 </Column>
 <Column name="ID_ServicioExtra" id="7CD1BC39-132B-C05D-BCD9-7FDD97A975C0">
 <createdBy>andres</createdBy>
@@ -49,8 +46,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ServicioExtra_1" id="AED6BFF6-CCEA-EF34-BFA7-D5C67BF3C696">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>454DD6DC-CE4E-5608-4038-05B84EC317ED</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C687B804-BCBB-A02E-A4A3-0094D6F21482" referredColumn="CB159279-B648-45B9-9194-0F667B6C53ED"/>
+<colAssociation fkAssociation="C687B804-BCBB-A02E-A4A3-0094D6F21482" referredColumn="ED4913A7-B4D0-8A06-287E-93A83D260483"/>
 </associations>
 </Column>
 </columns>
@@ -77,8 +86,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C7DE22A2-ED39-3643-6D01-B3A2874D7C16"/>
-<colUsage columnID="7CD1BC39-132B-C05D-BCD9-7FDD97A975C0"/>
+<colUsage columnID="AED6BFF6-CCEA-EF34-BFA7-D5C67BF3C696"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="6448CDEA-EE0C-F92C-6C04-C5783FFA07FD" name="Conector_ServicioExtra_Reserva_Reserva_FK">

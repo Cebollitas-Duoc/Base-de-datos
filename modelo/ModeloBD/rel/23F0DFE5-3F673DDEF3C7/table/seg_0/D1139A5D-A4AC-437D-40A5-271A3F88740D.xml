@@ -14,8 +14,9 @@
 <generatorID>AF7E746B-60E9-2576-A404-5EBC3CD1FB39</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -29,8 +30,9 @@
 <generatorID>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -63,6 +65,32 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_ServicioExtra_1" id="ED4913A7-B4D0-8A06-287E-93A83D260483">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>E736FF5C-6715-ED91-62C0-92BD410811B1</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Chofer" id="28924D09-02BD-BDC9-08A5-CD9526DC20D8">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>C0659572-5F6A-E906-2503-84240B13DA38</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95DFCE2C-C6AB-F0A9-0BB2-8C6DF14E8407" referredColumn="EE85C0C9-8036-1998-DC82-5C83619EB242"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B0877B97-DE3F-738E-7334-89B4D662047E" name="Conector_Departamento_ServicioExtra_PK">
@@ -74,7 +102,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1FFAB4A1-912E-A6B7-1470-FCE3C0B115EE"/>
+<colUsage columnID="ED4913A7-B4D0-8A06-287E-93A83D260483"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="0E5D17E6-6A26-B3C5-ECAF-8357F2D8E41E" name="Conector_Departamento_ServicioExtra_ServicioExtra_FK">
@@ -97,6 +125,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1FFAB4A1-912E-A6B7-1470-FCE3C0B115EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6742B4DF-B307-E3DF-0C8E-6D1209D3BB51" name="Conector_Departamento_ServicioExtra_Chofer_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-10 19:43:02 UTC</createdTime>
+<generatorID>BF432A9F-47A1-D3FE-7D0E-4F0F93A3C1C4</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28924D09-02BD-BDC9-08A5-CD9526DC20D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
