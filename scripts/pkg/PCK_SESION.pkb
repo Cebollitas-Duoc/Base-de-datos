@@ -1,0 +1,25 @@
+CREATE OR REPLACE PACKAGE BODY USR_TURISMO_REAL.PCK_SESION IS
+
+PROCEDURE P_AGREGAR_SESION             ( PIN_ID_SESION          IN NUMBER
+										,PIN_LLAVE        	    IN VARCHAR2
+										,PIN_EXPIRACION      	IN NUMBER
+										,PIN_ID_USUARIO   		IN NUMBER
+										,PIN_FECHACREACION      IN NUMBER) IS
+		BEGIN
+			INSERT INTO SESION (
+								 ID_SESION    
+								,LLAVE        
+								,EXPIRACION   
+								,ID_USUARIO   
+								,FECHACREACION)
+			VALUES (     
+					 PIN_ID_SESION     	 
+					,PIN_LLAVE            
+					,PIN_EXPIRACION   
+					,PIN_ID_USUARIO   
+					,PIN_FECHACREACION
+					);
+		END;
+
+END PCK_SESION;
+/
