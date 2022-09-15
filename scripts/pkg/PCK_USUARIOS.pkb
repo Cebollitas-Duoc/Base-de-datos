@@ -46,7 +46,11 @@ PROCEDURE P_AGREGAR_ACTUALIZAR_USUARIO     ( PIN_ID_USUARIO          IN NUMBER
 											,PIN_EMAIL        	     IN VARCHAR2
 											,PIN_ID_PERMISO       	 IN NUMBER
 											,PIN_ID_ESTADOUSUARIO    IN NUMBER
-											,PIN_PASSWORD            IN VARCHAR2) IS
+											,PIN_PASSWORD            IN VARCHAR2
+											,PIN_PRIMERNOMBRE        IN VARCHAR2
+											,PIN_SEGUNDONOMBRE       IN VARCHAR2
+											,PIN_PRIMERAPELLIDO      IN VARCHAR2
+											,PIN_SEGUNDOAPELLIDO     IN VARCHAR2) IS
 
 	X_ID_USUARIO     NUMBER;
 	
@@ -68,16 +72,32 @@ PROCEDURE P_AGREGAR_ACTUALIZAR_USUARIO     ( PIN_ID_USUARIO          IN NUMBER
 		EXCEPTION
 			WHEN NO_DATA_FOUND THEN
 				BEGIN
-					INSERT INTO USUARIO (
-										 EMAIL        	 
+					SELECT USUARIO_ID_USUARIO_SEQ.NEXTVAL INTO X_ID_USUARIO
+                    FROM DUAL;
+					INSERT INTO USUARIO (ID_USUARIO										 
+										,EMAIL        	 
 										,ID_PERMISO      
 										,ID_ESTADOUSUARIO
 										,PASSWORD)
-					VALUES (     
-							 PIN_EMAIL        	 
+					VALUES ( 
+							 X_ID_USUARIO    
+							,PIN_EMAIL        	 
 							,PIN_ID_PERMISO      
 							,PIN_ID_ESTADOUSUARIO
 							,PIN_PASSWORD
+							);
+					INSERT INTO CLIENTE (
+										 ID_USUARIO										 
+										,PRIMERNOMBRE      
+										,SEGUNDONOMBRE
+										,PRIMERAPELLIDO
+										,SEGUNDOAPELLIDO)
+					VALUES ( 
+							 X_ID_USUARIO    
+							,PIN_PRIMERNOMBRE   
+							,PIN_SEGUNDONOMBRE  
+							,PIN_PRIMERAPELLIDO 
+							,PIN_SEGUNDOAPELLIDO
 							);
 				END;	
 			
