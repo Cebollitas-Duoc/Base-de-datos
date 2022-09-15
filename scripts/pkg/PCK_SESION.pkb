@@ -6,12 +6,12 @@ PROCEDURE P_AGREGAR_SESION             ( PIN_LLAVE        	    IN VARCHAR2
 										,PIN_FECHACREACION      IN NUMBER) IS
 		BEGIN
 			INSERT INTO SESION (  
-								,LLAVE        
+								 LLAVE        
 								,EXPIRACION   
 								,ID_USUARIO   
 								,FECHACREACION)
 			VALUES (       	 
-					,PIN_LLAVE            
+					 PIN_LLAVE            
 					,PIN_EXPIRACION   
 					,PIN_ID_USUARIO   
 					,PIN_FECHACREACION
