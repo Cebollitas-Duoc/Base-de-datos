@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F041F930-83FB-42EE-7ADD-6CE65AC4CA94" name="Servicio">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F041F930-83FB-42EE-7ADD-6CE65AC4CA94" name="T_Servicio">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>64AF10E1-5A9F-7CC7-E7B4-1B777C0D38F9</generatorID>
@@ -62,7 +62,7 @@
 <colUsage columnID="FDBFD0CF-F527-9C5E-CBB5-49053793A1CC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="63FB7C80-D699-3FC3-DA1E-832827047D82" name="Servicio_CategoriaServicio_FK">
+<ind_PK_UK id="63FB7C80-D699-3FC3-DA1E-832827047D82" name="T_Servicio_T_CategoriaServicio_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>CD277D86-8338-9D5D-E7E1-9FCBB503F7A6</generatorID>

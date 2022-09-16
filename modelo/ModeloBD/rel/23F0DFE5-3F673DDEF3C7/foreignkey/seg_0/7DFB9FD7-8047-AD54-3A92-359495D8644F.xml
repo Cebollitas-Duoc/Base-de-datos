@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7DFB9FD7-8047-AD54-3A92-359495D8644F" containerWithKeyObject="E712AE2E-D16C-580C-469E-2C1CCD69D4B4" localFKIndex="56719BBD-7296-CD0B-A42A-A271F0772B29" name="Usuario_Permiso_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7DFB9FD7-8047-AD54-3A92-359495D8644F" containerWithKeyObject="E712AE2E-D16C-580C-469E-2C1CCD69D4B4" localFKIndex="56719BBD-7296-CD0B-A42A-A271F0772B29" name="T_Usuario_T_Permiso_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>069603A8-1797-42EE-4FFE-422694028C04</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<referredTableLongName>Permiso</referredTableLongName>
+<referredTableLongName>T_Permiso</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>579D8F31-2AFC-8B6A-EF1E-5327603A2199</referredTableID>
 <keyObject>2173747E-D76C-8472-B162-076E466330CF</keyObject>

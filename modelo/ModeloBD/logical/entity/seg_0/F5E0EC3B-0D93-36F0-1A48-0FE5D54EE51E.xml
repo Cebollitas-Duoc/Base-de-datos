@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5E0EC3B-0D93-36F0-1A48-0FE5D54EE51E" name="Conector_ServicioExtra_Reserva">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5E0EC3B-0D93-36F0-1A48-0FE5D54EE51E" name="T_Conector_ServicioExtra_Reserva">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:27:18 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>

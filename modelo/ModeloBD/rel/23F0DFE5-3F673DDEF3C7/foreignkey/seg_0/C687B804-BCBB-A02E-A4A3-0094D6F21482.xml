@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C687B804-BCBB-A02E-A4A3-0094D6F21482" containerWithKeyObject="2601BB14-861A-C3B9-0EEA-9FEEAE9E6960" localFKIndex="53E9D630-C747-A25D-4370-2B7E3155F720" name="Conector_ServicioExtra_Reserva_Conector_Departamento_ServicioExtra_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C687B804-BCBB-A02E-A4A3-0094D6F21482" containerWithKeyObject="2601BB14-861A-C3B9-0EEA-9FEEAE9E6960" localFKIndex="53E9D630-C747-A25D-4370-2B7E3155F720" name="T_Conector_ServicioExtra_Reserva_T_Conector_Departamento_ServicioExtra_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>3BA0B708-C517-B8C0-7373-695AA4F87ECB</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<referredTableLongName>Conector_Departamento_ServicioExtra</referredTableLongName>
+<referredTableLongName>T_Conector_Departamento_ServicioExtra</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>D1139A5D-A4AC-437D-40A5-271A3F88740D</referredTableID>
 <keyObject>B0877B97-DE3F-738E-7334-89B4D662047E</keyObject>
 <referredKeyID>B0877B97-DE3F-738E-7334-89B4D662047E</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ID_Departamento,ID_ServicioExtra</refColNames>
+<refColNames>ID_ServicioExtra_1</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

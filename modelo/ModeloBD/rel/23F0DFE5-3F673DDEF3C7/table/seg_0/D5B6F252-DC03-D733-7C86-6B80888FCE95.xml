@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5B6F252-DC03-D733-7C86-6B80888FCE95" name="Iventario">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5B6F252-DC03-D733-7C86-6B80888FCE95" name="T_Iventario">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>0D8C923E-51FE-5A15-829C-504CC37BF0A0</generatorID>
@@ -74,7 +74,7 @@
 <colUsage columnID="C1E5C922-F550-215D-037C-DCA39AF608AB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="112A0B85-D827-89A8-3EFF-FF64DF52E145" name="Iventario_Departamento_FK">
+<ind_PK_UK id="112A0B85-D827-89A8-3EFF-FF64DF52E145" name="T_Iventario_T_Departamento_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>CCCA6B12-9D32-0701-1EBB-1A27082F5CDA</generatorID>

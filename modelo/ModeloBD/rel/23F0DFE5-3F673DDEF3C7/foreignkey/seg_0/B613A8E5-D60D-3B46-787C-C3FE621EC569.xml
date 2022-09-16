@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B613A8E5-D60D-3B46-787C-C3FE621EC569" containerWithKeyObject="3391F0E9-D0B2-769F-4758-D4046193A800" localFKIndex="38EDEE86-7256-ED0B-1F5F-35B1106E83B1" name="Reporte_CategoriaReporte_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B613A8E5-D60D-3B46-787C-C3FE621EC569" containerWithKeyObject="3391F0E9-D0B2-769F-4758-D4046193A800" localFKIndex="38EDEE86-7256-ED0B-1F5F-35B1106E83B1" name="T_Reporte_T_CategoriaReporte_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 21:08:27 UTC</createdTime>
 <generatorID>97939309-1E37-4AB7-6AF8-C2126D6BAA20</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<referredTableLongName>CategoriaReporte</referredTableLongName>
+<referredTableLongName>T_CategoriaReporte</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>A2B88F25-229E-D964-6AD5-C39D4CBE4E9C</referredTableID>
 <keyObject>24184A13-FA6F-77DE-FE81-D6C0FC7D7E06</keyObject>

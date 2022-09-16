@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4252B5AD-6499-98BB-2F80-3E27BA287FD1" containerWithKeyObject="4DC79DDA-315C-5514-7A08-890A8DC46302" localFKIndex="42F78CCA-E634-A1C6-692E-7EE2F508F090" name="Reserva_EstadoReserva_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4252B5AD-6499-98BB-2F80-3E27BA287FD1" containerWithKeyObject="4DC79DDA-315C-5514-7A08-890A8DC46302" localFKIndex="42F78CCA-E634-A1C6-692E-7EE2F508F090" name="T_Reserva_T_EstadoReserva_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>E0A038AD-F7CE-1ADC-7DF0-3A0BAE7DCB93</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<referredTableLongName>EstadoReserva</referredTableLongName>
+<referredTableLongName>T_EstadoReserva</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>CDED28FD-6EA8-DA0A-9CC3-B28DF15D26AE</referredTableID>
 <keyObject>68261D0C-BF3C-05F0-03EA-5EB582ED2574</keyObject>

@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="04755BAA-6172-1EC9-3FE6-9D994D33AE12" containerWithKeyObject="51D245C4-2C90-84F3-1AC1-EEE23B6A1163" localFKIndex="273C8ADA-F75E-7F9D-431A-A3EE0D3443F4" name="Cliente_Usuario_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BAEAB386-FEED-CE11-647E-46977A3E04AA" containerWithKeyObject="4DC79DDA-315C-5514-7A08-890A8DC46302" localFKIndex="33D0A7C6-6C72-2227-4204-FAC9E31C8A77" name="T_Reserva_T_Usuario_FK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>A233629D-A282-72A4-CB18-5C3C0A4DB71F</generatorID>
+<createdTime>2022-09-16 18:29:43 UTC</createdTime>
+<generatorID>AE6F215B-10B9-257D-E172-7B908421C14F</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<referredTableLongName>Usuario</referredTableLongName>
+<referredTableLongName>T_Usuario</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>E712AE2E-D16C-580C-469E-2C1CCD69D4B4</referredTableID>
 <keyObject>F9ECBA28-8049-EBAA-8487-F4162ADE2ED4</keyObject>

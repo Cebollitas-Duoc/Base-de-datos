@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AB2B53CF-7F6E-2D8F-DDBF-A89370B85543" containerWithKeyObject="D1139A5D-A4AC-437D-40A5-271A3F88740D" localFKIndex="27FEA29C-945D-02E6-1D3E-28F1DC4F3D58" name="Conector_Departamento_ServicioExtra_Departamento_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AB2B53CF-7F6E-2D8F-DDBF-A89370B85543" containerWithKeyObject="D1139A5D-A4AC-437D-40A5-271A3F88740D" localFKIndex="27FEA29C-945D-02E6-1D3E-28F1DC4F3D58" name="T_Conector_Departamento_ServicioExtra_T_Departamento_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>CAB34F1F-24E7-25F8-6463-C538C608FAE0</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<referredTableLongName>Departamento</referredTableLongName>
+<referredTableLongName>T_Departamento</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>126FB53C-AEB4-A053-C0BC-CD62C42D47C8</referredTableID>
 <keyObject>0271605A-04DF-0B9F-0BB7-29B858B9ACE5</keyObject>

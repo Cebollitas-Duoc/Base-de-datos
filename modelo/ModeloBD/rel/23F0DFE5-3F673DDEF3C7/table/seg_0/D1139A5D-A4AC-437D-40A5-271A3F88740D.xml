@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1139A5D-A4AC-437D-40A5-271A3F88740D" name="Conector_Departamento_ServicioExtra">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1139A5D-A4AC-437D-40A5-271A3F88740D" name="T_Conector_Departamento_ServicioExtra">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>493EEB6B-CB00-4B0A-EB69-80A1629DB0BB</generatorID>
@@ -13,7 +13,6 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>AF7E746B-60E9-2576-A404-5EBC3CD1FB39</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
@@ -29,7 +28,6 @@
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
@@ -105,7 +103,7 @@
 <colUsage columnID="ED4913A7-B4D0-8A06-287E-93A83D260483"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0E5D17E6-6A26-B3C5-ECAF-8357F2D8E41E" name="Conector_Departamento_ServicioExtra_ServicioExtra_FK">
+<ind_PK_UK id="0E5D17E6-6A26-B3C5-ECAF-8357F2D8E41E" name="T_Conector_Departamento_ServicioExtra_T_CategoriaServicioExtra_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>394732D5-E076-568A-386D-A2FDB565780E</generatorID>
@@ -116,7 +114,7 @@
 <colUsage columnID="CB159279-B648-45B9-9194-0F667B6C53ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="27FEA29C-945D-02E6-1D3E-28F1DC4F3D58" name="Conector_Departamento_ServicioExtra_Departamento_FK">
+<ind_PK_UK id="27FEA29C-945D-02E6-1D3E-28F1DC4F3D58" name="T_Conector_Departamento_ServicioExtra_T_Departamento_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>CAB34F1F-24E7-25F8-6463-C538C608FAE0</generatorID>
@@ -127,7 +125,7 @@
 <colUsage columnID="1FFAB4A1-912E-A6B7-1470-FCE3C0B115EE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6742B4DF-B307-E3DF-0C8E-6D1209D3BB51" name="Conector_Departamento_ServicioExtra_Chofer_FK">
+<ind_PK_UK id="6742B4DF-B307-E3DF-0C8E-6D1209D3BB51" name="T_Conector_Departamento_ServicioExtra_T_Chofer_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:43:02 UTC</createdTime>
 <generatorID>BF432A9F-47A1-D3FE-7D0E-4F0F93A3C1C4</generatorID>

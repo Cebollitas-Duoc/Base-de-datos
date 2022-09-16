@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="843C84B5-C48A-C32B-B103-AD6FF2226187" name="Mantencion">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="843C84B5-C48A-C32B-B103-AD6FF2226187" name="T_Mantencion">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:39:34 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
@@ -37,8 +37,9 @@
 </engineerTo>
 <referedAttribute>6FDAD78C-8AAE-C32A-354F-4B3BC1A54086</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_Departamento" id="98F8FB21-0879-D60B-A64A-8293DB697559">
@@ -51,8 +52,9 @@
 </engineerTo>
 <referedAttribute>D33F68F2-6328-9263-BA41-DE8D1E644FAB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Descripcion" id="34E162D5-0CBB-869F-A9E1-5081BD24ED13">

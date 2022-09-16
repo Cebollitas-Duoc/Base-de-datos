@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CC350CD7-3848-CF27-195F-BB79FE9018B3" name="Pago">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CC350CD7-3848-CF27-195F-BB79FE9018B3" name="T_Pago">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 21:31:52 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
@@ -37,8 +37,9 @@
 </engineerTo>
 <referedAttribute>86887B36-4571-E51F-0B38-F2307D2BBCFC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Valor" id="7424A2B6-DF7C-FAB4-477F-B99007D56C40">

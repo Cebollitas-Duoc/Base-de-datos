@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D68DB75-6798-0222-46A9-1D01A27003C1" name="Mantencion">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D68DB75-6798-0222-46A9-1D01A27003C1" name="T_Mantencion">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>843C84B5-C48A-C32B-B103-AD6FF2226187</generatorID>
@@ -26,8 +26,9 @@
 <generatorID>53FDF253-2009-8BC8-4C8F-687308BF6752</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -41,8 +42,9 @@
 <generatorID>98F8FB21-0879-D60B-A64A-8293DB697559</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -116,7 +118,7 @@
 <colUsage columnID="44FBBC3E-A6C4-80AD-7F73-D57F6DBB2598"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="45F30C37-C9DE-48FC-9BCB-56B1BF0A92A2" name="Mantencion_CategoriaMantencion_FK">
+<ind_PK_UK id="45F30C37-C9DE-48FC-9BCB-56B1BF0A92A2" name="T_Mantencion_T_CategoriaMantencion_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>6CAA28B9-511A-23EC-4F28-CA4A4F032C74</generatorID>
@@ -127,7 +129,7 @@
 <colUsage columnID="D67C8CC8-AF96-1E2F-0AFB-927BFDB98DA3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9FE352FF-7BCD-B3FA-F3CF-C87175B339F2" name="Mantencion_Departamento_FK">
+<ind_PK_UK id="9FE352FF-7BCD-B3FA-F3CF-C87175B339F2" name="T_Mantencion_T_Departamento_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>5466D4A3-1BFE-9F83-B0FC-2A214D15D0CD</generatorID>

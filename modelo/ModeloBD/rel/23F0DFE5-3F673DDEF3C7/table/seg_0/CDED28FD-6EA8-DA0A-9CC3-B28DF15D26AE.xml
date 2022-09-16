@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDED28FD-6EA8-DA0A-9CC3-B28DF15D26AE" name="EstadoReserva">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDED28FD-6EA8-DA0A-9CC3-B28DF15D26AE" name="T_EstadoReserva">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>9139F811-ED99-E798-5B8D-F1E2E06FA200</generatorID>
