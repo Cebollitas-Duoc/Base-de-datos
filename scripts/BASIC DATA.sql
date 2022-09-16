@@ -34,6 +34,6 @@ INSERT INTO usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
 VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 'diego@mrmeme.cl');
 
 INSERT INTO cliente (ID_USUARIO, PRIMERNOMBRE, SEGUNDONOMBRE, PRIMERAPELLIDO, SEGUNDOAPELLIDO, DIRECCION, TELEFONO, FOTO)
-VALUES (2, 'Andres', ' ', 'Groselj', 'Pausic', '308 Belmont Avenue', '+569 1234 4321', '/fotos/defaultprofile.jpg');
+VALUES (2, 'Andres', ' ', 'Groselj', 'Pausic', '308 Belmont Avenue', '+569 1234 4321', '/img/profiles/turing.png');
 
 Commit;
