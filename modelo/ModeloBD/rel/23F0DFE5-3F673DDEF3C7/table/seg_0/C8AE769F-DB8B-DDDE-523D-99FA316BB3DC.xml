@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_ServicioExtra" id="D0CE3345-612C-23D4-F5F9-243604E0D363">
+<Column name="ID_CategoriaServicioExtra" id="D0CE3345-612C-23D4-F5F9-243604E0D363">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>CE6D9FEA-41C8-3ABB-95DE-C0F216AACBA3</generatorID>
@@ -17,7 +17,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Nombre" id="F47A1962-4C78-985A-10AB-8076E159FDF3">

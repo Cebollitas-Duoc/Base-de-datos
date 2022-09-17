@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_error_id_error</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_error_id_error</autoIncrementTriggerName>
 </Column>
 <Column name="NombreError" id="D6D1420C-674A-1745-F7F3-6667726417DE">
 <createdBy>andres</createdBy>
@@ -74,7 +76,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="296C9DD5-A80C-EED9-6115-A9D3890B0E1B" name="Error_PK">
+<ind_PK_UK id="296C9DD5-A80C-EED9-6115-A9D3890B0E1B" name="T_Error_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 21:08:27 UTC</createdTime>
 <generatorID>84FCE2D0-CB56-6C2E-2609-D00BAA3684EA</generatorID>

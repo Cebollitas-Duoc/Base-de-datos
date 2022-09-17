@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_iventario_id_inventario</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_iventario_id_inventario</autoIncrementTriggerName>
 </Column>
 <Column name="Nombre" id="E5AF90DA-4F70-5682-5B99-4EDEB64F8F9B">
 <createdBy>andres</createdBy>
@@ -62,7 +64,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A583EE58-8B1E-A741-FA5A-C8CB271E6C9B" name="Iventario_PK">
+<ind_PK_UK id="A583EE58-8B1E-A741-FA5A-C8CB271E6C9B" name="T_Iventario_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>446DDC7C-2692-E22B-CEDC-8CB465096F38</generatorID>

@@ -34,7 +34,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="24184A13-FA6F-77DE-FE81-D6C0FC7D7E06" name="CategoriaReporte_PK">
+<ind_PK_UK id="24184A13-FA6F-77DE-FE81-D6C0FC7D7E06" name="T_CategoriaReporte_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 21:08:27 UTC</createdTime>
 <generatorID>A8347782-112E-1552-F45F-839F235FEDB4</generatorID>

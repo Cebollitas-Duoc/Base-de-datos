@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_pago_id_pago</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_pago_id_pago</autoIncrementTriggerName>
 </Column>
 <Column name="ID_EstadoPago" id="7BE36D9B-235B-A400-37D9-8F6B2C41E941">
 <createdBy>andres</createdBy>
@@ -64,7 +66,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3E543EC7-EFC3-CD76-31BE-AE790507ACA1" name="Pago_PK">
+<ind_PK_UK id="3E543EC7-EFC3-CD76-31BE-AE790507ACA1" name="T_Pago_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 22:01:04 UTC</createdTime>
 <generatorID>CD24E6F5-991A-6FBA-1EB8-0CE13963BFBB</generatorID>

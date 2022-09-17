@@ -1,7 +1,6 @@
 DROP TABLE t_categoriamantencion CASCADE CONSTRAINTS;
 DROP TABLE t_categoriareporte CASCADE CONSTRAINTS;
 DROP TABLE t_categoriaservicio CASCADE CONSTRAINTS;
-DROP TABLE t_cliente CASCADE CONSTRAINTS;
 DROP TABLE t_conector_departamento_servicio CASCADE CONSTRAINTS;
 DROP TABLE t_conector_departamento_servicioextra CASCADE CONSTRAINTS;
 DROP TABLE t_conector_servicioextra_reserva CASCADE CONSTRAINTS;
@@ -23,17 +22,16 @@ DROP TABLE t_sesion CASCADE CONSTRAINTS;
 DROP TABLE t_usuario CASCADE CONSTRAINTS;
 DROP TABLE t_chofer CASCADE CONSTRAINTS;
 
-DROP SEQUENCE t_cliente_id_usuario_seq;
-DROP SEQUENCE t_departamento_id_departamento;
-DROP SEQUENCE t_error_id_error_seq;
-DROP SEQUENCE t_foto_id_foto_seq;
-DROP SEQUENCE t_iventario_id_inventario_seq;
-DROP SEQUENCE t_mantencion_id_mantencion_seq;
-DROP SEQUENCE t_pago_id_pago_seq;
-DROP SEQUENCE t_reporte_id_reporte_seq;
-DROP SEQUENCE t_reserva_id_reserva_seq;
-DROP SEQUENCE t_servicio_id_servicio_seq;
-DROP SEQUENCE t_sesion_id_sesion_seq;
-DROP SEQUENCE t_usuario_id_usuario_seq;
-DROP SEQUENCE t_categoriaservicioextra_id_se;
+DROP SEQUENCE seq_departamento_id_departam;
+DROP SEQUENCE seq_error_id_error;
+DROP SEQUENCE seq_foto_id_foto;
+DROP SEQUENCE seq_iventario_id_inventario;
+DROP SEQUENCE seq_mantencion_id_mantencion;
+DROP SEQUENCE seq_pago_id_pago;
+DROP SEQUENCE seq_reporte_id_reporte;
+DROP SEQUENCE seq_reserva_id_reserva;
+DROP SEQUENCE seq_servicio_id_servicio;
+DROP SEQUENCE seq_sesion_id_sesion;
+DROP SEQUENCE seq_usuario_id_usuario;
+
 

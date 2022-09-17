@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_servicio_id_servicio</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_servicio_id_servicio</autoIncrementTriggerName>
 </Column>
 <Column name="Descripcion" id="8A742F36-77B7-F949-F280-4BDAE635F657">
 <createdBy>andres</createdBy>
@@ -50,7 +52,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F4A79CA0-9A94-A152-7B64-9AD109581026" name="Servicio_PK">
+<ind_PK_UK id="F4A79CA0-9A94-A152-7B64-9AD109581026" name="T_Servicio_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>03114CA5-D5CE-B98A-6290-1833A6C6B3A4</generatorID>

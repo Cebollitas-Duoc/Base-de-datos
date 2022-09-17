@@ -63,7 +63,7 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_ServicioExtra_1" id="ED4913A7-B4D0-8A06-287E-93A83D260483">
+<Column name="ID_ServicioExtra1" id="ED4913A7-B4D0-8A06-287E-93A83D260483">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:43:02 UTC</createdTime>
 <generatorID>E736FF5C-6715-ED91-62C0-92BD410811B1</generatorID>
@@ -91,7 +91,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B0877B97-DE3F-738E-7334-89B4D662047E" name="Conector_Departamento_ServicioExtra_PK">
+<ind_PK_UK id="B0877B97-DE3F-738E-7334-89B4D662047E" name="T_Conector_Departamento_ServicioExtra_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>9E6FE519-C347-8DBE-9291-B1775C71BAAA</generatorID>

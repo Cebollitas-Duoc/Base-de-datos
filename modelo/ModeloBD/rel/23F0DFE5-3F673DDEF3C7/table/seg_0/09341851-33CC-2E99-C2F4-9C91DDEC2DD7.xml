@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_foto_id_foto</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_foto_id_foto</autoIncrementTriggerName>
 </Column>
 <Column name="ID_Departamento" id="592D5EC3-2B55-2D75-E68F-8572990EEB93">
 <createdBy>andres</createdBy>
@@ -50,7 +52,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F4461FE5-A78D-A4E6-565C-92CC09D0482D" name="Foto_PK">
+<ind_PK_UK id="F4461FE5-A78D-A4E6-565C-92CC09D0482D" name="T_Foto_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>4E52ADA1-EC16-0938-985B-C17DE5D9C5E0</generatorID>

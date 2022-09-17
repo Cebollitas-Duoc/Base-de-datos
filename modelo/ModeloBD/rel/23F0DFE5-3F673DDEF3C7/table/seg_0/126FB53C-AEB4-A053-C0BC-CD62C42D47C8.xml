@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_departamento_id_departam</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_departamento_id_departam</autoIncrementTriggerName>
 </Column>
 <Column name="Direccion" id="8DB54B1C-4200-60B4-705B-EDC9C5D2908E">
 <createdBy>andres</createdBy>
@@ -111,7 +113,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0271605A-04DF-0B9F-0BB7-29B858B9ACE5" name="Departamento_PK">
+<ind_PK_UK id="0271605A-04DF-0B9F-0BB7-29B858B9ACE5" name="T_Departamento_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>90C2967D-E9B5-F6F8-D0C9-70F08220B9ED</generatorID>

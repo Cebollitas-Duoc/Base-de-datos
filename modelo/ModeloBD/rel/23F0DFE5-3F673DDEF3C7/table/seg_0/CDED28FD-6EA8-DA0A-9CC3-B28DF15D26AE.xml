@@ -47,7 +47,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="68261D0C-BF3C-05F0-03EA-5EB582ED2574" name="EstadoReserva_PK">
+<ind_PK_UK id="68261D0C-BF3C-05F0-03EA-5EB582ED2574" name="T_EstadoReserva_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>0892E55C-AE60-FBE3-5167-FF7800AE2147</generatorID>

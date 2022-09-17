@@ -47,7 +47,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="15A3767F-0F0C-FC71-0AFE-6E7B43F1B0D1" name="EstadoPago_PK">
+<ind_PK_UK id="15A3767F-0F0C-FC71-0AFE-6E7B43F1B0D1" name="T_EstadoPago_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 22:01:04 UTC</createdTime>
 <generatorID>800AF638-D4ED-FCE5-A0EB-7193D351D4FE</generatorID>

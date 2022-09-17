@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_reporte_id_reporte</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_reporte_id_reporte</autoIncrementTriggerName>
 </Column>
 <Column name="Ruta" id="A8F40889-31BF-AC1B-1846-0765C9E2E33E">
 <createdBy>andres</createdBy>
@@ -50,7 +52,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C9209F31-4865-D2CA-28CB-4F0BF7D20B35" name="Reporte_PK">
+<ind_PK_UK id="C9209F31-4865-D2CA-28CB-4F0BF7D20B35" name="T_Reporte_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 21:08:27 UTC</createdTime>
 <generatorID>4522984E-6145-56B7-0956-F2110A0064E1</generatorID>

@@ -65,7 +65,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="809EC8D1-A08F-FFCE-6CED-E0788EAC0630" name="Conector_Departamento_Servicio_PK">
+<ind_PK_UK id="809EC8D1-A08F-FFCE-6CED-E0788EAC0630" name="T_Conector_Departamento_Servicio_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>BE8C38B4-AF4F-9D5C-A927-C9F0931B281B</generatorID>

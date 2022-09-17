@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_usuario_id_usuario</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_usuario_id_usuario</autoIncrementTriggerName>
 </Column>
 <Column name="Password" id="EC86A7F6-F46B-A399-DF54-FB19A48D8B41">
 <createdBy>andres</createdBy>

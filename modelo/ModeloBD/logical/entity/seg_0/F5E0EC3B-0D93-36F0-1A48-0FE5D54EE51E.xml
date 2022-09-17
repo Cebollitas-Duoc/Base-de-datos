@@ -29,7 +29,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_ServicioExtra_1" id="454DD6DC-CE4E-5608-4038-05B84EC317ED">
+<Attribute name="ID_ServicioExtra" id="454DD6DC-CE4E-5608-4038-05B84EC317ED">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:34:43 UTC</createdTime>
 <generatorID>3BA0B708-C517-B8C0-7373-695AA4F87ECB</generatorID>

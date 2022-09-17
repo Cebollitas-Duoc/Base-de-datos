@@ -19,6 +19,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_mantencion_id_mantencion</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_mantencion_id_mantencion</autoIncrementTriggerName>
 </Column>
 <Column name="ID_CategoriaMantencion" id="D67C8CC8-AF96-1E2F-0AFB-927BFDB98DA3">
 <createdBy>andres</createdBy>
@@ -106,7 +108,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="90AB0115-3A13-64E2-4DA8-82E27465C888" name="Mantencion_PK">
+<ind_PK_UK id="90AB0115-3A13-64E2-4DA8-82E27465C888" name="T_Mantencion_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>25DD6FC8-7DE8-648C-4D6F-3E1006553095</generatorID>
