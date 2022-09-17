@@ -51,7 +51,8 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
                                 ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
                                 ,PIN_DIRECCION           IN VARCHAR2
                                 ,PIN_TELEFONO            IN VARCHAR2
-                                ,PIN_RUTAFOTOPERFIL      IN VARCHAR2) IS
+                                ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
+                                ,OUT_RETURNCODE          OUT NUMBER) IS
 	
 	BEGIN    
         INSERT INTO T_USUARIO (
@@ -78,6 +79,16 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
             PIN_DIRECCION, 
             PIN_TELEFONO, 
             PIN_RUTAFOTOPERFIL);
+    
+        COMMIT;
+            OUT_RETURNCODE := 1;
+        
+    EXCEPTION
+        WHEN OTHERS THEN
+            BEGIN
+                OUT_RETURNCODE := 0;
+                ROLLBACK;
+            END;	
 
     END;
     
@@ -92,7 +103,8 @@ PROCEDURE P_ACTUALIZAR_USUARIO  (PIN_ID_USUARIO         IN NUMBER
                                 ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
                                 ,PIN_DIRECCION           IN VARCHAR2
                                 ,PIN_TELEFONO            IN VARCHAR2
-                                ,PIN_RUTAFOTOPERFIL      IN VARCHAR2) IS
+                                ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
+                                ,OUT_RETURNCODE          OUT NUMBER) IS
 
 	X_ID_USUARIO     NUMBER;
 	
@@ -117,14 +129,16 @@ PROCEDURE P_ACTUALIZAR_USUARIO  (PIN_ID_USUARIO         IN NUMBER
                 ,RUTAFOTOPERFIL   = PIN_RUTAFOTOPERFIL
                 
         WHERE PIN_ID_USUARIO = ID_USUARIO;
-
-	
-		EXCEPTION
-			WHEN NO_DATA_FOUND THEN
-				BEGIN
-                    --DEVOLVER ERROR
-                    SELECT ID_USUARIO INTO X_ID_USUARIO FROM T_USUARIO WHERE ID_USUARIO = PIN_ID_USUARIO;
-				END;	
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+        
+    EXCEPTION
+        WHEN OTHERS THEN
+            BEGIN
+                OUT_RETURNCODE := 0;
+                ROLLBACK;
+            END;	
 			
 	END;	
 	
