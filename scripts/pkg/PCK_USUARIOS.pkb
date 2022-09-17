@@ -9,7 +9,7 @@ PROCEDURE P_LEE_USUARIOS                (PIN_EMAIL        IN VARCHAR2  ---PIN PA
 		SELECT 	 'True'
 				,ID_USUARIO
 				,PASSWORD
-		FROM USUARIO
+		FROM T_USUARIO
 		WHERE ((PIN_EMAIL = '') OR (PIN_EMAIL = EMAIL))
 			  AND (ID_ESTADOUSUARIO = '1');
     END;    
@@ -20,7 +20,7 @@ PROCEDURE P_ACTUALIZAR_ESTADO_USUARIO      ( PIN_ID_USUARIO          IN NUMBER) 
 		
 	BEGIN
 		SELECT ID_ESTADOUSUARIO INTO X_ESTADO
-		FROM USUARIO
+		FROM T_USUARIO
 		WHERE ID_USUARIO = PIN_ID_USUARIO;
 		
 		IF X_ESTADO = 1 THEN
@@ -31,7 +31,7 @@ PROCEDURE P_ACTUALIZAR_ESTADO_USUARIO      ( PIN_ID_USUARIO          IN NUMBER) 
 			
 	    END IF;
 		
-		UPDATE USUARIO
+		UPDATE T_USUARIO
 		SET   ID_ESTADOUSUARIO = X_ESTADO
 		WHERE PIN_ID_USUARIO = ID_USUARIO;
 		
@@ -41,63 +41,89 @@ PROCEDURE P_ACTUALIZAR_ESTADO_USUARIO      ( PIN_ID_USUARIO          IN NUMBER) 
 				NULL;
 	END;
 	
-PROCEDURE P_AGREGAR_ACTUALIZAR_USUARIO     ( PIN_ID_USUARIO          IN NUMBER
-											,PIN_EMAIL        	     IN VARCHAR2
-											,PIN_ID_PERMISO       	 IN NUMBER
-											,PIN_ID_ESTADOUSUARIO    IN NUMBER
-											,PIN_PASSWORD            IN VARCHAR2
-											,PIN_PRIMERNOMBRE        IN VARCHAR2
-											,PIN_SEGUNDONOMBRE       IN VARCHAR2
-											,PIN_PRIMERAPELLIDO      IN VARCHAR2
-											,PIN_SEGUNDOAPELLIDO     IN VARCHAR2) IS
+PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
+                                ,PIN_ID_PERMISO       	 IN NUMBER
+                                ,PIN_ID_ESTADOUSUARIO    IN NUMBER
+                                ,PIN_PASSWORD            IN VARCHAR2
+                                ,PIN_PRIMERNOMBRE        IN VARCHAR2
+                                ,PIN_SEGUNDONOMBRE       IN VARCHAR2
+                                ,PIN_PRIMERAPELLIDO      IN VARCHAR2
+                                ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                ,PIN_DIRECCION           IN VARCHAR2
+                                ,PIN_TELEFONO            IN VARCHAR2
+                                ,PIN_RUTAFOTOPERFIL      IN VARCHAR2) IS
+	
+	BEGIN    
+        INSERT INTO T_USUARIO (
+            EMAIL, 
+            PASSWORD, 
+            ID_PERMISO, 
+            ID_ESTADOUSUARIO, 
+            PRIMERNOMBRE, 
+            SEGUNDONOMBRE, 
+            PRIMERAPELLIDO, 
+            SEGUNDOAPELLIDO, 
+            DIRECCION, 
+            TELEFONO, 
+            RUTAFOTOPERFIL)
+        VALUES ( 
+            PIN_EMAIL, 
+            PIN_PASSWORD, 
+            PIN_ID_PERMISO, 
+            PIN_ID_ESTADOUSUARIO, 
+            PIN_PRIMERNOMBRE, 
+            PIN_SEGUNDONOMBRE, 
+            PIN_PRIMERAPELLIDO, 
+            PIN_SEGUNDOAPELLIDO, 
+            PIN_DIRECCION, 
+            PIN_TELEFONO, 
+            PIN_RUTAFOTOPERFIL);
+
+    END;
+    
+PROCEDURE P_ACTUALIZAR_USUARIO  (PIN_ID_USUARIO         IN NUMBER
+                                ,PIN_EMAIL        	     IN VARCHAR2
+                                ,PIN_ID_PERMISO       	 IN NUMBER
+                                ,PIN_ID_ESTADOUSUARIO    IN NUMBER
+                                ,PIN_PASSWORD            IN VARCHAR2
+                                ,PIN_PRIMERNOMBRE        IN VARCHAR2
+                                ,PIN_SEGUNDONOMBRE       IN VARCHAR2
+                                ,PIN_PRIMERAPELLIDO      IN VARCHAR2
+                                ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                ,PIN_DIRECCION           IN VARCHAR2
+                                ,PIN_TELEFONO            IN VARCHAR2
+                                ,PIN_RUTAFOTOPERFIL      IN VARCHAR2) IS
 
 	X_ID_USUARIO     NUMBER;
 	
 	BEGIN
 	
 		SELECT ID_USUARIO INTO X_ID_USUARIO
-		FROM USUARIO
+		FROM T_USUARIO
 		WHERE ID_USUARIO = PIN_ID_USUARIO;
 	
 
-			UPDATE USUARIO
-			SET      EMAIL        	 = PIN_EMAIL        	 
-					,ID_PERMISO       = PIN_ID_PERMISO      
-					,ID_ESTADOUSUARIO = PIN_ID_ESTADOUSUARIO
-					,PASSWORD         = PIN_PASSWORD
-			WHERE PIN_ID_USUARIO = ID_USUARIO;
+        UPDATE T_USUARIO
+        SET      EMAIL        	  = PIN_EMAIL        	 
+                ,ID_PERMISO       = PIN_ID_PERMISO      
+                ,ID_ESTADOUSUARIO = PIN_ID_ESTADOUSUARIO
+                ,PASSWORD         = PIN_PASSWORD
+                ,PRIMERNOMBRE     = PIN_PRIMERNOMBRE
+                ,SEGUNDONOMBRE    = PIN_SEGUNDONOMBRE
+                ,PRIMERAPELLIDO   = PIN_PRIMERAPELLIDO
+                ,SEGUNDOAPELLIDO  = PIN_SEGUNDOAPELLIDO
+                ,DIRECCION        = PIN_DIRECCION
+                ,TELEFONO         = PIN_TELEFONO
+                ,RUTAFOTOPERFIL   = PIN_RUTAFOTOPERFIL
+                
+        WHERE PIN_ID_USUARIO = ID_USUARIO;
 
 	
 		EXCEPTION
 			WHEN NO_DATA_FOUND THEN
 				BEGIN
-					SELECT USUARIO_ID_USUARIO_SEQ.NEXTVAL INTO X_ID_USUARIO
-                    FROM DUAL;
-					INSERT INTO USUARIO (ID_USUARIO										 
-										,EMAIL        	 
-										,ID_PERMISO      
-										,ID_ESTADOUSUARIO
-										,PASSWORD)
-					VALUES ( 
-							 X_ID_USUARIO    
-							,PIN_EMAIL        	 
-							,PIN_ID_PERMISO      
-							,PIN_ID_ESTADOUSUARIO
-							,PIN_PASSWORD
-							);
-					INSERT INTO CLIENTE (
-										 ID_USUARIO										 
-										,PRIMERNOMBRE      
-										,SEGUNDONOMBRE
-										,PRIMERAPELLIDO
-										,SEGUNDOAPELLIDO)
-					VALUES ( 
-							 X_ID_USUARIO    
-							,PIN_PRIMERNOMBRE   
-							,PIN_SEGUNDONOMBRE  
-							,PIN_PRIMERAPELLIDO 
-							,PIN_SEGUNDOAPELLIDO
-							);
+                    --DEVOLVER ERROR
+                    SELECT ID_USUARIO INTO X_ID_USUARIO FROM T_USUARIO WHERE ID_USUARIO = PIN_ID_USUARIO;
 				END;	
 			
 	END;	

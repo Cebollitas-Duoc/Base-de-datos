@@ -5,7 +5,7 @@ PROCEDURE P_AGREGAR_SESION             ( PIN_LLAVE        	    IN VARCHAR2
 										,PIN_ID_USUARIO   		IN NUMBER
 										,PIN_FECHACREACION      IN NUMBER) IS
 		BEGIN
-			INSERT INTO SESION (  
+			INSERT INTO T_SESION (  
 								 LLAVE        
 								,EXPIRACION   
 								,ID_USUARIO   
