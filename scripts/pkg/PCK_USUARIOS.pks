@@ -43,6 +43,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
 	PROCEDURE P_ACTUALIZAR_ESTADO_USUARIO      ( PIN_ID_USUARIO          IN NUMBER);
     
     PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
+                                        ,OUT_EMAIL               OUT VARCHAR2
                                         ,OUT_PRIMERNOMBRE        OUT VARCHAR2
                                         ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                                         ,OUT_PRIMERAPELLIDO      OUT VARCHAR2

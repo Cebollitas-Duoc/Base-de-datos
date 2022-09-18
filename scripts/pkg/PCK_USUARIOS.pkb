@@ -182,6 +182,7 @@ PROCEDURE P_ACTUALIZAR_USUARIO  (PIN_ID_USUARIO         IN NUMBER
 	END;	
 	
 PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
+                                    ,OUT_EMAIL               OUT VARCHAR2
                                     ,OUT_PRIMERNOMBRE        OUT VARCHAR2
                                     ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                                     ,OUT_PRIMERAPELLIDO      OUT VARCHAR2
@@ -194,6 +195,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
 													
 	BEGIN										
         SELECT
+            U.EMAIL,
             U.PRIMERNOMBRE,
             U.SEGUNDONOMBRE,
             U.PRIMERAPELLIDO,
@@ -203,6 +205,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             U.RUTAFOTOPERFIL,
             'True'
         INTO
+            OUT_EMAIL,
             OUT_PRIMERNOMBRE,
             OUT_SEGUNDONOMBRE,
             OUT_PRIMERAPELLIDO,
