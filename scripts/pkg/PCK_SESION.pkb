@@ -48,10 +48,32 @@ PROCEDURE P_USER_CREADENTIALS   (PIN_EMAIL      IN VARCHAR2
             OUT_RETURNCODE := 1;
         EXCEPTION
             WHEN NO_DATA_FOUND THEN BEGIN
-                SELECT 'False', '', ''
-                INTO OUT_USER_EXIST, OUT_ID_USUARIO, OUT_PASS
-                FROM DUAL;
-                
+                OUT_USER_EXIST := 'False';
+                OUT_RETURNCODE := 0;
+            END;
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
+        
+PROCEDURE P_SESION_Valida   (PIN_LLAVE        	    IN VARCHAR2
+                            ,OUT_ES_VALIDA          OUT VARCHAR2
+                            ,OUT_ID_USUARIO   		OUT NUMBER
+                            ,OUT_PERMISO       		OUT NUMBER
+                            ,OUT_RETURNCODE         OUT NUMBER) IS
+		BEGIN
+            select U.ID_USUARIO, U.ID_PERMISO
+            INTO OUT_ID_USUARIO, OUT_PERMISO
+            from T_SESION s
+            INNER JOIN T_Usuario u
+            ON U.ID_USUARIO = s.ID_USUARIO
+            WHERE S.LLAVE = PIN_LLAVE;
+            
+            OUT_ES_VALIDA := 'True';
+            OUT_RETURNCODE := 1;
+        EXCEPTION
+            WHEN NO_DATA_FOUND THEN BEGIN
+                OUT_ES_VALIDA := 'False';
                 OUT_RETURNCODE := 0;
             END;
             WHEN OTHERS THEN BEGIN
