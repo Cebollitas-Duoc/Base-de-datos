@@ -55,6 +55,30 @@ PROCEDURE P_USER_CREADENTIALS   (PIN_EMAIL      IN VARCHAR2
                 OUT_RETURNCODE := 0;
             END;
 		END;
+
+PROCEDURE P_SESSION_CREADENTIALS    (PIN_LLAVE          IN VARCHAR2
+                                    ,OUT_VALID_SESSION  OUT VARCHAR2
+                                	,OUT_ID_USUARIO     OUT VARCHAR2
+                                    ,OUT_PASS           OUT VARCHAR2
+                                    ,OUT_RETURNCODE     OUT NUMBER) IS
+		BEGIN
+            SELECT 'TRUE', U.ID_USUARIO, U.PASSWORD
+            INTO OUT_VALID_SESSION, OUT_ID_USUARIO, OUT_PASS
+            FROM T_SESION S
+            INNER JOIN T_USUARIO U
+            ON U.ID_USUARIO = S.ID_USUARIO
+            WHERE S.LLAVE = PIN_LLAVE;
+            
+            OUT_RETURNCODE := 1;
+        EXCEPTION
+            WHEN NO_DATA_FOUND THEN BEGIN
+                OUT_VALID_SESSION := 'False';
+                OUT_RETURNCODE := 0;
+            END;
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
         
 PROCEDURE P_SESION_Valida   (PIN_LLAVE        	    IN VARCHAR2
                             ,OUT_ES_VALIDA          OUT VARCHAR2
@@ -76,6 +100,21 @@ PROCEDURE P_SESION_Valida   (PIN_LLAVE        	    IN VARCHAR2
                 OUT_ES_VALIDA := 'False';
                 OUT_RETURNCODE := 0;
             END;
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
+        
+PROCEDURE P_UPDATE_PASSWORD (PIN_ID_USUARIO IN VARCHAR2
+                            ,PIN_PASSWORD   IN VARCHAR2
+                            ,OUT_RETURNCODE OUT NUMBER) IS
+		BEGIN
+            UPDATE T_USUARIO
+            SET PASSWORD = PIN_PASSWORD
+            WHERE ID_USUARIO = PIN_ID_USUARIO;
+            
+            OUT_RETURNCODE := 1;
+        EXCEPTION
             WHEN OTHERS THEN BEGIN
                 OUT_RETURNCODE := 0;
             END;
