@@ -10,13 +10,15 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_SESION IS
                                             
     PROCEDURE P_USER_CREADENTIALS           (PIN_EMAIL          IN VARCHAR2
 											,OUT_USER_EXIST     OUT VARCHAR2
-											,OUT_ID_USUARIO     OUT VARCHAR2
+											,OUT_ID_USUARIO     OUT NUMBER
+                                            ,OUT_ID_PERMISO     OUT NUMBER
 											,OUT_PASS           OUT VARCHAR2
                                             ,OUT_RETURNCODE     OUT NUMBER);
                                             
     PROCEDURE P_SESSION_CREADENTIALS        (PIN_LLAVE          IN VARCHAR2
 											,OUT_VALID_SESSION  OUT VARCHAR2
-											,OUT_ID_USUARIO     OUT VARCHAR2
+											,OUT_ID_USUARIO     OUT NUMBER
+                                            ,OUT_ID_PERMISO     OUT NUMBER
 											,OUT_PASS           OUT VARCHAR2
                                             ,OUT_RETURNCODE     OUT NUMBER);
                                             
