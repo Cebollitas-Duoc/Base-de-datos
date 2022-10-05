@@ -1,0 +1,7 @@
+CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_ADMIN IS 
+                                            
+	PROCEDURE P_LISTAR_USUARIOS (OUT_USUARIOS   OUT SYS_REFCURSOR
+                                ,OUT_RETURNCODE OUT NUMBER);
+   
+END PCK_ADMIN;
+/

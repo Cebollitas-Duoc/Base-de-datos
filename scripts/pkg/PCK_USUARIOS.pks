@@ -1,6 +1,6 @@
 CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS 
 ----,OUT_CURSOR       OUT SYS_REFCURSOR) IS
-    PROCEDURE P_LEE_USUARIO    (PIN_EMAIL               IN VARCHAR2
+    PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
                                 ,OUT_USER_EXIST          OUT VARCHAR2
                                 ,OUT_ID_PERMISO       	 OUT NUMBER
                                 ,OUT_ID_ESTADOUSUARIO    OUT NUMBER
@@ -37,8 +37,6 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
                                      ,PIN_TELEFONO            IN VARCHAR2
                                      ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
                                      ,OUT_RETURNCODE          OUT NUMBER);
-    
-	PROCEDURE P_ACTUALIZAR_ESTADO_USUARIO      ( PIN_ID_USUARIO          IN NUMBER);
     
     PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
                                         ,OUT_EMAIL               OUT VARCHAR2
