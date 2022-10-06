@@ -126,6 +126,34 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_CheckIn" id="ADCB2FD0-19E4-F845-0537-91BBC1D56128">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-06 00:39:00 UTC</createdTime>
+<generatorID>64EFF9CD-E7B9-809E-A18C-821E558C0AAC</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<referedAttribute>9AE0148D-0839-1473-9C19-C58E0B9116B6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CheckOut" id="9FFBF7F4-A594-4441-8F54-741F8B00E733">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-06 00:40:08 UTC</createdTime>
+<generatorID>F3995777-A5E8-BAE6-F497-76DEC436BEB0</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<referedAttribute>9AE0148D-0839-1473-9C19-C58E0B9116B6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="66965462-A710-2B9F-D532-FB35EE9C1BCA" name="Reserva PK">
