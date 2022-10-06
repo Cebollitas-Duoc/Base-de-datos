@@ -1,6 +1,6 @@
 INSERT INTO T_Permiso (ID_Permiso, Nombre, Descripcion) VALUES (0, 'Cliente', 'Puede rentar un departamento');
-INSERT INTO T_Permiso (ID_Permiso, Nombre, Descripcion) VALUES (1, 'Admin', 'Administra el negocio');
-INSERT INTO T_Permiso (ID_Permiso, Nombre, Descripcion) VALUES (2, 'Empleado', 'Administra el negocio');
+INSERT INTO T_Permiso (ID_Permiso, Nombre, Descripcion) VALUES (1, 'Empleado', 'Administra el negocio');
+INSERT INTO T_Permiso (ID_Permiso, Nombre, Descripcion) VALUES (2, 'Admin', 'Administra el negocio');
 
 INSERT INTO T_EstadoUsuario (ID_EstadoUsuario, Descripcion) VALUES (0, 'Por validar');
 INSERT INTO T_EstadoUsuario (ID_EstadoUsuario, Descripcion) VALUES (1, 'Validado');
