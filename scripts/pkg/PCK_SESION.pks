@@ -12,6 +12,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_SESION IS
 											,OUT_USER_EXIST     OUT VARCHAR2
 											,OUT_ID_USUARIO     OUT NUMBER
                                             ,OUT_ID_PERMISO     OUT NUMBER
+                                            ,OUT_ID_ESTADO      OUT NUMBER
 											,OUT_PASS           OUT VARCHAR2
                                             ,OUT_RETURNCODE     OUT NUMBER);
                                             
@@ -25,7 +26,8 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_SESION IS
     PROCEDURE P_SESION_VALIDA               (PIN_LLAVE        	IN VARCHAR2
                                             ,OUT_ES_VALIDA      OUT VARCHAR2
                                             ,OUT_ID_USUARIO   	OUT NUMBER
-                                            ,OUT_PERMISO       	OUT NUMBER
+                                            ,OUT_ID_PERMISO     OUT NUMBER
+                                            ,OUT_ID_ESTADO      OUT NUMBER
                                             ,OUT_RETURNCODE     OUT NUMBER);
                                             
     PROCEDURE P_UPDATE_PASSWORD             (PIN_ID_USUARIO     IN VARCHAR2

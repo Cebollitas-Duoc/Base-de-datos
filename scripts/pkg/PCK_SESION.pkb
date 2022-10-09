@@ -38,11 +38,12 @@ PROCEDURE P_USER_CREADENTIALS   (PIN_EMAIL      IN VARCHAR2
                                 ,OUT_USER_EXIST OUT VARCHAR2
                                 ,OUT_ID_USUARIO OUT NUMBER
                                 ,OUT_ID_PERMISO OUT NUMBER
+                                ,OUT_ID_ESTADO  OUT NUMBER
                                 ,OUT_PASS       OUT VARCHAR2
                                 ,OUT_RETURNCODE          OUT NUMBER) IS
 		BEGIN
-            SELECT 'True', ID_USUARIO, ID_PERMISO, PASSWORD
-            INTO OUT_USER_EXIST, OUT_ID_USUARIO, OUT_ID_PERMISO, OUT_PASS
+            SELECT 'True', ID_USUARIO, ID_PERMISO, ID_ESTADOUSUARIO, PASSWORD
+            INTO OUT_USER_EXIST, OUT_ID_USUARIO, OUT_ID_PERMISO, OUT_ID_ESTADO, OUT_PASS
             FROM T_USUARIO
             WHERE EMAIL = PIN_EMAIL;
             
@@ -82,14 +83,15 @@ PROCEDURE P_SESSION_CREADENTIALS    (PIN_LLAVE          IN VARCHAR2
             END;
 		END;
         
-PROCEDURE P_SESION_Valida   (PIN_LLAVE        	    IN VARCHAR2
+PROCEDURE P_SESION_VALIDA   (PIN_LLAVE        	    IN VARCHAR2
                             ,OUT_ES_VALIDA          OUT VARCHAR2
                             ,OUT_ID_USUARIO   		OUT NUMBER
-                            ,OUT_PERMISO       		OUT NUMBER
+                            ,OUT_ID_PERMISO         OUT NUMBER
+                            ,OUT_ID_ESTADO          OUT NUMBER
                             ,OUT_RETURNCODE         OUT NUMBER) IS
 		BEGIN
-            select U.ID_USUARIO, U.ID_PERMISO
-            INTO OUT_ID_USUARIO, OUT_PERMISO
+            select U.ID_USUARIO, U.ID_PERMISO, ID_ESTADOUSUARIO
+            INTO OUT_ID_USUARIO, OUT_ID_PERMISO, OUT_ID_ESTADO
             from T_SESION s
             INNER JOIN T_Usuario u
             ON U.ID_USUARIO = s.ID_USUARIO
