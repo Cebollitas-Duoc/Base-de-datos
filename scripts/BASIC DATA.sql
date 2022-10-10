@@ -6,6 +6,9 @@ INSERT INTO T_EstadoUsuario (ID_EstadoUsuario, Descripcion) VALUES (0, 'Por vali
 INSERT INTO T_EstadoUsuario (ID_EstadoUsuario, Descripcion) VALUES (1, 'Validado');
 INSERT INTO T_EstadoUsuario (ID_EstadoUsuario, Descripcion) VALUES (2, 'Bloqueado');
 
+INSERT INTO T_EstadoDpto (ID_Estadodpto, Descripcion) VALUES (0, 'Activo');
+INSERT INTO T_EstadoDpto (ID_Estadodpto, Descripcion) VALUES (1, 'Inactivo');
+
 INSERT INTO T_EstadoPago (ID_EstadoPago, Nombre, Descripcion) VALUES (0, 'Creado', 'El pago fue creado');
 INSERT INTO T_EstadoPago (ID_EstadoPago, Nombre, Descripcion) VALUES (1, 'Pagado', 'El pago fue pagado con exito');
 INSERT INTO T_EstadoPago (ID_EstadoPago, Nombre, Descripcion) VALUES (2, 'Cancelado', 'El pago no se puedo efectuar');

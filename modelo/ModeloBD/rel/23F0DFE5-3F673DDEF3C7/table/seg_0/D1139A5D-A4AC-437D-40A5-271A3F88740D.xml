@@ -23,7 +23,7 @@
 <colAssociation fkAssociation="AB2B53CF-7F6E-2D8F-DDBF-A89370B85543" referredColumn="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
 </associations>
 </Column>
-<Column name="ID_ServicioExtra" id="CB159279-B648-45B9-9194-0F667B6C53ED">
+<Column name="ID_CategoriaServicioExtra" id="CB159279-B648-45B9-9194-0F667B6C53ED">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 20:58:56 UTC</createdTime>
 <generatorID>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</generatorID>
@@ -63,7 +63,7 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_ServicioExtra1" id="ED4913A7-B4D0-8A06-287E-93A83D260483">
+<Column name="ID_ServicioExtra" id="ED4913A7-B4D0-8A06-287E-93A83D260483">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:43:02 UTC</createdTime>
 <generatorID>E736FF5C-6715-ED91-62C0-92BD410811B1</generatorID>

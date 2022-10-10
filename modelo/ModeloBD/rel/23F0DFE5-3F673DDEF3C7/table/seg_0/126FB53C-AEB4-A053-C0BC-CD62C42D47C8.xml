@@ -44,8 +44,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Latitud" id="E0036F5E-E313-E25D-2274-924C2EDEF3BC">
@@ -57,8 +56,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Habitaciones" id="E52630C3-42ED-1B2F-0580-1007F5EF198F">
@@ -94,8 +92,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Valor" id="1A39BE8C-7D4E-CFBB-B41D-423157262C78">
@@ -107,9 +104,23 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EstadoDpto" id="529B5275-C116-92DF-CC5D-55D73169D952">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:28:15 UTC</createdTime>
+<generatorID>4850DC54-739A-1DF3-4DF4-1949D53D7072</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB94E08D-EABC-E02D-CC41-07B71CC8A1CC" referredColumn="892BFEED-9473-2013-C682-09E53A2FFC39"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -123,6 +134,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93ACC667-46C1-41C1-2CD7-B902E07A2418" name="T_Departamento_T_EstadoDpto_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:28:15 UTC</createdTime>
+<generatorID>53AAC991-E991-FC6F-9B7A-906F0694A22A</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="529B5275-C116-92DF-CC5D-55D73169D952"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

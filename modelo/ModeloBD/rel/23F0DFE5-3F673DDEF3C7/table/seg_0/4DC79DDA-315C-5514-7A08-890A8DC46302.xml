@@ -122,6 +122,36 @@
 <colAssociation fkAssociation="BAEAB386-FEED-CE11-647E-46977A3E04AA" referredColumn="D90FB4BD-6F3D-DE45-F394-01D63472D697"/>
 </associations>
 </Column>
+<Column name="ID_Reporte" id="418B3D36-2990-5207-5104-593050400633">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:15:35 UTC</createdTime>
+<generatorID>ADCB2FD0-19E4-F845-0537-91BBC1D56128</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E45C8AB-C565-60F9-8FE8-09FB3C5D69D0" referredColumn="D3D316A2-8714-32F1-3FFC-2DA6EF93DE61"/>
+</associations>
+</Column>
+<Column name="ID_Reporte1" id="048CD711-F632-AD66-B6E3-034E8A2E27BA">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:15:35 UTC</createdTime>
+<generatorID>9FFBF7F4-A594-4441-8F54-741F8B00E733</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A41012C-6A8D-6815-2812-621BABCF3A05" referredColumn="D3D316A2-8714-32F1-3FFC-2DA6EF93DE61"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A8D4F8A3-205E-F4B5-C73E-06B35124F433" name="Reserva_PK">
@@ -134,6 +164,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="70114586-6D5C-1A31-D811-2CC03256D517"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21B58223-E390-249F-B6A5-52F0253CC914" name="T_Reserva__IDX">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:15:35 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>64EFF9CD-E7B9-809E-A18C-821E558C0AAC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="418B3D36-2990-5207-5104-593050400633"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49C32AB9-2B24-96B1-E8AA-17DF4FC95EB3" name="T_Reserva__IDXv1">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:15:35 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F3995777-A5E8-BAE6-F497-76DEC436BEB0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="048CD711-F632-AD66-B6E3-034E8A2E27BA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="42F78CCA-E634-A1C6-692E-7EE2F508F090" name="T_Reserva_T_EstadoReserva_FK">
@@ -178,6 +230,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="3F456646-49EC-7358-E60A-0CE368FDFF2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E06D9F52-2C04-AE89-F98F-BFC0B935DBDA" name="T_Reserva_T_Reporte_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:15:35 UTC</createdTime>
+<generatorID>64EFF9CD-E7B9-809E-A18C-821E558C0AAC</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="418B3D36-2990-5207-5104-593050400633"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3AAA7D72-BD47-A81F-334A-4B3A29417CB7" name="T_Reserva_T_Reporte_FKv1">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-10 20:15:35 UTC</createdTime>
+<generatorID>F3995777-A5E8-BAE6-F497-76DEC436BEB0</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="048CD711-F632-AD66-B6E3-034E8A2E27BA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
