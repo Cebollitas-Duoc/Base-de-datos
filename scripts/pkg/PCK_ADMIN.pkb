@@ -1,5 +1,6 @@
 CREATE OR REPLACE PACKAGE BODY USR_TURISMO_REAL.PCK_ADMIN IS
 
+--Usuarios
 PROCEDURE P_LISTAR_USUARIOS (OUT_USUARIOS   OUT SYS_REFCURSOR
                             ,OUT_RETURNCODE OUT NUMBER) IS
 		BEGIN
@@ -75,7 +76,50 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                     ROLLBACK;
                 END;	
 			
-	END;	
+	END;
+    
+    --Departamentos
+    PROCEDURE P_AGREGAR_DPTO    (PIN_ID_ESTADO       IN NUMBER
+                                ,PIN_DIRECCION      IN VARCHAR2
+                                ,PIN_LONGITUD       IN NUMBER
+                                ,PIN_LATITUD        IN NUMBER
+                                ,PIN_HABITACIONES   IN NUMBER
+                                ,PIN_BANIOS         IN NUMBER
+                                ,PIN_TAMANIO        IN NUMBER
+                                ,PIN_VALOR          IN NUMBER
+                                ,OUT_RETURNCODE     OUT NUMBER) IS
+    BEGIN
+        INSERT INTO T_DEPARTAMENTO
+        (ID_ESTADODPTO
+        ,DIRECCION
+        ,LONGITUD
+        ,LATITUD
+        ,HABITACIONES
+        ,BANIOS
+        ,TAMANIO
+        ,VALOR)
+    VALUES
+        (PIN_ID_ESTADO
+        ,PIN_DIRECCION
+        ,PIN_LONGITUD
+        ,PIN_LATITUD 
+        ,PIN_HABITACIONES 
+        ,PIN_BANIOS
+        ,PIN_TAMANIO
+        ,PIN_VALOR);
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+        
+        EXCEPTION
+            WHEN OTHERS THEN
+                BEGIN
+                    OUT_RETURNCODE := 0;
+                    ROLLBACK;
+                END;	
+			
+	END;
+
 
 END PCK_ADMIN;
 /
