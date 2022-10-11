@@ -28,6 +28,17 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_ADMIN IS
                                 ,PIN_VALOR          IN NUMBER
                                 ,OUT_RETURNCODE     OUT NUMBER);
                                 
+    PROCEDURE P_EDIT_DPTO       (PIN_ID_DPTO        IN NUMBER
+                                ,PIN_ID_ESTADO      IN NUMBER
+                                ,PIN_DIRECCION      IN VARCHAR2
+                                ,PIN_LONGITUD       IN NUMBER
+                                ,PIN_LATITUD        IN NUMBER
+                                ,PIN_HABITACIONES   IN NUMBER
+                                ,PIN_BANIOS         IN NUMBER
+                                ,PIN_TAMANIO        IN NUMBER
+                                ,PIN_VALOR          IN NUMBER
+                                ,OUT_RETURNCODE     OUT NUMBER);
+                                
     PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
                                 ,OUT_RETURNCODE OUT NUMBER);
    

@@ -119,6 +119,42 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                 END;	
 	END;
     
+PROCEDURE P_EDIT_DPTO   (PIN_ID_DPTO        IN NUMBER
+                        ,PIN_ID_ESTADO      IN NUMBER
+                        ,PIN_DIRECCION      IN VARCHAR2
+                        ,PIN_LONGITUD       IN NUMBER
+                        ,PIN_LATITUD        IN NUMBER
+                        ,PIN_HABITACIONES   IN NUMBER
+                        ,PIN_BANIOS         IN NUMBER
+                        ,PIN_TAMANIO        IN NUMBER
+                        ,PIN_VALOR          IN NUMBER
+                        ,OUT_RETURNCODE     OUT NUMBER) IS
+BEGIN
+
+        UPDATE T_DEPARTAMENTO
+        SET     
+                ID_ESTADODPTO     = PIN_ID_ESTADO
+                ,DIRECCION        = PIN_DIRECCION
+                ,LONGITUD         = PIN_LONGITUD        	 
+                ,LATITUD          = PIN_LATITUD
+                ,HABITACIONES     = PIN_HABITACIONES
+                ,BANIOS           = PIN_BANIOS
+                ,TAMANIO          = PIN_TAMANIO
+                ,VALOR            = PIN_VALOR
+        WHERE ID_DEPARTAMENTO = PIN_ID_DPTO;
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+        
+        EXCEPTION
+            WHEN OTHERS THEN
+                BEGIN
+                    OUT_RETURNCODE := 0;
+                    ROLLBACK;
+                END;	
+			
+	END;
+    
 PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
                             ,OUT_RETURNCODE OUT NUMBER) IS
 		BEGIN
