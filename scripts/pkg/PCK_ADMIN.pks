@@ -27,6 +27,9 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_ADMIN IS
                                 ,PIN_TAMANIO        IN NUMBER
                                 ,PIN_VALOR          IN NUMBER
                                 ,OUT_RETURNCODE     OUT NUMBER);
+                                
+    PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
+                                ,OUT_RETURNCODE OUT NUMBER);
    
 END PCK_ADMIN;
 /

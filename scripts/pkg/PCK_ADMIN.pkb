@@ -117,8 +117,20 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                     OUT_RETURNCODE := 0;
                     ROLLBACK;
                 END;	
-			
 	END;
+    
+PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
+                            ,OUT_RETURNCODE OUT NUMBER) IS
+		BEGIN
+            OPEN OUT_DPTOS FOR
+            SELECT * FROM T_DEPARTAMENTO;
+            
+            OUT_RETURNCODE := 1;
+        EXCEPTION
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
 
 
 END PCK_ADMIN;
