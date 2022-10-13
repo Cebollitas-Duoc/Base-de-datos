@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="90E0F794-AFA9-2E23-D94B-D6D80521C0CC" name="T_FotoDpto">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1AF643B1-8E29-2262-1B54-29EC7DE315E4" name="T_FotoDpto">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:44:54 UTC</createdTime>
+<createdTime>2022-10-13 18:39:45 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_FotoDpto" id="C5772579-7CDA-53EA-88CE-E7751BD4B859">
+<Attribute name="ID_FotoDpto" id="D2241A0A-95EF-5A39-0C09-142E7152DDFC">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:45:08 UTC</createdTime>
+<createdTime>2022-10-13 18:40:08 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -27,10 +27,10 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Departamento" id="E15CB67A-786E-7D32-AD7C-7A92FA363E08">
+<Attribute name="ID_Departamento" id="05D3C223-9191-E574-8548-685D8415E421">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:48:38 UTC</createdTime>
-<generatorID>F6D1E343-DEE8-084E-6D20-D0EE10163BCA</generatorID>
+<createdTime>2022-10-13 18:44:08 UTC</createdTime>
+<generatorID>27A4FB5D-6025-E404-940B-C92A2D65FC18</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -41,9 +41,9 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Ruta" id="72F57534-89E3-3144-0ECF-42E86A4E5EA3">
+<Attribute name="Ruta" id="A21A7673-72EF-59F5-8254-198C4D2FBA85">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 22:01:41 UTC</createdTime>
+<createdTime>2022-10-13 18:40:48 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -52,22 +52,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="4E52ADA1-EC16-0938-985B-C17DE5D9C5E0" name="Foto PK">
+<identifier id="BDB7E2C1-A6C5-F108-8E8F-ACCD39F24E57" name="T_FotoDpto PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:45:33 UTC</createdTime>
+<createdTime>2022-10-13 18:40:34 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>C5772579-7CDA-53EA-88CE-E7751BD4B859</attributeRef>
+<attributeRef>D2241A0A-95EF-5A39-0C09-142E7152DDFC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

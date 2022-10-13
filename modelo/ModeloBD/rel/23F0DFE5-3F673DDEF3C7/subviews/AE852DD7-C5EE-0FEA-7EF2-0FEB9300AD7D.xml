@@ -50,9 +50,9 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="735" y="13" width="170" height="76"/>
 </OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="64467B28-74B5-F874-AAE8-7991D53FFA79" otype="Table" vid="8CD3F9D6-8E14-7A77-417D-DCC19EF1E612">
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="68F2286A-EE9C-44FC-073C-9BC2978B86C6" otype="Table" vid="B02FEFF0-6B52-C3B4-67EA-4119F93C47FD">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="803" y="737" width="99" height="49"/>
+<bounds x="817" y="744" width="84" height="59"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="769FEDB2-476D-B813-6519-6278F9686D07" otype="Table" vid="780A0B39-FEAC-2D50-95E7-CA2F37FA9D23">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

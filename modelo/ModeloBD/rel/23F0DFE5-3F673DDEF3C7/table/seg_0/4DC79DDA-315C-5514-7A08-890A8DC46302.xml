@@ -137,7 +137,7 @@
 <colAssociation fkAssociation="2E45C8AB-C565-60F9-8FE8-09FB3C5D69D0" referredColumn="D3D316A2-8714-32F1-3FFC-2DA6EF93DE61"/>
 </associations>
 </Column>
-<Column name="ID_Reporte2" id="048CD711-F632-AD66-B6E3-034E8A2E27BA">
+<Column name="ID_Reporte1" id="048CD711-F632-AD66-B6E3-034E8A2E27BA">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-10 20:15:35 UTC</createdTime>
 <generatorID>9FFBF7F4-A594-4441-8F54-741F8B00E733</generatorID>
@@ -243,7 +243,7 @@
 <colUsage columnID="418B3D36-2990-5207-5104-593050400633"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3AAA7D72-BD47-A81F-334A-4B3A29417CB7" name="T_Reserva_T_Reporte_FKv2">
+<ind_PK_UK id="3AAA7D72-BD47-A81F-334A-4B3A29417CB7" name="T_Reserva_T_Reporte_FKv1">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-10 20:15:35 UTC</createdTime>
 <generatorID>F3995777-A5E8-BAE6-F497-76DEC436BEB0</generatorID>

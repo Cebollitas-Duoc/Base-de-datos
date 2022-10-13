@@ -47,7 +47,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_ServicioExtra1" id="AED6BFF6-CCEA-EF34-BFA7-D5C67BF3C696">
+<Column name="ID_ServicioExtra2" id="AED6BFF6-CCEA-EF34-BFA7-D5C67BF3C696">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:43:02 UTC</createdTime>
 <generatorID>454DD6DC-CE4E-5608-4038-05B84EC317ED</generatorID>

@@ -1,29 +1,30 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64467B28-74B5-F874-AAE8-7991D53FFA79" name="T_Fotov1">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68F2286A-EE9C-44FC-073C-9BC2978B86C6" name="T_Foto">
 <createdBy>andres</createdBy>
-<createdTime>2022-10-13 18:15:01 UTC</createdTime>
-<generatorID>B59CF935-B880-F180-8E20-4CB0BEC5BCB6</generatorID>
+<createdTime>2022-10-13 18:45:36 UTC</createdTime>
+<generatorID>B70C2AFC-DCFA-5D21-AACB-E337052CDF05</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_Foto" id="D038CD07-1AD1-0A19-E570-5C4819918DBA">
+<Column name="ID_Foto1" id="0EA6B3DF-81C1-87D5-050A-FE9DDC76849C">
 <createdBy>andres</createdBy>
-<createdTime>2022-10-13 18:15:01 UTC</createdTime>
-<generatorID>73841CEB-4D4A-8F4D-AA4F-14451FF69D61</generatorID>
+<createdTime>2022-10-13 18:45:36 UTC</createdTime>
+<generatorID>6C5C9F6A-520B-C0FA-DB85-192992D480EB</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ImgData" id="6A672477-2888-AF46-E4A9-BB2722D2A5C3">
+<Column name="ImgData" id="1A34FEC5-2380-C5B0-F55B-D6632CBF59E8">
 <createdBy>andres</createdBy>
-<createdTime>2022-10-13 18:15:01 UTC</createdTime>
-<generatorID>3C0B31E9-95B0-561A-FA7A-96E0C1F79406</generatorID>
+<createdTime>2022-10-13 18:45:36 UTC</createdTime>
+<generatorID>D1A9AD54-A7DD-99CB-F200-745F4B2D31D7</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
