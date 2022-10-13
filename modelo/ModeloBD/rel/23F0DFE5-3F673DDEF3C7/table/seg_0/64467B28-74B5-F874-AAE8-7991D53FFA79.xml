@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64467B28-74B5-F874-AAE8-7991D53FFA79" name="T_Fotov1">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-13 18:15:01 UTC</createdTime>
+<generatorID>B59CF935-B880-F180-8E20-4CB0BEC5BCB6</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Foto" id="D038CD07-1AD1-0A19-E570-5C4819918DBA">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-13 18:15:01 UTC</createdTime>
+<generatorID>73841CEB-4D4A-8F4D-AA4F-14451FF69D61</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ImgData" id="6A672477-2888-AF46-E4A9-BB2722D2A5C3">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-13 18:15:01 UTC</createdTime>
+<generatorID>3C0B31E9-95B0-561A-FA7A-96E0C1F79406</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>DOM10009</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
