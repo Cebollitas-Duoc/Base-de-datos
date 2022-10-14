@@ -9,9 +9,11 @@ PROCEDURE P_INSERT_PICTURE  (PIN_ID_FOTO    IN VARCHAR2
             
             OUT_RETURNCODE := 1;
         EXCEPTION
-            WHEN OTHERS THEN BEGIN
+            WHEN DUP_VAL_ON_INDEX THEN
+                --una imagen con el mismo hash fue guardada (son iguales)
+                OUT_RETURNCODE := 1;
+            WHEN OTHERS THEN
                 OUT_RETURNCODE := 0;
-            END;
 		END;
 
 PROCEDURE P_GET_PICTURE (PIN_ID_FOTO    IN VARCHAR2
@@ -25,9 +27,8 @@ PROCEDURE P_GET_PICTURE (PIN_ID_FOTO    IN VARCHAR2
             
             OUT_RETURNCODE := 1;
         EXCEPTION
-            WHEN OTHERS THEN BEGIN
+            WHEN OTHERS THEN
                 OUT_RETURNCODE := 0;
-            END;
 		END;
 
 

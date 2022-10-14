@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09341851-33CC-2E99-C2F4-9C91DDEC2DD7" name="T_FotoDpto">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBF777A3-1C2F-4B39-72F3-5C0094646A2E" name="T_FotoDpto">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>90E0F794-AFA9-2E23-D94B-D6D80521C0CC</generatorID>
+<createdTime>2022-10-13 18:46:38 UTC</createdTime>
+<generatorID>1AF643B1-8E29-2262-1B54-29EC7DE315E4</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_FotoDpto" id="0EA26631-6D23-C9D4-D4E7-4DAFB35B568E">
+<Column name="ID_FotoDpto" id="D4DCD687-5CBE-5F12-DE71-E7B6311B43A4">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>C5772579-7CDA-53EA-88CE-E7751BD4B859</generatorID>
+<createdTime>2022-10-13 18:46:38 UTC</createdTime>
+<generatorID>D2241A0A-95EF-5A39-0C09-142E7152DDFC</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -19,13 +19,13 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<autoIncrementSequenceName>seq_foto_id_foto</autoIncrementSequenceName>
-<autoIncrementTriggerName>trg_foto_id_foto</autoIncrementTriggerName>
+<autoIncrementSequenceName>seq_fotodpto_id_fotodpto</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_fotodpto_id_fotodpto</autoIncrementTriggerName>
 </Column>
-<Column name="ID_Departamento" id="592D5EC3-2B55-2D75-E68F-8572990EEB93">
+<Column name="ID_Departamento" id="2CBA3BBC-9122-8804-C8C3-B48D83EEBE52">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>E15CB67A-786E-7D32-AD7C-7A92FA363E08</generatorID>
+<createdTime>2022-10-13 18:46:38 UTC</createdTime>
+<generatorID>05D3C223-9191-E574-8548-685D8415E421</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -34,45 +34,45 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="AE8BDC4B-81B0-D862-866D-71ADC0650563" referredColumn="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
+<colAssociation fkAssociation="B1912535-44E7-5D5A-C994-C17935C30AB4" referredColumn="6727F274-8AB2-C3BA-9511-413DEBCB4B8D"/>
 </associations>
 </Column>
-<Column name="Ruta" id="F1F1E1D6-5769-51DB-6806-6E85D3E911FA">
+<Column name="Ruta" id="4F2DCD4D-1668-5CF3-A2FA-98E5B7B461B7">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>72F57534-89E3-3144-0ECF-42E86A4E5EA3</generatorID>
+<createdTime>2022-10-13 18:46:38 UTC</createdTime>
+<generatorID>A21A7673-72EF-59F5-8254-198C4D2FBA85</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F4461FE5-A78D-A4E6-565C-92CC09D0482D" name="T_Foto_PK">
+<ind_PK_UK id="9DE58D14-A7C4-6F46-4D03-D7781BC39AD4" name="T_FotoDpto_PK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>4E52ADA1-EC16-0938-985B-C17DE5D9C5E0</generatorID>
+<createdTime>2022-10-13 18:46:38 UTC</createdTime>
+<generatorID>BDB7E2C1-A6C5-F108-8E8F-ACCD39F24E57</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0EA26631-6D23-C9D4-D4E7-4DAFB35B568E"/>
+<colUsage columnID="D4DCD687-5CBE-5F12-DE71-E7B6311B43A4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="ED664DB1-4DFD-900C-F84A-B7B963F2B337" name="T_Foto_T_Departamento_FK">
+<ind_PK_UK id="F470CCC1-D06A-EB15-999C-23F5450D43A0" name="T_FotoDpto_T_Departamento_FK">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-29 20:58:56 UTC</createdTime>
-<generatorID>F6D1E343-DEE8-084E-6D20-D0EE10163BCA</generatorID>
+<createdTime>2022-10-13 18:46:38 UTC</createdTime>
+<generatorID>27A4FB5D-6025-E404-940B-C92A2D65FC18</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="592D5EC3-2B55-2D75-E68F-8572990EEB93"/>
+<colUsage columnID="2CBA3BBC-9122-8804-C8C3-B48D83EEBE52"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

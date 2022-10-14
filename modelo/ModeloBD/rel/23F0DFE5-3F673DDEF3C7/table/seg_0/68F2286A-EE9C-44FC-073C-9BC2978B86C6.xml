@@ -8,12 +8,11 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_Foto1" id="0EA6B3DF-81C1-87D5-050A-FE9DDC76849C">
+<Column name="ID_Foto" id="0EA6B3DF-81C1-87D5-050A-FE9DDC76849C">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-13 18:45:36 UTC</createdTime>
 <generatorID>6C5C9F6A-520B-C0FA-DB85-192992D480EB</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
@@ -34,4 +33,18 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB9E3795-79BA-2996-C546-DF79FD7A32E2" name="T_Foto_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-13 23:40:55 UTC</createdTime>
+<generatorID>42DEF221-C1B9-3A75-1583-ADC7B8A6660A</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EA6B3DF-81C1-87D5-050A-FE9DDC76849C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

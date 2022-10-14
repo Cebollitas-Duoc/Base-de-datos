@@ -22,7 +22,6 @@
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
@@ -43,4 +42,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="42DEF221-C1B9-3A75-1583-ADC7B8A6660A" name="T_Foto PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-13 23:40:47 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6C5C9F6A-520B-C0FA-DB85-192992D480EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
