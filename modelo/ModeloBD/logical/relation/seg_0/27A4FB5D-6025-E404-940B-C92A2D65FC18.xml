@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Foto_Departamento" directorySegmentName="seg_0" id="F6D1E343-DEE8-084E-6D20-D0EE10163BCA">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Foto_Departamento" directorySegmentName="seg_0" id="27A4FB5D-6025-E404-940B-C92A2D65FC18">
 <createdBy>andres</createdBy>
-<createdTime>2022-08-25 21:48:38 UTC</createdTime>
+<createdTime>2022-10-13 18:44:08 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
@@ -13,7 +13,7 @@
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>11B50512-4E7F-3C07-70B1-F7A4B6DCEA87</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>90E0F794-AFA9-2E23-D94B-D6D80521C0CC</targetEntity>
+<targetEntity>1AF643B1-8E29-2262-1B54-29EC7DE315E4</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

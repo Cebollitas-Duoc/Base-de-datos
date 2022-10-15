@@ -31,7 +31,10 @@ INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
 VALUES ('01#40#asdfasdf#e3e3316c1536b6d21976e118222334778854deeab0ff3f24303ad4f1f6fbffd2', 1, 1, 'jose@mrmeme.cl');
 
 INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL, PRIMERNOMBRE, SEGUNDONOMBRE, PRIMERAPELLIDO, SEGUNDOAPELLIDO, DIRECCION, TELEFONO, RUTAFOTOPERFIL)
-VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 1, 'andres@mrmeme.cl', 'Andres', ' ', 'Groselj', 'Pausic', '308 Belmont Avenue', '+569 1234 4321', '/img/profiles/turing.png');
+VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 1, 'andres@mrmeme.cl', 'Andres', ' ', 'Groselj', 'Pausic', '308 Belmont Avenue', '+569 1234 4321', '/static/img/profiles/turing.png');
+
+INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
+VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 'diego@mrmeme.cl');
 
 INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, EMAIL)
 VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 'diego@mrmeme.cl');
