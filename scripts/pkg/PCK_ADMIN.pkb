@@ -167,7 +167,95 @@ PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
                 OUT_RETURNCODE := 0;
             END;
 		END;
-
+        
+--Imagenes Departamentos
+PROCEDURE P_AGREGAR_FOTO_DPTO   (PIN_ID_DPTO    IN NUMBER
+                                ,PIN_PRINCIPAL  IN NUMBER
+                                ,PIN_DIRECCION  IN VARCHAR2
+                                ,OUT_RETURNCODE OUT NUMBER) IS
+		X_ID_DPTO NUMBER;
+        BEGIN
+            IF (PIN_PRINCIPAL = 1) THEN
+                SELECT ID_DEPARTAMENTO INTO X_ID_DPTO
+                FROM T_FOTODPTO        	 
+                WHERE ID_FOTODPTO = PIN_ID_FOTO_DPTO;
+            
+                UPDATE t_fotodpto
+                SET PRINCIPAL = 0        	 
+                WHERE ID_DEPARTAMENTO = X_ID_DPTO;
+            END IF;
+        
+            INSERT INTO T_FOTODPTO (ID_DEPARTAMENTO, PRINCIPAL, RUTA)
+            VALUES (
+            PIN_ID_DPTO, 
+            PIN_PRINCIPAL, 
+            PIN_DIRECCION);
+            
+            COMMIT;
+            OUT_RETURNCODE := 1;
+        EXCEPTION
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
+        
+PROCEDURE P_EDIT_FOTO_DPTO  (PIN_ID_FOTO_DPTO   IN NUMBER
+                            ,PIN_PRINCIPAL      IN NUMBER
+                            ,PIN_ORDEN          IN NUMBER
+                            ,OUT_RETURNCODE     OUT NUMBER) IS
+		X_ID_DPTO NUMBER;
+        BEGIN
+            IF (PIN_PRINCIPAL = 1) THEN
+                SELECT ID_DEPARTAMENTO INTO X_ID_DPTO
+                FROM T_FOTODPTO        	 
+                WHERE ID_FOTODPTO = PIN_ID_FOTO_DPTO;
+            
+                UPDATE t_fotodpto
+                SET PRINCIPAL = 0        	 
+                WHERE ID_DEPARTAMENTO = X_ID_DPTO;
+            END IF;
+            
+            UPDATE T_FOTODPTO
+            SET 
+                PRINCIPAL = PIN_PRINCIPAL,
+                ORDEN = PIN_ORDEN
+            WHERE ID_FOTODPTO = PIN_ID_FOTO_DPTO;
+            
+            OUT_RETURNCODE := 1;
+        EXCEPTION
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
+        
+PROCEDURE P_LISTAR_FOTOS_DPTO   (PIN_ID_DPTO   IN NUMBER
+                                ,OUT_FOTOS   OUT SYS_REFCURSOR
+                                ,OUT_RETURNCODE OUT NUMBER) IS
+		BEGIN
+            OPEN OUT_FOTOS FOR
+            SELECT ID_FOTODPTO, RUTA, PRINCIPAL, ORDEN 
+            FROM T_FOTODPTO
+            WHERE ID_DEPARTAMENTO = PIN_ID_DPTO;
+            
+            OUT_RETURNCODE := 1;
+        EXCEPTION
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
+        
+PROCEDURE P_BORRAR_FOTO_DPTO    (PIN_ID_FOTO_DPTO   IN NUMBER
+                                ,OUT_RETURNCODE     OUT NUMBER) IS
+		BEGIN
+            DELETE FROM t_fotodpto
+            WHERE id_fotodpto = PIN_ID_FOTO_DPTO;
+            
+            OUT_RETURNCODE := 1;
+        EXCEPTION
+            WHEN OTHERS THEN BEGIN
+                OUT_RETURNCODE := 0;
+            END;
+		END;
 
 END PCK_ADMIN;
 /

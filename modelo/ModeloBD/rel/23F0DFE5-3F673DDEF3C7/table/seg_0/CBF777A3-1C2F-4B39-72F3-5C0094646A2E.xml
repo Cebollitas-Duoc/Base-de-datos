@@ -50,6 +50,30 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Principal" id="D6F0FBC7-A75A-287C-8D2C-5E7A8CE66CFB">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-16 14:00:12 UTC</createdTime>
+<generatorID>1C73BD61-0886-7402-6A7A-8F373C057D6C</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Orden" id="6EA9437D-1A05-E844-7190-2EA3116CF27E">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-16 14:00:12 UTC</createdTime>
+<generatorID>88471171-FB11-4441-FABD-A7FB5D5E3BED</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="9DE58D14-A7C4-6F46-4D03-D7781BC39AD4" name="T_FotoDpto_PK">
