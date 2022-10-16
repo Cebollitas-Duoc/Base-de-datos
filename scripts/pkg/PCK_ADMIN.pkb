@@ -159,7 +159,14 @@ PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
                             ,OUT_RETURNCODE OUT NUMBER) IS
 		BEGIN
             OPEN OUT_DPTOS FOR
-            SELECT * FROM T_DEPARTAMENTO;
+            SELECT (
+                SELECT DISTINCT FIRST_VALUE(RUTA)
+                OVER (ORDER BY PRINCIPAL DESC, ORDEN ASC )
+                FROM T_FOTODPTO 
+                WHERE ID_DEPARTAMENTO = d.id_departamento
+            ) as imagen_principal,
+            d.id_departamento, d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estadodpto  
+            FROM T_DEPARTAMENTO d;
             
             OUT_RETURNCODE := 1;
         EXCEPTION
@@ -173,16 +180,11 @@ PROCEDURE P_AGREGAR_FOTO_DPTO   (PIN_ID_DPTO    IN NUMBER
                                 ,PIN_PRINCIPAL  IN NUMBER
                                 ,PIN_DIRECCION  IN VARCHAR2
                                 ,OUT_RETURNCODE OUT NUMBER) IS
-		X_ID_DPTO NUMBER;
         BEGIN
             IF (PIN_PRINCIPAL = 1) THEN
-                SELECT ID_DEPARTAMENTO INTO X_ID_DPTO
-                FROM T_FOTODPTO        	 
-                WHERE ID_FOTODPTO = PIN_ID_FOTO_DPTO;
-            
                 UPDATE t_fotodpto
                 SET PRINCIPAL = 0        	 
-                WHERE ID_DEPARTAMENTO = X_ID_DPTO;
+                WHERE ID_DEPARTAMENTO = PIN_ID_DPTO;
             END IF;
         
             INSERT INTO T_FOTODPTO (ID_DEPARTAMENTO, PRINCIPAL, RUTA)
@@ -221,6 +223,7 @@ PROCEDURE P_EDIT_FOTO_DPTO  (PIN_ID_FOTO_DPTO   IN NUMBER
                 ORDEN = PIN_ORDEN
             WHERE ID_FOTODPTO = PIN_ID_FOTO_DPTO;
             
+            COMMIT;
             OUT_RETURNCODE := 1;
         EXCEPTION
             WHEN OTHERS THEN BEGIN
@@ -250,6 +253,7 @@ PROCEDURE P_BORRAR_FOTO_DPTO    (PIN_ID_FOTO_DPTO   IN NUMBER
             DELETE FROM t_fotodpto
             WHERE id_fotodpto = PIN_ID_FOTO_DPTO;
             
+            COMMIT;
             OUT_RETURNCODE := 1;
         EXCEPTION
             WHEN OTHERS THEN BEGIN
