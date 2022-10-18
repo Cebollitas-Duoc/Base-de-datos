@@ -159,13 +159,13 @@ PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
                             ,OUT_RETURNCODE OUT NUMBER) IS
 		BEGIN
             OPEN OUT_DPTOS FOR
-            SELECT (
-                SELECT DISTINCT FIRST_VALUE(RUTA)
+            SELECT
+            d.id_departamento, d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estadodpto, (
+            SELECT DISTINCT FIRST_VALUE(RUTA)
                 OVER (ORDER BY PRINCIPAL DESC, ORDEN ASC )
                 FROM T_FOTODPTO 
                 WHERE ID_DEPARTAMENTO = d.id_departamento
-            ) as imagen_principal,
-            d.id_departamento, d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estadodpto  
+            ) as imagen_principal
             FROM T_DEPARTAMENTO d;
             
             OUT_RETURNCODE := 1;
@@ -231,14 +231,15 @@ PROCEDURE P_EDIT_FOTO_DPTO  (PIN_ID_FOTO_DPTO   IN NUMBER
             END;
 		END;
         
-PROCEDURE P_LISTAR_FOTOS_DPTO   (PIN_ID_DPTO   IN NUMBER
-                                ,OUT_FOTOS   OUT SYS_REFCURSOR
+PROCEDURE P_LISTAR_FOTOS_DPTO   (PIN_ID_DPTO    IN NUMBER
+                                ,OUT_FOTOS      OUT SYS_REFCURSOR
                                 ,OUT_RETURNCODE OUT NUMBER) IS
 		BEGIN
             OPEN OUT_FOTOS FOR
             SELECT ID_FOTODPTO, RUTA, PRINCIPAL, ORDEN 
-            FROM T_FOTODPTO
-            WHERE ID_DEPARTAMENTO = PIN_ID_DPTO;
+            FROM T_FOTODPTO f
+            WHERE ID_DEPARTAMENTO = PIN_ID_DPTO
+            ORDER BY ORDEN;
             
             OUT_RETURNCODE := 1;
         EXCEPTION
