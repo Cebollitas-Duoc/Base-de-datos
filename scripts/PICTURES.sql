@@ -1,4 +1,0 @@
-INSERT INTO T_FOTO (ID_FOTO, IMGDATA)
-VALUES ('eb41803d0b24268fbf482bdbb83a1fbc.jpeg', '');
-
-Commit;
