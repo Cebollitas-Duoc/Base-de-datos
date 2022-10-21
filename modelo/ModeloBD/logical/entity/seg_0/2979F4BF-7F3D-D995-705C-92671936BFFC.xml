@@ -23,8 +23,23 @@
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Usuario" id="5A6662D3-6CDB-AFB3-1BF0-B08C4A26848A">
+<createdBy>andres</createdBy>
+<createdTime>2022-09-16 18:24:24 UTC</createdTime>
+<generatorID>AE6F215B-10B9-257D-E172-7B908421C14F</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<referedAttribute>7239F48E-B3B8-8271-8FA8-2B214FD3A53F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_Departamento" id="C127AC74-1700-77D3-42F9-715C6FDBFB18">
@@ -57,15 +72,16 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Usuario" id="5A6662D3-6CDB-AFB3-1BF0-B08C4A26848A">
+<Attribute name="ID_Pago" id="7C676009-81D1-D148-967C-CFCE1734D28B">
 <createdBy>andres</createdBy>
-<createdTime>2022-09-16 18:24:24 UTC</createdTime>
-<generatorID>AE6F215B-10B9-257D-E172-7B908421C14F</generatorID>
+<createdTime>2022-08-29 21:37:07 UTC</createdTime>
+<generatorID>92EEA233-7BD4-848B-0D75-357299B93234</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<referedAttribute>7239F48E-B3B8-8271-8FA8-2B214FD3A53F</referedAttribute>
+<referedAttribute>A80F6414-93DE-7F2D-F4BC-81EBB148A1C0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
@@ -110,48 +126,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_Pago" id="7C676009-81D1-D148-967C-CFCE1734D28B">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-29 21:37:07 UTC</createdTime>
-<generatorID>92EEA233-7BD4-848B-0D75-357299B93234</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>A80F6414-93DE-7F2D-F4BC-81EBB148A1C0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_CheckIn" id="ADCB2FD0-19E4-F845-0537-91BBC1D56128">
-<createdBy>andres</createdBy>
-<createdTime>2022-10-06 00:39:00 UTC</createdTime>
-<generatorID>64EFF9CD-E7B9-809E-A18C-821E558C0AAC</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>9AE0148D-0839-1473-9C19-C58E0B9116B6</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_CheckOut" id="9FFBF7F4-A594-4441-8F54-741F8B00E733">
-<createdBy>andres</createdBy>
-<createdTime>2022-10-06 00:40:08 UTC</createdTime>
-<generatorID>F3995777-A5E8-BAE6-F497-76DEC436BEB0</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>9AE0148D-0839-1473-9C19-C58E0B9116B6</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

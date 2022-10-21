@@ -22,6 +22,22 @@
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Reserva" id="DF8A4FF4-0D62-6C48-ED75-D194D5AEFC5A">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-21 00:35:01 UTC</createdTime>
+<generatorID>0EC9D44D-A5EE-E8D7-5369-CD6C6F205300</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<referedAttribute>D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
@@ -41,20 +57,6 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Ruta" id="9D01AE4F-BA73-FD95-AEC4-4A7DFA05B37D">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-29 21:02:37 UTC</createdTime>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4522984E-6145-56B7-0956-F2110A0064E1" name="Reporte PK">
@@ -66,6 +68,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
+<attributeRef>DF8A4FF4-0D62-6C48-ED75-D194D5AEFC5A</attributeRef>
 <attributeRef>9AE0148D-0839-1473-9C19-C58E0B9116B6</attributeRef>
 </usedAttributes>
 </identifier>

@@ -41,19 +41,20 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Ruta" id="A21A7673-72EF-59F5-8254-198C4D2FBA85">
+<Attribute name="ID_Foto" id="B1A84C73-AC7C-1645-CD12-B2510265966C">
 <createdBy>andres</createdBy>
-<createdTime>2022-10-13 18:40:48 UTC</createdTime>
+<createdTime>2022-10-21 00:44:04 UTC</createdTime>
+<generatorID>21B94712-2EA6-659A-500B-B7D278E4E6E7</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6C5C9F6A-520B-C0FA-DB85-192992D480EB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Principal" id="1C73BD61-0886-7402-6A7A-8F373C057D6C">
 <createdBy>andres</createdBy>
@@ -94,6 +95,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D2241A0A-95EF-5A39-0C09-142E7152DDFC</attributeRef>
+<attributeRef>B1A84C73-AC7C-1645-CD12-B2510265966C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

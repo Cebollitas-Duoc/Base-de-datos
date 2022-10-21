@@ -25,8 +25,9 @@
 </engineerTo>
 <referedAttribute>D4DFFB9B-180D-25CD-EEF9-46BBC3361A6A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_ServicioExtra" id="454DD6DC-CE4E-5608-4038-05B84EC317ED">
