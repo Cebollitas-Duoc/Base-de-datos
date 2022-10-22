@@ -27,20 +27,6 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Nombre" id="0D7731F7-75CF-B4DB-9AD4-BE5402950100">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 20:36:53 UTC</createdTime>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="Descripcion" id="072FA9CE-8F66-E4DE-F06C-B004697D1B9F">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 20:37:42 UTC</createdTime>
@@ -48,7 +34,6 @@
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
