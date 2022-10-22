@@ -41,20 +41,6 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_CategoriaServicio" id="BBD7D28F-793A-33EB-95AF-6811462DD777">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 22:20:48 UTC</createdTime>
-<generatorID>CD277D86-8338-9D5D-E7E1-9FCBB503F7A6</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<referedAttribute>6B4DB440-F3EF-6164-9305-CD280359C452</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>DOM10006</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="03114CA5-D5CE-B98A-6290-1833A6C6B3A4" name="Servicio PK">

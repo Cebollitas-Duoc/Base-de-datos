@@ -81,9 +81,10 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="FechaInicio" id="D40E9D8C-77D5-1623-DC7F-4FD486274FF2">
@@ -95,9 +96,10 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>25</dataTypePrecision>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,25,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="FechaFin" id="02839C20-8C10-3A89-C548-AE11ED23C501">
@@ -109,9 +111,10 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>25</dataTypePrecision>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,25,</ownDataTypeParameters>
 </Attribute>
 </attributes>
