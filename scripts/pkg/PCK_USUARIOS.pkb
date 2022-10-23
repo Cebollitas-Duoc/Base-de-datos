@@ -8,6 +8,7 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
                             ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                             ,OUT_PRIMERAPELLIDO      OUT VARCHAR2
                             ,OUT_SEGUNDOAPELLIDO     OUT VARCHAR2
+                            ,OUT_RUT                 OUT NUMBER
                             ,OUT_DIRECCION           OUT VARCHAR2
                             ,OUT_TELEFONO            OUT VARCHAR2
                             ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2
@@ -23,6 +24,7 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
             SEGUNDONOMBRE,
             PRIMERAPELLIDO,
             SEGUNDOAPELLIDO,
+            RUT,
             DIRECCION,
             TELEFONO,
             ID_FOTO
@@ -35,6 +37,7 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
             OUT_SEGUNDONOMBRE,
             OUT_PRIMERAPELLIDO,
             OUT_SEGUNDOAPELLIDO,
+            OUT_RUT,
             OUT_DIRECCION,
             OUT_TELEFONO,
             OUT_RUTAFOTOPERFIL
@@ -63,6 +66,7 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
                                 ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                                 ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                                 ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                ,PIN_RUT                 IN NUMBER
                                 ,PIN_DIRECCION           IN VARCHAR2
                                 ,PIN_TELEFONO            IN VARCHAR2
                                 ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
@@ -77,7 +81,8 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
             PRIMERNOMBRE, 
             SEGUNDONOMBRE, 
             PRIMERAPELLIDO, 
-            SEGUNDOAPELLIDO, 
+            SEGUNDOAPELLIDO,
+            RUT,
             DIRECCION, 
             TELEFONO, 
             ID_FOTO)
@@ -89,7 +94,8 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
             PIN_PRIMERNOMBRE, 
             PIN_SEGUNDONOMBRE, 
             PIN_PRIMERAPELLIDO, 
-            PIN_SEGUNDOAPELLIDO, 
+            PIN_SEGUNDOAPELLIDO,
+            PIN_RUT,
             PIN_DIRECCION, 
             PIN_TELEFONO, 
             PIN_RUTAFOTOPERFIL);
@@ -112,6 +118,7 @@ PROCEDURE P_EDIT_SESSION_PROFILE (PIN_SESION              IN VARCHAR2
                                  ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                                  ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                                  ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                 ,PIN_RUT                 IN NUMBER
                                  ,PIN_DIRECCION           IN VARCHAR2
                                  ,PIN_TELEFONO            IN VARCHAR2
                                  ,PIN_ID_FOTO             IN VARCHAR2
@@ -143,6 +150,7 @@ PROCEDURE P_EDIT_SESSION_PROFILE (PIN_SESION              IN VARCHAR2
                 ,SEGUNDONOMBRE    = PIN_SEGUNDONOMBRE
                 ,PRIMERAPELLIDO   = PIN_PRIMERAPELLIDO
                 ,SEGUNDOAPELLIDO  = PIN_SEGUNDOAPELLIDO
+                ,RUT              = PIN_RUT
                 ,DIRECCION        = PIN_DIRECCION
                 ,TELEFONO         = PIN_TELEFONO
                 ,ID_FOTO          = X_ID_FOTO
@@ -167,6 +175,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
                                     ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                                     ,OUT_PRIMERAPELLIDO      OUT VARCHAR2
                                     ,OUT_SEGUNDOAPELLIDO     OUT VARCHAR2
+                                    ,OUT_RUT                 OUT NUMBER
                                     ,OUT_DIRECCION           OUT VARCHAR2
                                     ,OUT_TELEFONO            OUT VARCHAR2
                                     ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2
@@ -180,6 +189,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             U.SEGUNDONOMBRE,
             U.PRIMERAPELLIDO,
             U.SEGUNDOAPELLIDO,
+            U.RUT,
             U.DIRECCION,
             U.TELEFONO,
             U.ID_FOTO,
@@ -190,6 +200,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             OUT_SEGUNDONOMBRE,
             OUT_PRIMERAPELLIDO,
             OUT_SEGUNDOAPELLIDO,
+            OUT_RUT,
             OUT_DIRECCION,
             OUT_TELEFONO,
             OUT_RUTAFOTOPERFIL,

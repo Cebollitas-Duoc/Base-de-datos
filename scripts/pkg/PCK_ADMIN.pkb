@@ -13,7 +13,8 @@ PROCEDURE P_LISTAR_USUARIOS (OUT_USUARIOS   OUT SYS_REFCURSOR
                 PRIMERNOMBRE, 
                 SEGUNDONOMBRE, 
                 PRIMERAPELLIDO, 
-                SEGUNDOAPELLIDO, 
+                SEGUNDOAPELLIDO,
+                RUT,
                 DIRECCION, 
                 TELEFONO, 
                 ID_FOTO
@@ -34,6 +35,7 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                         ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                         ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                         ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                        ,PIN_RUT                 IN NUMBER
                         ,PIN_DIRECCION           IN VARCHAR2
                         ,PIN_TELEFONO            IN VARCHAR2
                         ,PIN_ID_FOTO             IN VARCHAR2
@@ -60,6 +62,7 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                 ,SEGUNDONOMBRE    = PIN_SEGUNDONOMBRE
                 ,PRIMERAPELLIDO   = PIN_PRIMERAPELLIDO
                 ,SEGUNDOAPELLIDO  = PIN_SEGUNDOAPELLIDO
+                ,RUT              = PIN_RUT
                 ,DIRECCION        = PIN_DIRECCION
                 ,TELEFONO         = PIN_TELEFONO
                 ,ID_FOTO          = X_ID_FOTO
