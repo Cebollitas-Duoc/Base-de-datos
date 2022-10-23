@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="503B24C0-12DC-6F34-3043-64BBBF99857F" containerWithKeyObject="FA938D77-7E3B-D8C3-DDA7-A69F8D752D3E" localFKIndex="0CD911F0-A209-BF47-299F-A3C4A67B16FC" name="T_ServicioExtra_Departamento_T_Chofer_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>BF432A9F-47A1-D3FE-7D0E-4F0F93A3C1C4</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<referredTableLongName>T_Chofer</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>64055E9D-1CD2-11F6-CF1A-68F9C0753672</referredTableID>
+<keyObject>D0FC1D6B-46F6-9B97-6B47-D30659A012EF</keyObject>
+<referredKeyID>D0FC1D6B-46F6-9B97-6B47-D30659A012EF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Chofer</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

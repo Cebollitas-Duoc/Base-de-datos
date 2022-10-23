@@ -9,6 +9,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
                                 ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                                 ,OUT_PRIMERAPELLIDO      OUT VARCHAR2
                                 ,OUT_SEGUNDOAPELLIDO     OUT VARCHAR2
+                                ,OUT_RUT                 OUT NUMBER
                                 ,OUT_DIRECCION           OUT VARCHAR2
                                 ,OUT_TELEFONO            OUT VARCHAR2
                                 ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2
@@ -22,6 +23,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
                                 ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                                 ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                                 ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                ,PIN_RUT                 IN NUMBER
                                 ,PIN_DIRECCION           IN VARCHAR2
                                 ,PIN_TELEFONO            IN VARCHAR2
                                 ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
@@ -33,9 +35,10 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
                                      ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                                      ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                                      ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                     ,PIN_RUT                 IN NUMBER
                                      ,PIN_DIRECCION           IN VARCHAR2
                                      ,PIN_TELEFONO            IN VARCHAR2
-                                     ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
+                                     ,PIN_ID_FOTO             IN VARCHAR2
                                      ,OUT_RETURNCODE          OUT NUMBER);
     
     PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
@@ -44,6 +47,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
                                         ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                                         ,OUT_PRIMERAPELLIDO      OUT VARCHAR2
                                         ,OUT_SEGUNDOAPELLIDO     OUT VARCHAR2
+                                        ,OUT_RUT                 OUT NUMBER
                                         ,OUT_DIRECCION           OUT VARCHAR2
                                         ,OUT_TELEFONO            OUT VARCHAR2
                                         ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2

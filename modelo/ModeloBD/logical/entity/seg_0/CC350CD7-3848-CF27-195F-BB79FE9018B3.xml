@@ -52,9 +52,10 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Fecha" id="BCB6BFFD-86CC-4041-E194-D4DF9411804E">
@@ -66,9 +67,10 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>25</dataTypePrecision>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,25,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -65,8 +65,9 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Orden" id="88471171-FB11-4441-FABD-A7FB5D5E3BED">
@@ -78,8 +79,9 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -95,7 +97,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D2241A0A-95EF-5A39-0C09-142E7152DDFC</attributeRef>
-<attributeRef>B1A84C73-AC7C-1645-CD12-B2510265966C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

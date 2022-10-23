@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA938D77-7E3B-D8C3-DDA7-A69F8D752D3E" name="T_ServicioExtra_Departamento">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>493EEB6B-CB00-4B0A-EB69-80A1629DB0BB</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ServicioExtra" id="F2AD01EA-2E22-C1F3-4EED-0FEA440C56F1">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>E736FF5C-6715-ED91-62C0-92BD410811B1</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Departamento" id="FA0DC27F-FA39-3908-97FB-EDA275F8C152">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>AF7E746B-60E9-2576-A404-5EBC3CD1FB39</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F73993BA-5D21-1CFA-F1D2-DD8A9B960FD7" referredColumn="1F528A5C-E987-F063-EB6E-F45EE1C0D6A7"/>
+</associations>
+</Column>
+<Column name="ID_CategoriaServicioExtra" id="AFA38E7B-C3CC-940C-0890-725932BD0BEC">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>BB3EBC0C-D8E1-AEA8-3E94-D241411B5FFD</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F223524B-9AA2-98B8-7F3D-2893BB8CD6A2" referredColumn="1BCEB400-D494-5ED7-9767-A983D5E3B00B"/>
+</associations>
+</Column>
+<Column name="ID_Chofer" id="AC23AAC6-FFF2-D70D-70A8-833ACCC5D8E8">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>C0659572-5F6A-E906-2503-84240B13DA38</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="503B24C0-12DC-6F34-3043-64BBBF99857F" referredColumn="46A54B8E-7E03-B882-5EC9-CC10340B5CA6"/>
+</associations>
+</Column>
+<Column name="ID_Estado" id="14AE10F0-85DD-F9EF-A728-9F2792402AA0">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>FE2A1D9D-191F-B81A-5A24-D6D26652AD73</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A08EC16-0252-2875-2891-56A198D00C06" referredColumn="DB4F4182-3725-11E2-22BC-B70B6D85831F"/>
+</associations>
+</Column>
+<Column name="Valor" id="6E172176-F13B-8A83-8F5B-04810E247B33">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>C27A38F3-C9D8-CDCC-54F3-6E0D4E57405F</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47BC955A-E549-7F88-AF2A-45A12E57F31C" name="T_ServicioExtra_Departamento_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>9E6FE519-C347-8DBE-9291-B1775C71BAAA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2AD01EA-2E22-C1F3-4EED-0FEA440C56F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CD911F0-A209-BF47-299F-A3C4A67B16FC" name="T_ServicioExtra_Departamento_T_Chofer_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>BF432A9F-47A1-D3FE-7D0E-4F0F93A3C1C4</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC23AAC6-FFF2-D70D-70A8-833ACCC5D8E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CEF43E6-DB98-94F7-4D08-5F2040D613FF" name="T_ServicioExtra_Departamento_T_CategoriaServicioExtra_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>394732D5-E076-568A-386D-A2FDB565780E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFA38E7B-C3CC-940C-0890-725932BD0BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C7F62E9-7A5A-DB07-03A6-E6724636C28D" name="T_ServicioExtra_Departamento_T_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>CAB34F1F-24E7-25F8-6463-C538C608FAE0</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA0DC27F-FA39-3908-97FB-EDA275F8C152"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAAFC8BB-5EE1-97E8-B0A0-B0D9B21E1791" name="T_ServicioExtra_Departamento_T_Estado_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>88CA9E4C-110B-C1A5-7BEC-45D8FD2248E4</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14AE10F0-85DD-F9EF-A728-9F2792402AA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="45FED627-FB0B-3273-AB6F-2107C4DF9E1E" name="T_Conector_Departamento_Servicio">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="45FED627-FB0B-3273-AB6F-2107C4DF9E1E" name="T_Servicio">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:04:11 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
@@ -15,7 +15,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_Servicio" id="4DB3D8E4-4009-1625-FD18-D35B9A74F23D">
+<Attribute name="ID_Servicio" id="7C59E400-C607-6E3C-2386-6CFD70B797EB">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-23 00:12:48 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CategoriaServicio" id="4DB3D8E4-4009-1625-FD18-D35B9A74F23D">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:14:36 UTC</createdTime>
 <generatorID>E9C2F543-B4DF-1C94-CF2D-443160601D58</generatorID>
@@ -43,6 +55,20 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_Estado" id="B39EA75D-A358-782C-6D45-65CC6FD2A598">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 22:08:00 UTC</createdTime>
+<generatorID>3A6B3C8A-C0E8-ECA7-EB5F-E746DA3C6C7E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<referedAttribute>6B6E1982-136A-ED73-FAF2-93E8605B8A50</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Cantidad" id="D2105EF6-AE5A-B653-877C-4861FB91FB53">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:15:25 UTC</createdTime>
@@ -52,23 +78,10 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Estado" id="81BA193B-E0BF-7CAF-9FA4-E9447584AD56">
-<createdBy>andres</createdBy>
-<createdTime>2022-08-25 22:16:16 UTC</createdTime>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -76,13 +89,13 @@
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:14:51 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>4DB3D8E4-4009-1625-FD18-D35B9A74F23D</attributeRef>
-<attributeRef>3941F1FE-DC72-DF92-102C-66215C4CAA69</attributeRef>
+<attributeRef>7C59E400-C607-6E3C-2386-6CFD70B797EB</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

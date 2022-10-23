@@ -8,6 +8,7 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
                             ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                             ,OUT_PRIMERAPELLIDO      OUT VARCHAR2
                             ,OUT_SEGUNDOAPELLIDO     OUT VARCHAR2
+                            ,OUT_RUT                 OUT NUMBER
                             ,OUT_DIRECCION           OUT VARCHAR2
                             ,OUT_TELEFONO            OUT VARCHAR2
                             ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2
@@ -23,9 +24,10 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
             SEGUNDONOMBRE,
             PRIMERAPELLIDO,
             SEGUNDOAPELLIDO,
+            RUT,
             DIRECCION,
             TELEFONO,
-            RUTAFOTOPERFIL
+            ID_FOTO
         INTO
             OUT_USER_EXIST,
             OUT_ID_PERMISO,
@@ -35,6 +37,7 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
             OUT_SEGUNDONOMBRE,
             OUT_PRIMERAPELLIDO,
             OUT_SEGUNDOAPELLIDO,
+            OUT_RUT,
             OUT_DIRECCION,
             OUT_TELEFONO,
             OUT_RUTAFOTOPERFIL
@@ -63,6 +66,7 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
                                 ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                                 ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                                 ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                ,PIN_RUT                 IN NUMBER
                                 ,PIN_DIRECCION           IN VARCHAR2
                                 ,PIN_TELEFONO            IN VARCHAR2
                                 ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
@@ -77,10 +81,11 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
             PRIMERNOMBRE, 
             SEGUNDONOMBRE, 
             PRIMERAPELLIDO, 
-            SEGUNDOAPELLIDO, 
+            SEGUNDOAPELLIDO,
+            RUT,
             DIRECCION, 
             TELEFONO, 
-            RUTAFOTOPERFIL)
+            ID_FOTO)
         VALUES ( 
             PIN_EMAIL, 
             PIN_PASSWORD, 
@@ -89,7 +94,8 @@ PROCEDURE P_AGREGAR_USUARIO     (PIN_EMAIL        	     IN VARCHAR2
             PIN_PRIMERNOMBRE, 
             PIN_SEGUNDONOMBRE, 
             PIN_PRIMERAPELLIDO, 
-            PIN_SEGUNDOAPELLIDO, 
+            PIN_SEGUNDOAPELLIDO,
+            PIN_RUT,
             PIN_DIRECCION, 
             PIN_TELEFONO, 
             PIN_RUTAFOTOPERFIL);
@@ -112,13 +118,14 @@ PROCEDURE P_EDIT_SESSION_PROFILE (PIN_SESION              IN VARCHAR2
                                  ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                                  ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                                  ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                                 ,PIN_RUT                 IN NUMBER
                                  ,PIN_DIRECCION           IN VARCHAR2
                                  ,PIN_TELEFONO            IN VARCHAR2
-                                 ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
+                                 ,PIN_ID_FOTO             IN VARCHAR2
                                  ,OUT_RETURNCODE          OUT NUMBER) IS
 
-	X_ID_USUARIO      NUMBER;
-    X_RUTAFOTOPERFIL  VARCHAR2(200);
+	X_ID_USUARIO    NUMBER;
+    X_ID_FOTO       VARCHAR2(200);
 	
 	BEGIN
         --Buscar id de la sesion
@@ -129,12 +136,12 @@ PROCEDURE P_EDIT_SESSION_PROFILE (PIN_SESION              IN VARCHAR2
         WHERE S.LLAVE = PIN_SESION;
 
         --Si no se especifica una foto, se usa la antigua
-        IF PIN_RUTAFOTOPERFIL is NULL THEN
-            SELECT RUTAFOTOPERFIL INTO X_RUTAFOTOPERFIL
+        IF PIN_ID_FOTO is NULL THEN
+            SELECT ID_FOTO INTO X_ID_FOTO
             FROM T_USUARIO
             WHERE ID_USUARIO = X_ID_USUARIO;
         ELSE
-            X_RUTAFOTOPERFIL := PIN_RUTAFOTOPERFIL;
+            X_ID_FOTO := PIN_ID_FOTO;
         END IF;
 
         UPDATE T_USUARIO
@@ -143,9 +150,10 @@ PROCEDURE P_EDIT_SESSION_PROFILE (PIN_SESION              IN VARCHAR2
                 ,SEGUNDONOMBRE    = PIN_SEGUNDONOMBRE
                 ,PRIMERAPELLIDO   = PIN_PRIMERAPELLIDO
                 ,SEGUNDOAPELLIDO  = PIN_SEGUNDOAPELLIDO
+                ,RUT              = PIN_RUT
                 ,DIRECCION        = PIN_DIRECCION
                 ,TELEFONO         = PIN_TELEFONO
-                ,RUTAFOTOPERFIL   = X_RUTAFOTOPERFIL
+                ,ID_FOTO          = X_ID_FOTO
                 
         WHERE ID_USUARIO = X_ID_USUARIO;
         
@@ -167,6 +175,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
                                     ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
                                     ,OUT_PRIMERAPELLIDO      OUT VARCHAR2
                                     ,OUT_SEGUNDOAPELLIDO     OUT VARCHAR2
+                                    ,OUT_RUT                 OUT NUMBER
                                     ,OUT_DIRECCION           OUT VARCHAR2
                                     ,OUT_TELEFONO            OUT VARCHAR2
                                     ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2
@@ -180,9 +189,10 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             U.SEGUNDONOMBRE,
             U.PRIMERAPELLIDO,
             U.SEGUNDOAPELLIDO,
+            U.RUT,
             U.DIRECCION,
             U.TELEFONO,
-            U.RUTAFOTOPERFIL,
+            U.ID_FOTO,
             'True'
         INTO
             OUT_EMAIL,
@@ -190,6 +200,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             OUT_SEGUNDONOMBRE,
             OUT_PRIMERAPELLIDO,
             OUT_SEGUNDOAPELLIDO,
+            OUT_RUT,
             OUT_DIRECCION,
             OUT_TELEFONO,
             OUT_RUTAFOTOPERFIL,

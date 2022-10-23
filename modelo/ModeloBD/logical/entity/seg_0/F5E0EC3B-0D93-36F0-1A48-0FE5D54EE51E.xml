@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5E0EC3B-0D93-36F0-1A48-0FE5D54EE51E" name="T_Conector_ServicioExtra_Reserva">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5E0EC3B-0D93-36F0-1A48-0FE5D54EE51E" name="T_ServicioExtra_Contratado">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:27:18 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
@@ -39,6 +39,18 @@
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
 <referedAttribute>E736FF5C-6715-ED91-62C0-92BD410811B1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Valor" id="D1B9D070-F48A-F070-3158-F69FDAEBCBF6">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 22:09:17 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>

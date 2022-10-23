@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BCE0022-3957-088A-2F6B-B278B16476D1" name="T_Mantencion">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>843C84B5-C48A-C32B-B103-AD6FF2226187</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Mantencion" id="F0A53C1F-AFA2-18C4-13E0-0529AABF4F4B">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>24E58D87-5AED-99DB-51C0-2360F51FF75F</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_mantencion_id_mantencion</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_mantencion_id_mantencion</autoIncrementTriggerName>
+</Column>
+<Column name="ID_CategoriaMantencion" id="EAA1B002-8D98-8D76-70E1-E6D5636E22B6">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>53FDF253-2009-8BC8-4C8F-687308BF6752</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0A1A181-EE8B-3F03-BDEF-3F95624971D7" referredColumn="46733A65-570D-BC46-B103-FCFF29A971F8"/>
+</associations>
+</Column>
+<Column name="ID_Departamento" id="CBA2E5DD-BDEF-CA99-9202-3FD4E68D5EDA">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>98F8FB21-0879-D60B-A64A-8293DB697559</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1824DE0C-74BF-305B-B3E9-C39BC5490511" referredColumn="1F528A5C-E987-F063-EB6E-F45EE1C0D6A7"/>
+</associations>
+</Column>
+<Column name="Descripcion" id="BBF0C636-D004-84BD-A7C4-CA519E059735">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>34E162D5-0CBB-869F-A9E1-5081BD24ED13</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor" id="A1CEF511-FEA8-6D37-85EC-79C2B811D174">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>208344CF-724B-5502-48CD-1B92CA459723</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaInicio" id="7B10975B-B2BE-EE79-0148-BAFB9F7FFC7D">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>D40E9D8C-77D5-1623-DC7F-4FD486274FF2</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaFin" id="B10E1646-E863-65C2-4158-AFD0649A0AA2">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>02839C20-8C10-3A89-C548-AE11ED23C501</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5F60658-81A7-65B4-395F-01B404CDF262" name="T_Mantencion_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>25DD6FC8-7DE8-648C-4D6F-3E1006553095</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0A53C1F-AFA2-18C4-13E0-0529AABF4F4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A426F247-B1D8-2262-1362-7407E4325925" name="T_Mantencion_T_CategoriaMantencion_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>6CAA28B9-511A-23EC-4F28-CA4A4F032C74</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAA1B002-8D98-8D76-70E1-E6D5636E22B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F54FC273-F6DC-8E87-B2E2-CB2AE5C77AEF" name="T_Mantencion_T_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>5466D4A3-1BFE-9F83-B0FC-2A214D15D0CD</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBA2E5DD-BDEF-CA99-9202-3FD4E68D5EDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

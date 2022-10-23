@@ -13,10 +13,11 @@ PROCEDURE P_LISTAR_USUARIOS (OUT_USUARIOS   OUT SYS_REFCURSOR
                 PRIMERNOMBRE, 
                 SEGUNDONOMBRE, 
                 PRIMERAPELLIDO, 
-                SEGUNDOAPELLIDO, 
+                SEGUNDOAPELLIDO,
+                RUT,
                 DIRECCION, 
                 TELEFONO, 
-                RUTAFOTOPERFIL
+                ID_FOTO
             FROM T_USUARIO;
             
             OUT_RETURNCODE := 1;
@@ -34,21 +35,22 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                         ,PIN_SEGUNDONOMBRE       IN VARCHAR2
                         ,PIN_PRIMERAPELLIDO      IN VARCHAR2
                         ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
+                        ,PIN_RUT                 IN NUMBER
                         ,PIN_DIRECCION           IN VARCHAR2
                         ,PIN_TELEFONO            IN VARCHAR2
-                        ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
+                        ,PIN_ID_FOTO             IN VARCHAR2
                         ,OUT_RETURNCODE          OUT NUMBER) IS
 
-    X_RUTAFOTOPERFIL  VARCHAR2(200);
+    X_ID_FOTO  VARCHAR2(200);
 	
 	BEGIN
         --Si no se especifica una foto, se usa la antigua
-        IF PIN_RUTAFOTOPERFIL is NULL THEN
-            SELECT RUTAFOTOPERFIL INTO X_RUTAFOTOPERFIL
+        IF PIN_ID_FOTO is NULL THEN
+            SELECT ID_FOTO INTO X_ID_FOTO
             FROM T_USUARIO
             WHERE ID_USUARIO = PIN_ID_USUARIO;
         ELSE
-            X_RUTAFOTOPERFIL := PIN_RUTAFOTOPERFIL;
+            X_ID_FOTO := PIN_ID_FOTO;
         END IF;
 
         UPDATE T_USUARIO
@@ -60,9 +62,10 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                 ,SEGUNDONOMBRE    = PIN_SEGUNDONOMBRE
                 ,PRIMERAPELLIDO   = PIN_PRIMERAPELLIDO
                 ,SEGUNDOAPELLIDO  = PIN_SEGUNDOAPELLIDO
+                ,RUT              = PIN_RUT
                 ,DIRECCION        = PIN_DIRECCION
                 ,TELEFONO         = PIN_TELEFONO
-                ,RUTAFOTOPERFIL   = X_RUTAFOTOPERFIL
+                ,ID_FOTO          = X_ID_FOTO
                 
         WHERE ID_USUARIO = PIN_ID_USUARIO;
         
@@ -79,7 +82,7 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
 	END;
     
     --Departamentos
-    PROCEDURE P_AGREGAR_DPTO    (PIN_ID_ESTADO       IN NUMBER
+    PROCEDURE P_AGREGAR_DPTO    (PIN_ID_ESTADO      IN NUMBER
                                 ,PIN_DIRECCION      IN VARCHAR2
                                 ,PIN_LONGITUD       IN NUMBER
                                 ,PIN_LATITUD        IN NUMBER
@@ -90,7 +93,7 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                                 ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
         INSERT INTO T_DEPARTAMENTO
-        (ID_ESTADODPTO
+        (ID_ESTADO
         ,DIRECCION
         ,LONGITUD
         ,LATITUD
@@ -133,7 +136,7 @@ BEGIN
 
         UPDATE T_DEPARTAMENTO
         SET     
-                ID_ESTADODPTO     = PIN_ID_ESTADO
+                ID_ESTADO         = PIN_ID_ESTADO
                 ,DIRECCION        = PIN_DIRECCION
                 ,LONGITUD         = PIN_LONGITUD        	 
                 ,LATITUD          = PIN_LATITUD
@@ -160,8 +163,8 @@ PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
 		BEGIN
             OPEN OUT_DPTOS FOR
             SELECT
-            d.id_departamento, d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estadodpto, (
-            SELECT DISTINCT FIRST_VALUE(RUTA)
+            d.id_departamento, d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estado, (
+            SELECT DISTINCT FIRST_VALUE(ID_FOTO)
                 OVER (ORDER BY PRINCIPAL DESC, ORDEN ASC )
                 FROM T_FOTODPTO 
                 WHERE ID_DEPARTAMENTO = d.id_departamento
@@ -187,7 +190,7 @@ PROCEDURE P_AGREGAR_FOTO_DPTO   (PIN_ID_DPTO    IN NUMBER
                 WHERE ID_DEPARTAMENTO = PIN_ID_DPTO;
             END IF;
         
-            INSERT INTO T_FOTODPTO (ID_DEPARTAMENTO, PRINCIPAL, RUTA)
+            INSERT INTO T_FOTODPTO (ID_DEPARTAMENTO, PRINCIPAL, ID_FOTO)
             VALUES (
             PIN_ID_DPTO, 
             PIN_PRINCIPAL, 
@@ -236,7 +239,7 @@ PROCEDURE P_LISTAR_FOTOS_DPTO   (PIN_ID_DPTO    IN NUMBER
                                 ,OUT_RETURNCODE OUT NUMBER) IS
 		BEGIN
             OPEN OUT_FOTOS FOR
-            SELECT ID_FOTODPTO, RUTA, PRINCIPAL, ORDEN 
+            SELECT ID_FOTODPTO, ID_FOTO, PRINCIPAL, ORDEN 
             FROM T_FOTODPTO f
             WHERE ID_DEPARTAMENTO = PIN_ID_DPTO
             ORDER BY ORDEN;
