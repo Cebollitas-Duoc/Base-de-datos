@@ -31,6 +31,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TipoContenido" id="00D47420-CBBD-A13E-9C25-4EB61328E570">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-23 01:38:21 UTC</createdTime>
+<generatorID>3516CC76-FDA7-90AF-BC30-D2C2DADD6DBF</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FABAE34B-100E-F69E-7AE6-C4A5FE823C9D" name="T_Foto_PK">

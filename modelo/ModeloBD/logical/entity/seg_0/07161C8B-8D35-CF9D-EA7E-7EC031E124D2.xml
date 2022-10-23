@@ -76,8 +76,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PrimerNombre" id="BBF2BAF6-08FE-CF6D-408F-2A28BB4A9AC8">
 <createdBy>andres</createdBy>
@@ -168,6 +168,7 @@
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>6C5C9F6A-520B-C0FA-DB85-192992D480EB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

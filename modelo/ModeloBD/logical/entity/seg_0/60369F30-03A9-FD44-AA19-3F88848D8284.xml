@@ -57,14 +57,40 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="TipoContenido" id="B1139728-57C7-9565-0A66-8DB78B1A3A27">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-23 01:34:21 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FileData" id="C90F939E-CB04-6272-F856-29E435BE4970">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-23 01:33:09 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>DOM10009</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4522984E-6145-56B7-0956-F2110A0064E1" name="Reporte PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-29 21:02:09 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

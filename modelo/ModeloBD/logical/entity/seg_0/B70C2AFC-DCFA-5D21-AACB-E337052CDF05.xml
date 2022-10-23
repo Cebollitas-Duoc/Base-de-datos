@@ -28,6 +28,19 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="TipoContenido" id="3516CC76-FDA7-90AF-BC30-D2C2DADD6DBF">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-23 01:35:02 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="ImgData" id="D1A9AD54-A7DD-99CB-F200-745F4B2D31D7">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-13 18:45:08 UTC</createdTime>
@@ -46,8 +59,9 @@
 <createdBy>andres</createdBy>
 <createdTime>2022-10-13 23:40:47 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -24,7 +24,6 @@
 <createdTime>2022-10-22 23:46:59 UTC</createdTime>
 <generatorID>3A7DCCD5-C1D8-1860-7EA7-64CD32F2AE7C</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +36,6 @@
 <createdTime>2022-10-22 23:46:59 UTC</createdTime>
 <generatorID>E6174C44-B2CF-9FC0-9D8D-2BE665CA4E18</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

@@ -54,6 +54,29 @@
 <colAssociation fkAssociation="0C47B996-9674-363A-BCD8-E6F1726D3D95" referredColumn="83839504-703D-8C2D-ACB8-F365478C6D52"/>
 </associations>
 </Column>
+<Column name="TipoContenido" id="9E278ED6-EBDA-DAF4-3A08-F6ABF3D6C573">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-23 01:38:21 UTC</createdTime>
+<generatorID>B1139728-57C7-9565-0A66-8DB78B1A3A27</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FileData" id="4ABB9470-0B1F-7393-8E84-DFA1C33FFFF6">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-23 01:38:21 UTC</createdTime>
+<generatorID>C90F939E-CB04-6272-F856-29E435BE4970</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>DOM10009</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B78B4C55-34B0-6A6E-91D4-257F67617BA0" name="T_Reporte_PK">
