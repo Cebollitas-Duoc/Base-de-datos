@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99C0EB72-A3C1-989A-611D-424A222ABC31" name="T_ServicioExtra_Contratado">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>F5E0EC3B-0D93-36F0-1A48-0FE5D54EE51E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Reserva" id="0331B7F2-CE8B-379C-B83E-F117F52BB40D">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>8740BF40-F430-7343-2E3B-953827D10B3C</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D5B4F7E-4C7D-178F-2383-766F7EEA685E" referredColumn="F86DAD1F-DB15-3C23-1ADD-9113EB90594A"/>
+</associations>
+</Column>
+<Column name="ID_ServicioExtra" id="7AE922EF-024A-A66C-9654-BFB7F491BE8B">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>454DD6DC-CE4E-5608-4038-05B84EC317ED</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03876CF2-6A08-F007-F352-20C19721A26B" referredColumn="F2AD01EA-2E22-C1F3-4EED-0FEA440C56F1"/>
+</associations>
+</Column>
+<Column name="Valor" id="D114E6D4-E318-6A16-D7DD-3E1A88366126">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>D1B9D070-F48A-F070-3158-F69FDAEBCBF6</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="802521AE-8E9C-9081-5087-28628DAF0105" name="T_ServicioExtra_Contratado_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>39B13A98-D442-533C-A374-562CEC61EDDC</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0331B7F2-CE8B-379C-B83E-F117F52BB40D"/>
+<colUsage columnID="7AE922EF-024A-A66C-9654-BFB7F491BE8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97736BFB-FD61-6CD4-A5EE-02EEA6402764" name="T_ServicioExtra_Contratado_T_ServicioExtra_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>3BA0B708-C517-B8C0-7373-695AA4F87ECB</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AE922EF-024A-A66C-9654-BFB7F491BE8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="501DB714-3C72-6A5D-1AB3-2F6A19D87B08" name="T_ServicioExtra_Contratado_T_Reserva_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>82C3009C-7406-4317-87CE-EB4FC31864E9</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0331B7F2-CE8B-379C-B83E-F117F52BB40D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

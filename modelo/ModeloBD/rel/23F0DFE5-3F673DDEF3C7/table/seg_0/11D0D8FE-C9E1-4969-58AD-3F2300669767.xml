@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11D0D8FE-C9E1-4969-58AD-3F2300669767" name="T_Error">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>F98C923E-C605-3E0E-6844-65AE293EDD86</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Error" id="C797C309-DDD5-EAD3-576D-E0B9827D4423">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>8C3F1523-738F-E2A6-0DA3-DA00C30F7832</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_error_id_error</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_error_id_error</autoIncrementTriggerName>
+</Column>
+<Column name="NombreError" id="7804D7CA-111F-E335-3851-5EF91BE3DEE4">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>05C1AC11-ABAF-7EAA-9B4E-99F2F0818A34</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="DDEDA5B8-C823-195D-3F92-A6AECF2F5760">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>5FB1DC2B-4A5D-8A82-266E-C2675A310B65</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaHora" id="D89DCBA1-E7DA-380F-FA0A-9219446CBB64">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>F0249CB7-7208-83FF-7B1C-8CB1FD070925</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zona" id="0FDF951B-B93D-4E73-024C-25D3FF61CEE1">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>E18C8410-231D-91AD-D188-98B6158BCAD9</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CA77B06-E451-270C-CFC8-D11B2211DD4A" name="T_Error_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>84FCE2D0-CB56-6C2E-2609-D00BAA3684EA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C797C309-DDD5-EAD3-576D-E0B9827D4423"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

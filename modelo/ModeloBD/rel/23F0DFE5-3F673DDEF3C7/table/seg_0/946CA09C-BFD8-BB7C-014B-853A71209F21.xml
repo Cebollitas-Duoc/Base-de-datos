@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="946CA09C-BFD8-BB7C-014B-853A71209F21" name="T_FotoDpto">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>1AF643B1-8E29-2262-1B54-29EC7DE315E4</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_FotoDpto" id="1C7E794F-DDCB-2973-6CC7-11DAA4513439">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>D2241A0A-95EF-5A39-0C09-142E7152DDFC</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_fotodpto_id_fotodpto</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_fotodpto_id_fotodpto</autoIncrementTriggerName>
+</Column>
+<Column name="ID_Departamento" id="DA8043A5-A2F4-1DEA-BE0E-2966038F136F">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>05D3C223-9191-E574-8548-685D8415E421</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2736375-70ED-BD36-172B-EDAC907A1BB4" referredColumn="1F528A5C-E987-F063-EB6E-F45EE1C0D6A7"/>
+</associations>
+</Column>
+<Column name="ID_Foto" id="85E7B0FC-6E32-ABB0-044D-AF9F4E1DC12C">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>B1A84C73-AC7C-1645-CD12-B2510265966C</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4346AE8B-5DD5-9624-AD11-B38E719A0EB7" referredColumn="653D196F-2EC8-F03E-168C-222DA093DC0F"/>
+</associations>
+</Column>
+<Column name="Principal" id="ABF14DCC-BC0D-F3D3-B7AA-FCE67B410639">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>1C73BD61-0886-7402-6A7A-8F373C057D6C</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Orden" id="FE0B7E58-9767-29C8-127C-8B39C9EE6183">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>88471171-FB11-4441-FABD-A7FB5D5E3BED</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64A0B797-E2B4-2AE6-8A4C-80EDCC6AE736" name="T_FotoDpto_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>BDB7E2C1-A6C5-F108-8E8F-ACCD39F24E57</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C7E794F-DDCB-2973-6CC7-11DAA4513439"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66F05AF1-5BF4-54C1-3ABF-001E1434E08F" name="T_FotoDpto_T_Departamento_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>27A4FB5D-6025-E404-940B-C92A2D65FC18</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA8043A5-A2F4-1DEA-BE0E-2966038F136F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D217FD7-3065-C2EE-6698-93219BC1CA8E" name="T_FotoDpto_T_Foto_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<generatorID>21B94712-2EA6-659A-500B-B7D278E4E6E7</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85E7B0FC-6E32-ABB0-044D-AF9F4E1DC12C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
