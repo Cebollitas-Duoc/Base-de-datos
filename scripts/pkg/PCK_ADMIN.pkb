@@ -229,5 +229,38 @@ PROCEDURE P_BORRAR_FOTO_DPTO    (PIN_ID_FOTO_DPTO   IN NUMBER
             END;
 		END;
 
+--servicios
+
+PROCEDURE P_ADD_SERVICE (PIN_CAT_SRV    IN NUMBER
+                        ,PIN_ID_DPTO    IN NUMBER
+                        ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        INSERT INTO T_SERVICIO (ID_CATEGORIASERVICIO, ID_DEPARTAMENTO, ID_ESTADO, CANTIDAD)
+        VALUES (PIN_CAT_SRV, PIN_ID_DPTO, 0, 1);
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN
+            OUT_RETURNCODE := 0;
+    END;
+
+PROCEDURE P_EDIT_SERVICE (PIN_ID_SRV     IN NUMBER
+                         ,PIN_ID_ESTADO  IN NUMBER
+                         ,PIN_CANTIDAD   IN NUMBER
+                         ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        UPDATE T_SERVICIO
+        SET ID_ESTADO = PIN_ID_ESTADO,
+            CANTIDAD  = PIN_CANTIDAD
+        WHERE ID_SERVICIO = PIN_ID_SRV;
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN
+            OUT_RETURNCODE := 0;
+    END;
+
 END PCK_ADMIN;
 /

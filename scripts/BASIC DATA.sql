@@ -18,7 +18,15 @@ INSERT INTO T_EstadoReserva (ID_EstadoReserva, Nombre, Descripcion) VALUES (1, '
 INSERT INTO T_EstadoReserva (ID_EstadoReserva, Nombre, Descripcion) VALUES (2, 'Finalizada', 'La estadia finalizo');
 INSERT INTO T_EstadoReserva (ID_EstadoReserva, Nombre, Descripcion) VALUES (3, 'Cancelada', 'La reserva fue cancelada');
 
---INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (0, '');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (0, 'WIFI');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (1, 'Calefaccion');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (2, 'Estacionamiento');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (3, 'TV');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (4, 'Cocina');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (5, 'Patio');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (6, 'Cama - Singular');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (7, 'Cama - Queen');
+INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (8, 'Cama - King');
 
 --INSERT INTO T_CategoriaMantencion (ID_CategoriaMantencion, Descripcion) VALUES (0, '');
 

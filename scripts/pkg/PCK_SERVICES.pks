@@ -1,0 +1,11 @@
+CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_SERVICES IS  
+                             
+    PROCEDURE P_LISTAR_SERVICES (PIN_ID_DPTO    IN NUMBER
+                                ,OUT_SERVICES   OUT SYS_REFCURSOR
+                                ,OUT_RETURNCODE OUT NUMBER);
+    
+    PROCEDURE P_LISTAR_CAT_SRV  (OUT_CAT_SRV   OUT SYS_REFCURSOR
+                                ,OUT_RETURNCODE OUT NUMBER);
+   
+END PCK_SERVICES;
+/
