@@ -14,7 +14,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_ADMIN IS
                             ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
                             ,PIN_DIRECCION           IN VARCHAR2
                             ,PIN_TELEFONO            IN VARCHAR2
-                            ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
+                            ,PIN_ID_FOTO             IN VARCHAR2
                             ,OUT_RETURNCODE          OUT NUMBER);
                             
     --Departamentos

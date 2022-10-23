@@ -35,7 +35,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
                                      ,PIN_SEGUNDOAPELLIDO     IN VARCHAR2
                                      ,PIN_DIRECCION           IN VARCHAR2
                                      ,PIN_TELEFONO            IN VARCHAR2
-                                     ,PIN_RUTAFOTOPERFIL      IN VARCHAR2
+                                     ,PIN_ID_FOTO             IN VARCHAR2
                                      ,OUT_RETURNCODE          OUT NUMBER);
     
     PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
