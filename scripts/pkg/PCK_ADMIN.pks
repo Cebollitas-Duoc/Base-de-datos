@@ -40,8 +40,6 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_ADMIN IS
                                 ,PIN_VALOR          IN NUMBER
                                 ,OUT_RETURNCODE     OUT NUMBER);
                                 
-    PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
-                                ,OUT_RETURNCODE OUT NUMBER);
     --Imagenes Departamentos
     PROCEDURE P_AGREGAR_FOTO_DPTO   (PIN_ID_DPTO    IN NUMBER
                                     ,PIN_PRINCIPAL  IN NUMBER
@@ -52,10 +50,6 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_ADMIN IS
                                     ,PIN_PRINCIPAL      IN NUMBER
                                     ,PIN_ORDEN          IN NUMBER
                                     ,OUT_RETURNCODE     OUT NUMBER);
-    
-    PROCEDURE P_LISTAR_FOTOS_DPTO   (PIN_ID_DPTO   IN NUMBER
-                                    ,OUT_FOTOS   OUT SYS_REFCURSOR
-                                    ,OUT_RETURNCODE OUT NUMBER);
                         
     PROCEDURE P_BORRAR_FOTO_DPTO    (PIN_ID_FOTO_DPTO   IN NUMBER
                                     ,OUT_RETURNCODE     OUT NUMBER);
