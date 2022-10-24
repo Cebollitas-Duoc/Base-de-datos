@@ -90,6 +90,7 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
                                 ,PIN_BANIOS         IN NUMBER
                                 ,PIN_TAMANIO        IN NUMBER
                                 ,PIN_VALOR          IN NUMBER
+                                ,PIN_DESCRIPCION    IN VARCHAR2
                                 ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
         INSERT INTO T_DEPARTAMENTO
@@ -100,7 +101,8 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
         ,HABITACIONES
         ,BANIOS
         ,TAMANIO
-        ,VALOR)
+        ,VALOR
+        ,DESCRIPCION)
     VALUES
         (PIN_ID_ESTADO
         ,PIN_DIRECCION
@@ -109,7 +111,8 @@ PROCEDURE P_EDIT_USER   (PIN_ID_USUARIO          IN NUMBER
         ,PIN_HABITACIONES 
         ,PIN_BANIOS
         ,PIN_TAMANIO
-        ,PIN_VALOR);
+        ,PIN_VALOR
+        ,PIN_DESCRIPCION);
         
         COMMIT;
         OUT_RETURNCODE := 1;
@@ -131,6 +134,7 @@ PROCEDURE P_EDIT_DPTO   (PIN_ID_DPTO        IN NUMBER
                         ,PIN_BANIOS         IN NUMBER
                         ,PIN_TAMANIO        IN NUMBER
                         ,PIN_VALOR          IN NUMBER
+                        ,PIN_DESCRIPCION    IN VARCHAR2
                         ,OUT_RETURNCODE     OUT NUMBER) IS
 BEGIN
 
@@ -144,6 +148,7 @@ BEGIN
                 ,BANIOS           = PIN_BANIOS
                 ,TAMANIO          = PIN_TAMANIO
                 ,VALOR            = PIN_VALOR
+                ,DESCRIPCION      = PIN_DESCRIPCION
         WHERE ID_DEPARTAMENTO = PIN_ID_DPTO;
         
         COMMIT;

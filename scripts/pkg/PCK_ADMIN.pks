@@ -27,6 +27,7 @@ PROCEDURE P_AGREGAR_DPTO    (PIN_ID_ESTADO       IN NUMBER
                             ,PIN_BANIOS         IN NUMBER
                             ,PIN_TAMANIO        IN NUMBER
                             ,PIN_VALOR          IN NUMBER
+                            ,PIN_DESCRIPCION    IN VARCHAR2
                             ,OUT_RETURNCODE     OUT NUMBER);
                             
 PROCEDURE P_EDIT_DPTO       (PIN_ID_DPTO        IN NUMBER
@@ -38,6 +39,7 @@ PROCEDURE P_EDIT_DPTO       (PIN_ID_DPTO        IN NUMBER
                             ,PIN_BANIOS         IN NUMBER
                             ,PIN_TAMANIO        IN NUMBER
                             ,PIN_VALOR          IN NUMBER
+                            ,PIN_DESCRIPCION    IN VARCHAR2
                             ,OUT_RETURNCODE     OUT NUMBER);
                             
 --Imagenes Departamentos

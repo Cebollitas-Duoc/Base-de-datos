@@ -12,6 +12,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_DPTO IS
                             ,OUT_TAMANIO        OUT NUMBER
                             ,OUT_VALOR          OUT NUMBER
                             ,OUT_ID_ESTADO      OUT NUMBER
+                            ,OUT_DESCRIPCION    OUT VARCHAR2
                             ,OUT_IMAGEN         OUT VARCHAR2
                             ,OUT_RETURNCODE     OUT NUMBER);
     

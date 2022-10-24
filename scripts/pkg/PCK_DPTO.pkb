@@ -5,7 +5,7 @@ PROCEDURE P_LISTAR_DPTOS    (OUT_DPTOS   OUT SYS_REFCURSOR
     BEGIN
         OPEN OUT_DPTOS FOR
         SELECT
-        d.id_departamento, d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estado, (
+        d.id_departamento, d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estado, d.descripcion, (
         SELECT DISTINCT FIRST_VALUE(ID_FOTO)
             OVER (ORDER BY PRINCIPAL DESC, ORDEN ASC )
             FROM T_FOTODPTO 
@@ -29,17 +29,18 @@ PROCEDURE P_VER_DPTO    (PIN_ID_DPTO        IN NUMBER
                         ,OUT_TAMANIO        OUT NUMBER
                         ,OUT_VALOR          OUT NUMBER
                         ,OUT_ID_ESTADO      OUT NUMBER
+                        ,OUT_DESCRIPCION    OUT VARCHAR2
                         ,OUT_IMAGEN         OUT VARCHAR2
                         ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
         SELECT
-        d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estado, (
+        d.direccion, d.longitud, d.latitud, d.habitaciones, d.banios, d.tamanio, d.valor, d.id_estado, d.descripcion, (
         SELECT DISTINCT FIRST_VALUE(ID_FOTO)
             OVER (ORDER BY PRINCIPAL DESC, ORDEN ASC )
             FROM T_FOTODPTO 
             WHERE ID_DEPARTAMENTO = d.id_departamento
         ) as imagen_principal
-        INTO OUT_DIRECCION, OUT_LONGITUD, OUT_LATITUD, OUT_HABITACIONES, OUT_BANIOS, OUT_TAMANIO, OUT_VALOR, OUT_ID_ESTADO, OUT_IMAGEN
+        INTO OUT_DIRECCION, OUT_LONGITUD, OUT_LATITUD, OUT_HABITACIONES, OUT_BANIOS, OUT_TAMANIO, OUT_VALOR, OUT_ID_ESTADO, OUT_DESCRIPCION, OUT_IMAGEN
         FROM T_DEPARTAMENTO d
         WHERE d.id_departamento = PIN_ID_DPTO;
         
