@@ -1,5 +1,5 @@
 INSERT INTO T_Permiso (ID_Permiso, Descripcion) VALUES (0, 'Cliente');
-INSERT INTO T_Permiso (ID_Permiso, Descripcion) VALUES (1, 'Empleado');
+INSERT INTO T_Permiso (ID_Permiso, Descripcion) VALUES (1, 'Funcionario');
 INSERT INTO T_Permiso (ID_Permiso, Descripcion) VALUES (2, 'Admin');
 
 INSERT INTO T_EstadoUsuario (ID_EstadoUsuario, Descripcion) VALUES (0, 'Por validar');
