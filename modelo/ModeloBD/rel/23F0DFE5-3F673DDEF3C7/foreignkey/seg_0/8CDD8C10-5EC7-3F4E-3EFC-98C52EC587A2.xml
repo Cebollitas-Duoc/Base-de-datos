@@ -9,7 +9,7 @@
 <referredTableID>AA536217-06DF-DFDA-D882-DAA38B012FB2</referredTableID>
 <keyObject>8B60B40F-43FF-2E5F-41FD-9C7C8251DA13</keyObject>
 <referredKeyID>8B60B40F-43FF-2E5F-41FD-9C7C8251DA13</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <refColNames>ID_Pago</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
