@@ -80,6 +80,7 @@
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>A80F6414-93DE-7F2D-F4BC-81EBB148A1C0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
