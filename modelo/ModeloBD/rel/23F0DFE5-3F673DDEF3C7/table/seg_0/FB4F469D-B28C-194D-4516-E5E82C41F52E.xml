@@ -157,7 +157,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -178,6 +178,22 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="BBDDA9F1-DC99-0B82-758D-99DB9584CB38" referredColumn="A6AE0945-CA06-9EE3-A4CB-0D8CF4FB5078"/>
+</associations>
+</Column>
+<Column name="ID_Comuna" id="FEFA9DF2-5740-CA12-EFF3-4788502E6A94">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>FDCEB1A2-7844-EF20-C58C-0BD3701EF225</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EC0BCB8-431E-E920-C6E1-816203A65BC0" referredColumn="D374AA8E-ECEE-EBDC-4E9E-D6FA71BB4C36"/>
 </associations>
 </Column>
 </columns>
@@ -225,6 +241,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="89266147-666F-C527-1EFC-7EEAED280E7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE026A8E-605E-7056-69B5-1E5A53960CCC" name="T_Usuario_T_Comuna_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>751E7BF2-4269-03A8-9835-CA2FAD7D826A</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFA9DF2-5740-CA12-EFF3-4788502E6A94"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

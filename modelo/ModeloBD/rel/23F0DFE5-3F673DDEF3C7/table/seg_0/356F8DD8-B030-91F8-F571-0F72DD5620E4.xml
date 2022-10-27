@@ -130,6 +130,22 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_Comuna" id="13028149-E71C-D538-2DB8-7B44FFBE9EED">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>94921506-38F1-FB58-3B0C-758EC08C79F1</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3C7E4C0-C123-9FCF-E776-628A8242F378" referredColumn="D374AA8E-ECEE-EBDC-4E9E-D6FA71BB4C36"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="192CC256-6214-D7DE-863C-B977C5DC2116" name="T_Departamento_PK">
@@ -153,6 +169,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="47159390-083C-4F47-8CD7-24462EE3531E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE1CF28B-73CF-9F11-06AD-A26E549D721F" name="T_Departamento_T_Comuna_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>C9F49E54-003C-5E86-C806-359E4E7F64D9</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13028149-E71C-D538-2DB8-7B44FFBE9EED"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

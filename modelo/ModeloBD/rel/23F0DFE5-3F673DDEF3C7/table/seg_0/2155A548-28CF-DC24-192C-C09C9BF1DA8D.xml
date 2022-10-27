@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2155A548-28CF-DC24-192C-C09C9BF1DA8D" name="T_Comuna">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>C11E935F-D6D2-B1DE-8132-71833548AB97</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Comuna" id="D374AA8E-ECEE-EBDC-4E9E-D6FA71BB4C36">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>19575CA2-0F3A-40BF-DDAB-4FAB12040A7E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Region" id="77740278-AC8A-B812-BF7E-88B79FDD7087">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>1E9FF8A9-FA23-0853-C185-B565276869FA</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="101723CD-73AF-DCCE-D434-88953322D155" referredColumn="7F00ED3D-1CDC-A16D-EA9F-867C70DCE004"/>
+</associations>
+</Column>
+<Column name="Nombre" id="7EB91FF1-9E2B-430B-B37D-22B1508CAC18">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>45E8CF3F-98CC-EAF2-4768-715F74C40F48</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C10A9F56-5739-5712-A88F-A3057A7C7D8E" name="T_Comuna_PK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>35C9DF55-53F6-6739-A0EC-D96A9237EED6</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D374AA8E-ECEE-EBDC-4E9E-D6FA71BB4C36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D27C65A5-442C-19B0-86E3-6749876505E3" name="T_Comuna_T_Region_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:33:32 UTC</createdTime>
+<generatorID>D557034E-DB58-C2C9-4E39-4D1123E6515E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77740278-AC8A-B812-BF7E-88B79FDD7087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

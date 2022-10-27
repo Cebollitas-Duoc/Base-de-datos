@@ -41,6 +41,21 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_Comuna" id="FDCEB1A2-7844-EF20-C58C-0BD3701EF225">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:18:43 UTC</createdTime>
+<generatorID>751E7BF2-4269-03A8-9835-CA2FAD7D826A</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>19575CA2-0F3A-40BF-DDAB-4FAB12040A7E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Rut" id="071DDF97-54B0-192A-102D-005B09793DB4">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-21 01:03:55 UTC</createdTime>
@@ -174,7 +189,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID_EstadoUsuario" id="EFDE294C-D7F7-ED74-8E85-738176743447">
 <createdBy>andres</createdBy>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Comuna_Departamento" directorySegmentName="seg_0" id="C9F49E54-003C-5E86-C806-359E4E7F64D9">
+<createdBy>andres</createdBy>
+<createdTime>2022-10-27 01:17:39 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<sourcePk>35C9DF55-53F6-6739-A0EC-D96A9237EED6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C11E935F-D6D2-B1DE-8132-71833548AB97</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>11B50512-4E7F-3C07-70B1-F7A4B6DCEA87</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
