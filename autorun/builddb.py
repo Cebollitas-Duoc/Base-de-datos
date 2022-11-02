@@ -17,9 +17,13 @@ def readScript(path):
         raw = f.readlines()
         lastLine = ""
         nestedLvl = 0
+        line_count = 0
         for line in raw:
-            line = line.replace("\n", "").replace("/", "")
-            if ("--" in line or line == ""):
+            line_count += 1
+            if line_count == 393:
+                pass
+            line = line.replace("\n", "")
+            if ("--" in line or line == "" or line == " " or line == "/"):
                 continue
             if (";" in line):
                 if "end" in line.lower():
@@ -34,7 +38,10 @@ def readScript(path):
             lastLine = lastLine + line + " "
             if isNesting(line):
                 nestedLvl += 1
-                    
+        print("line_count #########################################")
+        print(line_count)
+        print("line_count #########################################")
+            
             
     return script
 
@@ -52,7 +59,7 @@ def fillDB():
     with oracledb.connect(turCS) as connection:
         runScrpit(connection, "../scripts/CREATE TABLES.sql")
         runScrpit(connection, "../scripts/BASIC DATA.sql")
-        runScrpit(connection, "../scripts/REGIONES_Y_COMUNAS.sql")
+        #runScrpit(connection, "../scripts/REGIONES_Y_COMUNAS.sql")
 
 def ceatePackages(connection):
     mypath = "../scripts/pkg"
@@ -67,8 +74,6 @@ def isNesting(line):
     line = line.lower()
     if "begin" in line:
         return True
-    if ("create" in line and "is" in line):
-        return True
     if "if" in line:
         return True
     return False
@@ -76,5 +81,5 @@ def isNesting(line):
 if __name__ == "__main__":
     createUser()
     fillDB()
-    with oracledb.connect(turCS) as connection:
-        ceatePackages(connection)
+    # with oracledb.connect(turCS) as connection:
+    #     ceatePackages(connection)
