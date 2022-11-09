@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0D5B4F7E-4C7D-178F-2383-766F7EEA685E" containerWithKeyObject="99C0EB72-A3C1-989A-611D-424A222ABC31" localFKIndex="501DB714-3C72-6A5D-1AB3-2F6A19D87B08" name="T_ServicioExtra_Contratado_T_Reserva_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0490CA75-F8AD-07E2-A2F7-A91C7F36FE25" containerWithKeyObject="D35E980C-16E1-B0CE-1B43-E784E0480FBD" localFKIndex="A53B22C4-FE61-53B6-F075-8DF9298806E7" name="T_ServicioExtra_Contratado_T_Reserva_FK">
 <createdBy>andres</createdBy>
-<createdTime>2022-10-22 23:46:59 UTC</createdTime>
+<createdTime>2022-11-09 01:51:57 UTC</createdTime>
 <generatorID>82C3009C-7406-4317-87CE-EB4FC31864E9</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
 <referredTableLongName>T_Reserva</referredTableLongName>

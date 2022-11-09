@@ -18,7 +18,10 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_vehiculo_id_vehiculo</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_vehiculo_id_vehiculo</autoIncrementTriggerName>
 </Column>
 <Column name="Asientos" id="96F2CDF7-C1C9-AC5A-7C89-AF538631423A">
 <createdBy>andres</createdBy>

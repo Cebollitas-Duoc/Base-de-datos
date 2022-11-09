@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ServicioExtraContratado" id="9A76CD09-DE2D-0F25-C272-3E9F6843B6CC">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-09 01:50:32 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="ID_Reserva" id="8740BF40-F430-7343-2E3B-953827D10B3C">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 22:31:50 UTC</createdTime>
@@ -96,8 +108,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>8740BF40-F430-7343-2E3B-953827D10B3C</attributeRef>
-<attributeRef>454DD6DC-CE4E-5608-4038-05B84EC317ED</attributeRef>
+<attributeRef>9A76CD09-DE2D-0F25-C272-3E9F6843B6CC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
