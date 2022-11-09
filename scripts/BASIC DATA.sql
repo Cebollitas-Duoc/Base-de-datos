@@ -28,6 +28,9 @@ INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (6, '
 INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (7, 'Cama - Queen');
 INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (8, 'Cama - King');
 
+INSERT INTO t_categoriaservicioextra (ID_CategoriaServicioextra, Descripcion) VALUES (0, 'Transporte');
+INSERT INTO t_categoriaservicioextra (ID_CategoriaServicioextra, Descripcion) VALUES (1, 'Turismo');
+
 --INSERT INTO T_CategoriaMantencion (ID_CategoriaMantencion, Descripcion) VALUES (0, '');
 
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (0, 'Documento generico');

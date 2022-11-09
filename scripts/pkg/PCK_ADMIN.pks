@@ -66,6 +66,14 @@ PROCEDURE P_EDIT_SERVICE (PIN_ID_SRV     IN NUMBER
                          ,PIN_ID_ESTADO  IN NUMBER
                          ,PIN_CANTIDAD   IN NUMBER
                          ,OUT_RETURNCODE OUT NUMBER);
+
+-- servicios extra
+
+PROCEDURE P_ADD_EXTRASERVICE    (PIN_CAT_EXTSRV IN NUMBER
+                                ,PIN_ID_DPTO    IN NUMBER
+                                ,PIN_ID_ESTADO  IN NUMBER
+                                ,PIN_VALOR      IN NUMBER
+                                ,OUT_RETURNCODE OUT NUMBER);
    
 END PCK_ADMIN;
 /

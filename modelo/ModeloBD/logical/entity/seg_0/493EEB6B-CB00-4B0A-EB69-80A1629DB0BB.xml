@@ -55,7 +55,7 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Chofer" id="C0659572-5F6A-E906-2503-84240B13DA38">
+<Attribute name="ID_Trabajador" id="C0659572-5F6A-E906-2503-84240B13DA38">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:38:30 UTC</createdTime>
 <generatorID>BF432A9F-47A1-D3FE-7D0E-4F0F93A3C1C4</generatorID>
@@ -63,6 +63,7 @@
 <engineerTo>
 <item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>19B408FD-851C-B5AF-C4EC-FF777FF35F6F</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

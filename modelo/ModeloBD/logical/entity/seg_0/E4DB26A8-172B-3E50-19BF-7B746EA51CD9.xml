@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_Chofer" id="19B408FD-851C-B5AF-C4EC-FF777FF35F6F">
+<Attribute name="ID_Trabajador" id="19B408FD-851C-B5AF-C4EC-FF777FF35F6F">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:35:48 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>

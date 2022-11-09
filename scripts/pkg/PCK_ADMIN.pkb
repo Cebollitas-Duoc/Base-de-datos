@@ -267,5 +267,26 @@ PROCEDURE P_EDIT_SERVICE (PIN_ID_SRV     IN NUMBER
             OUT_RETURNCODE := 0;
     END;
 
+-- servicios extra
+PROCEDURE P_ADD_EXTRASERVICE    (PIN_CAT_EXTSRV IN NUMBER
+                                ,PIN_ID_DPTO    IN NUMBER
+                                ,PIN_ID_ESTADO  IN NUMBER
+                                ,PIN_VALOR      IN NUMBER
+                                ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        INSERT INTO T_SERVICIOEXTRA (ID_CATEGORIASERVICIOEXTRA, ID_DEPARTAMENTO, ID_ESTADO, VALOR)
+        VALUES (PIN_CAT_EXTSRV, PIN_ID_DPTO, PIN_ID_ESTADO, PIN_VALOR);
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN
+            OUT_RETURNCODE := 0;
+    END;
+
+
+
+
+
 END PCK_ADMIN;
 /

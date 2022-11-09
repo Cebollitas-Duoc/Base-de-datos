@@ -60,7 +60,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="56CABB10-697F-36A9-91D7-B5A020FCC810" otype="Table" vid="9F4D8464-4551-B895-9A11-A285516851F3">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1126" y="758" width="170" height="70"/>
+<bounds x="1096" y="757" width="170" height="70"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="61AC8D55-6F7D-5113-E7E2-402B448F3E27" otype="Table" vid="59B73C63-AF9B-07B1-7DCA-49A6E74716DF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -68,7 +68,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="64055E9D-1CD2-11F6-CF1A-68F9C0753672" otype="Table" vid="4330661D-A21F-0534-B9D4-E64AC65CAE95">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="900" y="752" width="178" height="90"/>
+<bounds x="881" y="756" width="178" height="90"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="663B32BD-0F30-4532-EA15-77D01D143074" otype="Table" vid="879CC58D-2A13-D15C-157F-DB3A589B7949">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -138,8 +138,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1126" y="793"/>
-<point x="1078" y="793"/>
+<point x="1096" y="792"/>
+<point x="1059" y="792"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0C47B996-9674-363A-BCD8-E6F1726D3D95" otype="FKIndexAssociation" vid_source="F6C88A70-934B-E06E-A593-F7D5454407EB" vid_target="C2E2DD73-8711-61F4-3BE3-C64B1E2D0C10">
@@ -228,8 +228,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="900" y="754"/>
-<point x="817" y="714"/>
+<point x="885" y="756"/>
+<point x="817" y="719"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="53776DF6-1B1A-5094-8D6D-52FB53FBC981" otype="FKIndexAssociation" vid_source="FB7DA5AD-FB43-1FD1-124A-C93BCF028A67" vid_target="29E05C34-4287-4CF9-E3F1-041DD5E314E9">
