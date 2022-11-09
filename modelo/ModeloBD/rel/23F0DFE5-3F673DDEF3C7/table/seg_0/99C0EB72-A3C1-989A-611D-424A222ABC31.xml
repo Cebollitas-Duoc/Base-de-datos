@@ -50,6 +50,34 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_Pago" id="41EF8BC2-31A5-603E-DA7B-7078DBF9622E">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:57:42 UTC</createdTime>
+<generatorID>D25D32AC-C348-32D9-3DB9-F572C4A8BBBB</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3764AC75-3A9B-1584-B1A9-EBC33E859B03" referredColumn="C83D10A2-A245-857B-1F06-10AB92643819"/>
+</associations>
+</Column>
+<Column name="Incluido" id="E239A9D7-487A-08C7-512F-B07A14FFF1E8">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:57:42 UTC</createdTime>
+<generatorID>8BAC9A0F-31CC-112B-F944-6D82AE3F5314</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="802521AE-8E9C-9081-5087-28628DAF0105" name="T_ServicioExtra_Contratado_PK">
@@ -85,6 +113,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0331B7F2-CE8B-379C-B83E-F117F52BB40D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3952B8A-3F35-E830-E4DF-C4365957C482" name="T_ServicioExtra_Contratado_T_Pago_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:57:42 UTC</createdTime>
+<generatorID>EDA8BE43-E82A-82DD-0B08-5C80AF1FF97B</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41EF8BC2-31A5-603E-DA7B-7078DBF9622E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

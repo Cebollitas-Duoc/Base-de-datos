@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Pago_ServicioExtra" directorySegmentName="seg_0" id="EDA8BE43-E82A-82DD-0B08-5C80AF1FF97B">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:40:09 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<sourcePk>CD24E6F5-991A-6FBA-1EB8-0CE13963BFBB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CC350CD7-3848-CF27-195F-BB79FE9018B3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F5E0EC3B-0D93-36F0-1A48-0FE5D54EE51E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

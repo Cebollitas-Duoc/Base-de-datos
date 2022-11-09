@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Vehiculo_Trabajador" directorySegmentName="seg_0" id="F178F2B8-7AA8-4085-B986-62ED43A1E745">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:56:16 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<sourcePk>07CA68E5-0752-D4CD-A6BE-25B677B5438B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C7EA08B0-C2A2-3EC6-5B97-EB33BC618D56</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E4DB26A8-172B-3E50-19BF-7B746EA51CD9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

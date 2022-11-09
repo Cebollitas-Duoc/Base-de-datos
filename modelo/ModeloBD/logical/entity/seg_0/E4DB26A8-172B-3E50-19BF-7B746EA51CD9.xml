@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E4DB26A8-172B-3E50-19BF-7B746EA51CD9" name="T_Chofer">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E4DB26A8-172B-3E50-19BF-7B746EA51CD9" name="T_Trabajador">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:35:26 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
@@ -25,6 +25,22 @@
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Patente" id="C3ABAD94-8E17-CD1B-AD97-BFF645ED656E">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:57:03 UTC</createdTime>
+<generatorID>F178F2B8-7AA8-4085-B986-62ED43A1E745</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AAA5DEF8-D14A-CC86-33A3-D8D4D8330080</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nombres" id="5795C646-5922-2CE6-C868-1B879D6CD9EA">
@@ -53,28 +69,15 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="PatenteVehiculo" id="B25A0CB2-0FBA-040D-6763-BC69E1B13ACF">
-<createdBy>andres</createdBy>
-<createdTime>2022-09-10 19:36:35 UTC</createdTime>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E0A533A7-B37F-8F3A-EF1F-720142E2FD9F" name="Chofer PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-09-10 19:35:58 UTC</createdTime>
 <ownerDesignName>ModeloBD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

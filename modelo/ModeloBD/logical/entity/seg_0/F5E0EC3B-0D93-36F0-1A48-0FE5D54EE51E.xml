@@ -56,6 +56,34 @@
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_Pago" id="D25D32AC-C348-32D9-3DB9-F572C4A8BBBB">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:40:09 UTC</createdTime>
+<generatorID>EDA8BE43-E82A-82DD-0B08-5C80AF1FF97B</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A80F6414-93DE-7F2D-F4BC-81EBB148A1C0</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Incluido" id="8BAC9A0F-31CC-112B-F944-6D82AE3F5314">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:42:44 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="39B13A98-D442-533C-A374-562CEC61EDDC" name="Conector_ServicioExtra_Reserva PK">

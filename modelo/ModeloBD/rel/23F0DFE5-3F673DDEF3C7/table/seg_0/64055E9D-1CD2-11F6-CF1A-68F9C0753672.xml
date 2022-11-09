@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64055E9D-1CD2-11F6-CF1A-68F9C0753672" name="T_Chofer">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64055E9D-1CD2-11F6-CF1A-68F9C0753672" name="T_Trabajador">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-22 23:46:59 UTC</createdTime>
 <generatorID>E4DB26A8-172B-3E50-19BF-7B746EA51CD9</generatorID>
@@ -56,6 +56,23 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Patente" id="AB500D5E-ECB9-1ABF-AB85-86AB165DE673">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:57:42 UTC</createdTime>
+<generatorID>C3ABAD94-8E17-CD1B-AD97-BFF645ED656E</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C1627AC-372A-DD99-92A3-19E83AC20194" referredColumn="1DFD0665-0661-7915-C5FB-AA1AF7892DE8"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D0FC1D6B-46F6-9B97-6B47-D30659A012EF" name="T_Chofer_PK">
@@ -68,6 +85,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="46A54B8E-7E03-B882-5EC9-CC10340B5CA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="774F6677-95F3-3335-746D-B99EA545123D" name="T_Trabajador_T_Vehiculo_FK">
+<createdBy>andres</createdBy>
+<createdTime>2022-11-08 23:57:42 UTC</createdTime>
+<generatorID>F178F2B8-7AA8-4085-B986-62ED43A1E745</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB500D5E-ECB9-1ABF-AB85-86AB165DE673"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
