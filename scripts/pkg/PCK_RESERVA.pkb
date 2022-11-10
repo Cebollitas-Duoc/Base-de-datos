@@ -77,6 +77,36 @@ PROCEDURE P_CANCEL_RESERVA  (PIN_ID_RSV     IN NUMBER
             OUT_RETURNCODE := 0;
     END;
 
+PROCEDURE P_ADD_EXTRA_SRV   (PIN_ID_RSV     IN NUMBER
+                            ,PIN_ID_EXTSRV  IN NUMBER
+                            ,PIN_included   IN NUMBER
+                            ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        INSERT INTO t_servicioextra_contratado 
+        (ID_Reserva, ID_ServicioExtra, Incluido) 
+        VALUES (PIN_ID_RSV, PIN_ID_EXTSRV, PIN_included);
+
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN BEGIN
+            OUT_RETURNCODE := 0;
+        END;
+    END;
+
+PROCEDURE P_LIST_RESERVA_EXTSRV (PIN_ID_RSV     IN NUMBER
+                                ,OUT_EXTSRV     OUT SYS_REFCURSOR
+                                ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        OPEN OUT_EXTSRV FOR
+        select * 
+        from t_servicioextra_contratado
+        where id_reserva = PIN_ID_RSV;
+        
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN
+            OUT_RETURNCODE := 0;
+    END;
 
 END PCK_RESERVA;
 /

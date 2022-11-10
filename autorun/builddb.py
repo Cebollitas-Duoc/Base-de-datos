@@ -71,6 +71,7 @@ def fillDB():
         runScrpit(connection, "../scripts/CREATE TABLES.sql")
         runScrpit(connection, "../scripts/BASIC DATA.sql")
         runScrpit(connection, "../scripts/REGIONES_Y_COMUNAS.sql")
+        buildPackage(connection, "../scripts/TRIGGERS.sql")
         ceatePackages(connection)
 
 def ceatePackages(connection):
