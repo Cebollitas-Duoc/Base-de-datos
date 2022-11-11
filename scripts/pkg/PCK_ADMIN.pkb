@@ -268,20 +268,51 @@ PROCEDURE P_EDIT_SERVICE (PIN_ID_SRV     IN NUMBER
     END;
 
 -- servicios extra
-PROCEDURE P_ADD_EXTRASERVICE    (PIN_CAT_EXTSRV IN NUMBER
-                                ,PIN_ID_DPTO    IN NUMBER
-                                ,PIN_ID_ESTADO  IN NUMBER
-                                ,PIN_VALOR      IN NUMBER
-                                ,OUT_RETURNCODE OUT NUMBER) IS
+PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
+                                ,PIN_ID_CAT_SRV     IN NUMBER
+                                ,PIN_ID_ESTADO      IN NUMBER
+                                ,PIN_ID_TRABAJADOR  IN NUMBER
+                                ,PIN_VALOR          IN NUMBER
+                                ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
-        INSERT INTO T_SERVICIOEXTRA (ID_CATEGORIASERVICIOEXTRA, ID_DEPARTAMENTO, ID_ESTADO, VALOR)
-        VALUES (PIN_CAT_EXTSRV, PIN_ID_DPTO, PIN_ID_ESTADO, PIN_VALOR);
-        
-        COMMIT;
+        INSERT 
+        INTO T_SERVICIOEXTRA(ID_Departamento
+                            ,ID_CategoriaServicioExtra
+                            ,ID_Estado
+                            ,ID_Trabajador
+                            ,Valor)
+			VALUES  (PIN_ID_DPTO
+					,PIN_ID_CAT_SRV
+					,PIN_ID_ESTADO
+                    ,PIN_ID_TRABAJADOR
+					,PIN_VALOR
+					);
+
         OUT_RETURNCODE := 1;
     EXCEPTION
-        WHEN OTHERS THEN
+        WHEN OTHERS THEN BEGIN
             OUT_RETURNCODE := 0;
+        END;
+    END;
+
+PROCEDURE P_UPDATE_EXTRASERVICE (PIN_ID_EXTRASRV    IN NUMBER
+                                ,PIN_ID_ESTADO      IN NUMBER
+                                ,PIN_ID_TRABAJADOR  IN NUMBER
+                                ,PIN_VALOR          IN NUMBER
+                                ,OUT_RETURNCODE     OUT NUMBER) IS
+    BEGIN
+        UPDATE T_SERVICIOEXTRA
+        SET     
+                ID_Estado       = PIN_ID_ESTADO,
+                ID_Trabajador   = PIN_ID_TRABAJADOR,
+                Valor           = PIN_VALOR        	 
+        WHERE ID_ServicioExtra = PIN_ID_EXTRASRV;
+
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN BEGIN
+            OUT_RETURNCODE := 0;
+        END;
     END;
 
 
