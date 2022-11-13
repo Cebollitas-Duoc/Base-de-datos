@@ -17,7 +17,10 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>DOM10006</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_categoriaservicio_id_categoriaservicio</autoIncrementSequenceName>
+<autoIncrementTriggerName>trg_categoriaservicio_id_categoriaservicio</autoIncrementTriggerName>
 </Column>
 <Column name="Descripcion" id="8B6BDD9E-A6A0-9FAC-05EB-8604C12E5147">
 <createdBy>andres</createdBy>

@@ -18,20 +18,20 @@ INSERT INTO T_EstadoReserva (ID_EstadoReserva, Nombre, Descripcion) VALUES (1, '
 INSERT INTO T_EstadoReserva (ID_EstadoReserva, Nombre, Descripcion) VALUES (2, 'Finalizada', 'La estadia finalizo');
 INSERT INTO T_EstadoReserva (ID_EstadoReserva, Nombre, Descripcion) VALUES (3, 'Cancelada', 'La reserva fue cancelada');
 
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (0, 'WIFI');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (1, 'Calefaccion');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (2, 'Estacionamiento');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (3, 'TV');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (4, 'Cocina');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (5, 'Patio');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (6, 'Cama - Singular');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (7, 'Cama - Queen');
-INSERT INTO T_CategoriaServicio (ID_CategoriaServicio, Descripcion) VALUES (8, 'Cama - King');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('WIFI');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Calefaccion');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Estacionamiento');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('TV');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Cocina');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Patio');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Cama - Singular');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Cama - Queen');
+INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Cama - King');
 
-INSERT INTO t_categoriaservicioextra (ID_CategoriaServicioextra, Descripcion) VALUES (0, 'Transporte');
-INSERT INTO t_categoriaservicioextra (ID_CategoriaServicioextra, Descripcion) VALUES (1, 'Turismo');
+INSERT INTO t_categoriaservicioextra (Descripcion) VALUES ('Transporte');
+INSERT INTO t_categoriaservicioextra (Descripcion) VALUES ('Turismo');
 
---INSERT INTO T_CategoriaMantencion (ID_CategoriaMantencion, Descripcion) VALUES (0, '');
+--INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('');
 
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (0, 'Documento generico');
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (1, 'Check In');
