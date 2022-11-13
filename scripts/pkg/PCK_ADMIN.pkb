@@ -267,6 +267,21 @@ PROCEDURE P_EDIT_SERVICE (PIN_ID_SRV     IN NUMBER
             OUT_RETURNCODE := 0;
     END;
 
+PROCEDURE P_ADD_SRV_CAT (PIN_DESCRIPCION IN VARCHAR2
+                        ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        INSERT INTO T_CategoriaServicio 
+        (Descripcion) 
+        VALUES (PIN_DESCRIPCION);
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN BEGIN
+            OUT_RETURNCODE := 0;
+        END;
+    END;
+
 -- servicios extra
 PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
                                 ,PIN_ID_CAT_SRV     IN NUMBER
@@ -287,7 +302,8 @@ PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
                     ,PIN_ID_TRABAJADOR
 					,PIN_VALOR
 					);
-
+        
+        COMMIT;
         OUT_RETURNCODE := 1;
     EXCEPTION
         WHEN OTHERS THEN BEGIN
@@ -307,7 +323,23 @@ PROCEDURE P_EDIT_EXTRASERVICE   (PIN_ID_EXTRASRV    IN NUMBER
                 ID_Trabajador   = PIN_ID_TRABAJADOR,
                 Valor           = PIN_VALOR        	 
         WHERE ID_ServicioExtra = PIN_ID_EXTRASRV;
+        
+        COMMIT;
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN BEGIN
+            OUT_RETURNCODE := 0;
+        END;
+    END;
 
+PROCEDURE P_ADD_EXTSRV_CAT  (PIN_DESCRIPCION IN VARCHAR2
+                            ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        INSERT INTO t_categoriaservicioextra 
+        (Descripcion) 
+        VALUES (PIN_DESCRIPCION);
+        
+        COMMIT;
         OUT_RETURNCODE := 1;
     EXCEPTION
         WHEN OTHERS THEN BEGIN
