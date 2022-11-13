@@ -295,7 +295,7 @@ PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
         END;
     END;
 
-PROCEDURE P_UPDATE_EXTRASERVICE (PIN_ID_EXTRASRV    IN NUMBER
+PROCEDURE P_EDIT_EXTRASERVICE   (PIN_ID_EXTRASRV    IN NUMBER
                                 ,PIN_ID_ESTADO      IN NUMBER
                                 ,PIN_ID_TRABAJADOR  IN NUMBER
                                 ,PIN_VALOR          IN NUMBER

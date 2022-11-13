@@ -70,13 +70,13 @@ PROCEDURE P_EDIT_SERVICE (PIN_ID_SRV     IN NUMBER
 -- servicios extra
 
 PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
-                                    ,PIN_ID_CAT_SRV     IN NUMBER
-                                    ,PIN_ID_ESTADO      IN NUMBER
-                                    ,PIN_ID_TRABAJADOR  IN NUMBER
-                                    ,PIN_VALOR          IN NUMBER
-                                    ,OUT_RETURNCODE     OUT NUMBER);
+                                ,PIN_ID_CAT_SRV     IN NUMBER
+                                ,PIN_ID_ESTADO      IN NUMBER
+                                ,PIN_ID_TRABAJADOR  IN NUMBER
+                                ,PIN_VALOR          IN NUMBER
+                                ,OUT_RETURNCODE     OUT NUMBER);
     
-PROCEDURE P_UPDATE_EXTRASERVICE (PIN_ID_EXTRASRV    IN NUMBER
+PROCEDURE P_EDIT_EXTRASERVICE   (PIN_ID_EXTRASRV    IN NUMBER
                                 ,PIN_ID_ESTADO      IN NUMBER
                                 ,PIN_ID_TRABAJADOR  IN NUMBER
                                 ,PIN_VALOR          IN NUMBER

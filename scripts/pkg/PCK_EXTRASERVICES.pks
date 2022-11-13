@@ -1,8 +1,8 @@
 CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_EXTRASERVICES IS  
 
-    PROCEDURE P_LIST_DPTO_EXTRASERVICES (PIN_ID_DPTO    IN NUMBER
-                                        ,OUT_SERVICES   OUT SYS_REFCURSOR
-                                        ,OUT_RETURNCODE OUT NUMBER);
+    PROCEDURE P_LIST_EXTRASERVICES  (PIN_ID_DPTO    IN NUMBER
+                                    ,OUT_SERVICES   OUT SYS_REFCURSOR
+                                    ,OUT_RETURNCODE OUT NUMBER);
     
     PROCEDURE P_LIST_CAT_EXTSRV (OUT_CAT_SRV   OUT SYS_REFCURSOR
                                 ,OUT_RETURNCODE OUT NUMBER);
