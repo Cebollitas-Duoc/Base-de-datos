@@ -3,12 +3,12 @@ CREATE OR REPLACE PACKAGE BODY USR_TURISMO_REAL.PCK_RESERVA IS
 PROCEDURE P_CREAR_RESERVA   (PIN_ID_USR     IN NUMBER
                             ,PIN_ID_DEPTO   IN NUMBER
                             ,PIN_ID_ESTADO  IN NUMBER
+                            ,PIN_FECHADESDE IN NUMBER
+                            ,PIN_FECHAHASTA IN NUMBER
                             ,PIN_VALOR      IN NUMBER
-							,PIN_FECHADESDE IN NUMBER
-							,PIN_FECHAHASTA IN NUMBER
                             ,OUT_RETURNCODE OUT NUMBER) IS
     BEGIN
-        INSERT INTO T_RESERVA (ID_Usuario, ID_Departamento, ID_EstadoReserva, VALORTOTAL) 
+        INSERT INTO T_RESERVA (ID_Usuario, ID_Departamento, ID_EstadoReserva, FECHADESDE, FECHAHASTA, VALORTOTAL) 
         VALUES (PIN_ID_USR, PIN_ID_DEPTO, PIN_ID_ESTADO, PIN_FECHADESDE, PIN_FECHAHASTA, PIN_VALOR);
                                  
         OUT_RETURNCODE := 1;
