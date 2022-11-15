@@ -3,6 +3,8 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_RESERVA IS
     PROCEDURE P_CREAR_RESERVA   (PIN_ID_USR     IN NUMBER
                                 ,PIN_ID_DEPTO   IN NUMBER
                                 ,PIN_ID_ESTADO  IN NUMBER
+								,PIN_FECHADESDE IN NUMBER
+								,PIN_FECHAHASTA IN NUMBER
                                 ,PIN_VALOR      IN NUMBER
                                 ,OUT_RETURNCODE OUT NUMBER);
     
