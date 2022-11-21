@@ -179,6 +179,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
                                     ,OUT_DIRECCION           OUT VARCHAR2
                                     ,OUT_TELEFONO            OUT VARCHAR2
                                     ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2
+                                    ,OUT_PERMISO             OUT VARCHAR2
                                     ,OUT_VALIDSESSION        OUT VARCHAR2
                                     ,OUT_RETURNCODE          OUT NUMBER) IS
 													
@@ -193,6 +194,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             U.DIRECCION,
             U.TELEFONO,
             U.ID_FOTO,
+            P.DESCRIPCION permiso,
             'True'
         INTO
             OUT_EMAIL,
@@ -204,10 +206,13 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             OUT_DIRECCION,
             OUT_TELEFONO,
             OUT_RUTAFOTOPERFIL,
+            OUT_PERMISO,
             OUT_VALIDSESSION
         FROM T_SESION S
         INNER JOIN T_USUARIO U 
         ON U.ID_USUARIO = S.ID_USUARIO 
+        INNER JOIN T_PERMISO P 
+        ON U.ID_PERMISO = P.ID_PERMISO
         WHERE S.LLAVE = PIN_SESION;
         
         OUT_RETURNCODE := 1;

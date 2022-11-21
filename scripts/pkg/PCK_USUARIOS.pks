@@ -51,6 +51,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_USUARIOS IS
                                         ,OUT_DIRECCION           OUT VARCHAR2
                                         ,OUT_TELEFONO            OUT VARCHAR2
                                         ,OUT_RUTAFOTOPERFIL      OUT VARCHAR2
+                                        ,OUT_PERMISO             OUT VARCHAR2
                                         ,OUT_VALIDSESSION        OUT VARCHAR2
                                         ,OUT_RETURNCODE          OUT NUMBER);
    
