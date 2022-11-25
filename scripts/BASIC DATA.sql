@@ -48,4 +48,10 @@ VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0
 INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, RUT, EMAIL, PRIMERNOMBRE, PRIMERAPELLIDO, DIRECCION, TELEFONO)
 VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 20200200, 'diego@mrmeme.cl', 'Diego', 'Soto', 'Casa Diego', 87654321);
 
+INSERT INTO t_sesion (id_usuario, llave, expiracion, fechacreacion) 
+VALUES (1, 'sesionPruebasAdmin', 2209035600000, 0);
+
+INSERT INTO t_sesion (id_usuario, llave, expiracion, fechacreacion) 
+VALUES (2, 'sesionPruebasUser', 2209035600000, 0);
+
 Commit;
