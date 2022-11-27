@@ -117,7 +117,7 @@
 <colUsage columnID="DCC9D4A0-5216-2C33-F8D1-45BF9C594FDF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9FE01953-8C02-DB4D-8CE6-6622C8890A27" name="T_ServicioExtra_Contratado_T_ServicioExtra_Departamento_FK">
+<ind_PK_UK id="9FE01953-8C02-DB4D-8CE6-6622C8890A27" name="T_ServicioExtra_Contratado_T_ServicioExtra_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-11-09 01:51:57 UTC</createdTime>
 <generatorID>3BA0B708-C517-B8C0-7373-695AA4F87ECB</generatorID>

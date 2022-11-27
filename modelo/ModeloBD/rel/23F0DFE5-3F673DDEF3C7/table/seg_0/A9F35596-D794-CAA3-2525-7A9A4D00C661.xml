@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9F35596-D794-CAA3-2525-7A9A4D00C661" name="T_Iventario">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9F35596-D794-CAA3-2525-7A9A4D00C661" name="T_Inventario">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-22 23:46:59 UTC</createdTime>
 <generatorID>0D8C923E-51FE-5A15-829C-504CC37BF0A0</generatorID>
 <ownerDesignName>ModeloBD</ownerDesignName>
+<ordsAlias>t_iventario</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -64,7 +65,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="49186232-43CB-C330-C085-26322093BE58" name="T_Iventario_PK">
+<ind_PK_UK id="49186232-43CB-C330-C085-26322093BE58" name="T_Inventario_PK">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-22 23:46:59 UTC</createdTime>
 <generatorID>446DDC7C-2692-E22B-CEDC-8CB465096F38</generatorID>
@@ -76,7 +77,7 @@
 <colUsage columnID="A1DAF49B-5C60-89FC-37EB-58183C8665A6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8EBF8CEA-1014-FFCA-00A4-2717B417D970" name="T_Iventario_T_Departamento_FK">
+<ind_PK_UK id="8EBF8CEA-1014-FFCA-00A4-2717B417D970" name="T_Inventario_T_Departamento_FK">
 <createdBy>andres</createdBy>
 <createdTime>2022-10-22 23:46:59 UTC</createdTime>
 <generatorID>CCCA6B12-9D32-0701-1EBB-1A27082F5CDA</generatorID>
