@@ -29,10 +29,8 @@ PROCEDURE P_EDIT_ITEM   (PIN_ID_ITEM    IN NUMBER
 
         UPDATE T_INVENTARIO
         SET     
-            ID_DEPARTAMENTO = PIN_ID_ITEM
-            ,NOMBRE         = PIN_NOMBRE
-            ,CANTIDAD       = PIN_CANTIDAD
-                
+            NOMBRE          = PIN_NOMBRE
+            ,CANTIDAD       = PIN_CANTIDAD  
         WHERE ID_INVENTARIO = PIN_ID_ITEM;
         
         commit;
