@@ -95,7 +95,7 @@ PROCEDURE P_SESION_VALIDA   (PIN_LLAVE        	    IN VARCHAR2
             from T_SESION s
             INNER JOIN T_Usuario u
             ON U.ID_USUARIO = s.ID_USUARIO
-            WHERE S.LLAVE = PIN_LLAVE;
+            WHERE U.ID_ESTADOUSUARIO != 2 AND S.LLAVE = PIN_LLAVE;
             
             OUT_ES_VALIDA := 'True';
             OUT_RETURNCODE := 1;
