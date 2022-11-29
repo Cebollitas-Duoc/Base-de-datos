@@ -31,7 +31,12 @@ INSERT INTO T_CategoriaServicio (Descripcion) VALUES ('Cama - King');
 INSERT INTO t_categoriaservicioextra (Descripcion) VALUES ('Transporte');
 INSERT INTO t_categoriaservicioextra (Descripcion) VALUES ('Turismo');
 
---INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('');
+INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('Electrica');
+INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('Plomeria agua');
+INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('Plomeria gas');
+INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('Pintura');
+INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('Telecomunicaciones');
+INSERT INTO T_CategoriaMantencion (Descripcion) VALUES ('Reparacion');
 
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (0, 'Documento generico');
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (1, 'Check In');

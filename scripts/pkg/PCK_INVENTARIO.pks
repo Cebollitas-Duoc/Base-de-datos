@@ -11,7 +11,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_INVENTARIO IS
                             ,OUT_RETURNCODE OUT NUMBER);
                         
     PROCEDURE P_LIST_ITEM   (PIN_ID_DPTO    IN NUMBER
-                            ,OUT_ITEMS    OUT SYS_REFCURSOR
+                            ,OUT_ITEMS      OUT SYS_REFCURSOR
                             ,OUT_RETURNCODE OUT NUMBER);
 
     PROCEDURE P_DELETE_ITEM (PIN_ID_ITEM    IN NUMBER
