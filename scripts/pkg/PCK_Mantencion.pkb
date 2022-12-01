@@ -60,8 +60,17 @@ PROCEDURE P_LISTAR_MANTENCIONES (PIN_ID_DPTO        IN NUMBER
                                 ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
         OPEN OUT_MANTENCIONES FOR
-        SELECT * 
-        FROM T_MANTENCION
+        SELECT
+            m.id_mantencion,
+            m.id_categoriamantencion,
+            c.descripcion CATEGORIA,
+            m.id_departamento,
+            m.descripcion,
+            m.valor,
+            m.fechainicio,
+            m.fechafin
+        FROM T_MANTENCION M
+        INNER JOIN t_categoriamantencion C ON c.id_categoriamantencion = m.id_categoriamantencion 
         WHERE ID_DEPARTAMENTO = PIN_ID_DPTO;
 
         OUT_RETURNCODE := 1;
