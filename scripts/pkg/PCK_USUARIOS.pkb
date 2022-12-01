@@ -1,6 +1,7 @@
 CREATE OR REPLACE PACKAGE BODY USR_TURISMO_REAL.PCK_USUARIOS IS
 PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
                             ,OUT_USER_EXIST          OUT VARCHAR2
+                            ,OUT_ID_USER       	     OUT NUMBER
                             ,OUT_ID_PERMISO       	 OUT NUMBER
                             ,OUT_ID_ESTADOUSUARIO    OUT NUMBER
                             ,OUT_PASSWORD            OUT VARCHAR2
@@ -17,6 +18,7 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
 	BEGIN										
 		SELECT
             'True',
+            id_usuario,
             ID_PERMISO,
             ID_ESTADOUSUARIO,
             PASSWORD,
@@ -30,6 +32,7 @@ PROCEDURE P_LEE_USUARIO     (PIN_EMAIL               IN VARCHAR2
             ID_FOTO
         INTO
             OUT_USER_EXIST,
+            OUT_ID_USER,
             OUT_ID_PERMISO,
             OUT_ID_ESTADOUSUARIO,
             OUT_PASSWORD,
@@ -170,6 +173,7 @@ PROCEDURE P_EDIT_SESSION_PROFILE (PIN_SESION              IN VARCHAR2
 	END;	
 	
 PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
+                                    ,OUT_ID_USER       	     OUT NUMBER
                                     ,OUT_EMAIL               OUT VARCHAR2
                                     ,OUT_PRIMERNOMBRE        OUT VARCHAR2
                                     ,OUT_SEGUNDONOMBRE       OUT VARCHAR2
@@ -185,6 +189,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
 													
 	BEGIN										
         SELECT
+            U.ID_USUARIO,
             U.EMAIL,
             U.PRIMERNOMBRE,
             U.SEGUNDONOMBRE,
@@ -197,6 +202,7 @@ PROCEDURE P_LEE_PERFIL_DE_SESION    (PIN_SESION              IN VARCHAR2
             P.DESCRIPCION permiso,
             'True'
         INTO
+            OUT_ID_USER,
             OUT_EMAIL,
             OUT_PRIMERNOMBRE,
             OUT_SEGUNDONOMBRE,
