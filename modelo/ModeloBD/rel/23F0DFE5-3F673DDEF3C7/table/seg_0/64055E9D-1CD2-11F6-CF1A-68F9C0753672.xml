@@ -46,19 +46,6 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PatenteVehiculo" id="E18E9C42-7D9C-2360-0936-F53D3AFA7D9D">
-<createdBy>andres</createdBy>
-<createdTime>2022-10-22 23:46:59 UTC</createdTime>
-<generatorID>B25A0CB2-0FBA-040D-6763-BC69E1B13ACF</generatorID>
-<ownerDesignName>ModeloBD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="Patente" id="AB500D5E-ECB9-1ABF-AB85-86AB165DE673">
 <createdBy>andres</createdBy>
 <createdTime>2022-11-08 23:57:42 UTC</createdTime>

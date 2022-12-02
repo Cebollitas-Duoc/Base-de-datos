@@ -6,11 +6,15 @@ PROCEDURE P_CREAR_RESERVA   (PIN_ID_USR     IN NUMBER
                             ,PIN_FECHADESDE IN NUMBER
                             ,PIN_FECHAHASTA IN NUMBER
                             ,PIN_VALOR      IN NUMBER
+                            ,OUT_ID_RSV     OUT NUMBER
                             ,OUT_RETURNCODE OUT NUMBER) IS
+    X_ID_RSV NUMBER;
     BEGIN
-        INSERT INTO T_RESERVA (ID_Usuario, ID_Departamento, ID_EstadoReserva, FECHADESDE, FECHAHASTA, VALORTOTAL) 
-        VALUES (PIN_ID_USR, PIN_ID_DEPTO, PIN_ID_ESTADO, PIN_FECHADESDE, PIN_FECHAHASTA, PIN_VALOR);
-                                 
+        X_ID_RSV := SEQ_RESERVA_ID_RESERVA.NEXTVAL;
+        INSERT INTO T_RESERVA (ID_RESERVA ,ID_Usuario, ID_Departamento, ID_EstadoReserva, FECHADESDE, FECHAHASTA, VALORTOTAL) 
+        VALUES (X_ID_RSV, PIN_ID_USR, PIN_ID_DEPTO, PIN_ID_ESTADO, PIN_FECHADESDE, PIN_FECHAHASTA, PIN_VALOR);
+        
+        OUT_ID_RSV  := X_ID_RSV;             
         OUT_RETURNCODE := 1;
     EXCEPTION
         WHEN OTHERS THEN

@@ -116,6 +116,20 @@
 <dataTypePrecision>25</dataTypePrecision>
 <ownDataTypeParameters>,25,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="FechaCreacion" id="D459AE7F-3019-4FEC-D98D-74D57BDD3711">
+<createdBy>andres</createdBy>
+<createdTime>2022-12-01 23:40:10 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="ValorTotal" id="C8FDC605-35A3-6A59-EC96-43D3042C798A">
 <createdBy>andres</createdBy>
 <createdTime>2022-08-25 21:11:43 UTC</createdTime>

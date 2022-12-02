@@ -6,6 +6,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_RESERVA IS
 								,PIN_FECHADESDE IN NUMBER
 								,PIN_FECHAHASTA IN NUMBER
                                 ,PIN_VALOR      IN NUMBER
+                                ,OUT_ID_RSV     OUT NUMBER
                                 ,OUT_RETURNCODE OUT NUMBER);
     
     PROCEDURE P_GET_USR_RESERVAS    (PIN_ID_USR     IN NUMBER

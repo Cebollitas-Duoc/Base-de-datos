@@ -125,6 +125,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="FechaCreacion" id="9F35DBEE-1163-2808-E41C-68A48B31FE96">
+<createdBy>andres</createdBy>
+<createdTime>2022-12-02 00:08:55 UTC</createdTime>
+<generatorID>D459AE7F-3019-4FEC-D98D-74D57BDD3711</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="288C3DCA-54C2-FF67-5AE9-56075BA27FAD" name="T_Reserva_PK">
