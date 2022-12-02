@@ -1,18 +1,19 @@
 CREATE OR REPLACE PACKAGE BODY USR_TURISMO_REAL.PCK_RESERVA IS
     
-PROCEDURE P_CREAR_RESERVA   (PIN_ID_USR     IN NUMBER
-                            ,PIN_ID_DEPTO   IN NUMBER
-                            ,PIN_ID_ESTADO  IN NUMBER
-                            ,PIN_FECHADESDE IN NUMBER
-                            ,PIN_FECHAHASTA IN NUMBER
-                            ,PIN_VALOR      IN NUMBER
-                            ,OUT_ID_RSV     OUT NUMBER
-                            ,OUT_RETURNCODE OUT NUMBER) IS
+PROCEDURE P_CREAR_RESERVA   (PIN_ID_USR         IN NUMBER
+                            ,PIN_ID_DEPTO       IN NUMBER
+                            ,PIN_ID_ESTADO      IN NUMBER
+                    		,PIN_FECHADESDE     IN NUMBER
+                			,PIN_FECHAHASTA     IN NUMBER
+            				,PIN_FECHACREACION  IN NUMBER
+                            ,PIN_VALOR          IN NUMBER
+                            ,OUT_ID_RSV         OUT NUMBER
+                            ,OUT_RETURNCODE     OUT NUMBER) IS
     X_ID_RSV NUMBER;
     BEGIN
         X_ID_RSV := SEQ_RESERVA_ID_RESERVA.NEXTVAL;
-        INSERT INTO T_RESERVA (ID_RESERVA ,ID_Usuario, ID_Departamento, ID_EstadoReserva, FECHADESDE, FECHAHASTA, VALORTOTAL) 
-        VALUES (X_ID_RSV, PIN_ID_USR, PIN_ID_DEPTO, PIN_ID_ESTADO, PIN_FECHADESDE, PIN_FECHAHASTA, PIN_VALOR);
+        INSERT INTO T_RESERVA (ID_RESERVA, ID_USUARIO, ID_DEPARTAMENTO, ID_ESTADORESERVA, FECHADESDE, FECHAHASTA, FECHACREACION, VALORTOTAL)
+        VALUES (X_ID_RSV, PIN_ID_USR, PIN_ID_DEPTO, PIN_ID_ESTADO, PIN_FECHADESDE, PIN_FECHAHASTA, PIN_FECHACREACION, PIN_VALOR);
         
         OUT_ID_RSV  := X_ID_RSV;             
         OUT_RETURNCODE := 1;
@@ -35,24 +36,26 @@ PROCEDURE P_GET_USR_RESERVAS    (PIN_ID_USR     IN NUMBER
             OUT_RETURNCODE := 0;
     END;
 
-PROCEDURE P_GET_RESERVA (PIN_ID_RSV     IN NUMBER
-                        ,OUT_ID_USR     OUT NUMBER
-                        ,OUT_ID_DPTO    OUT NUMBER
-                        ,OUT_ID_ESTADO  OUT NUMBER
-                        ,OUT_ID_PAGO    OUT NUMBER
-                        ,OUT_FECHADESDE OUT NUMBER
-                        ,OUT_FECHAHASTA OUT NUMBER
-                        ,OUT_VALOR      OUT NUMBER
-                        ,OUT_RETURNCODE OUT NUMBER) IS
+PROCEDURE P_GET_RESERVA (PIN_ID_RSV         IN NUMBER
+                        ,OUT_ID_USR         OUT NUMBER
+                        ,OUT_ID_DPTO        OUT NUMBER
+                        ,OUT_ID_ESTADO      OUT NUMBER
+                        ,OUT_ID_PAGO        OUT NUMBER
+                        ,OUT_FECHADESDE     OUT NUMBER
+                        ,OUT_FECHAHASTA     OUT NUMBER
+                        ,OUT_FECHACREACION  OUT NUMBER
+                        ,OUT_VALOR          OUT NUMBER
+                        ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
         select 
             ID_USUARIO, 
-            id_departamento, 
-            id_estadoreserva, 
-            id_pago, 
-            fechadesde, 
-            fechahasta, 
-            valortotal
+            ID_DEPARTAMENTO, 
+            ID_ESTADORESERVA, 
+            ID_PAGO, 
+            FECHADESDE, 
+            FECHAHASTA, 
+            FECHACREACION, 
+            VALORTOTAL
         into
             OUT_ID_USR,
             OUT_ID_DPTO,
@@ -60,6 +63,7 @@ PROCEDURE P_GET_RESERVA (PIN_ID_RSV     IN NUMBER
             OUT_ID_PAGO,
             OUT_FECHADESDE,
             OUT_FECHAHASTA,
+            OUT_FECHACREACION,
             OUT_VALOR
         from T_RESERVA
         WHERE ID_RESERVA = PIN_ID_RSV;
@@ -76,6 +80,21 @@ PROCEDURE P_CANCEL_RESERVA  (PIN_ID_RSV     IN NUMBER
         UPDATE T_RESERVA
         SET ID_ESTADORESERVA = 3
         WHERE ID_RESERVA = PIN_ID_RSV;
+        
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN
+            OUT_RETURNCODE := 0;
+    END;
+
+PROCEDURE P_GET_DPTO_RANGES (PIN_ID_DPTO    IN NUMBER
+                            ,OUT_RANGES     OUT SYS_REFCURSOR
+                            ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        OPEN OUT_RANGES FOR
+        SELECT FECHADESDE, FECHAHASTA
+        FROM T_RESERVA
+        WHERE ID_ESTADORESERVA != 3 AND ID_DEPARTAMENTO = PIN_ID_DPTO;
         
         OUT_RETURNCODE := 1;
     EXCEPTION
