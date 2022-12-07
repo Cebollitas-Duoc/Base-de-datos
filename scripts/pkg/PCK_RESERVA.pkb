@@ -36,38 +36,63 @@ PROCEDURE P_GET_USR_RESERVAS    (PIN_ID_USR     IN NUMBER
             OUT_RETURNCODE := 0;
     END;
 
-PROCEDURE P_GET_RESERVA (PIN_ID_RSV         IN NUMBER
-                        ,OUT_ID_USR         OUT NUMBER
-                        ,OUT_ID_DPTO        OUT NUMBER
-                        ,OUT_ID_ESTADO      OUT NUMBER
-                        ,OUT_ID_PAGO        OUT NUMBER
-                        ,OUT_FECHADESDE     OUT NUMBER
-                        ,OUT_FECHAHASTA     OUT NUMBER
-                        ,OUT_FECHACREACION  OUT NUMBER
-                        ,OUT_VALOR          OUT NUMBER
-                        ,OUT_RETURNCODE     OUT NUMBER) IS
+PROCEDURE P_GET_RESERVA (PIN_ID_RSV         	IN NUMBER
+                        ,OUT_ID_RESERVA			OUT NUMBER
+						,OUT_ID_USUARIO			OUT NUMBER
+						,OUT_ID_DEPARTAMENTO	OUT NUMBER
+						,OUT_DIRECCION			OUT VARCHAR2
+						,OUT_ID_ESTADORESERVA 	OUT NUMBER
+						,OUT_ESTADO_RESERVA 	OUT VARCHAR2
+						,OUT_ID_PAGO 			OUT NUMBER
+						,OUT_ESTADO_PAGO 		OUT VARCHAR2
+						,OUT_FECHADESDE			OUT NUMBER
+						,OUT_FECHAHASTA			OUT NUMBER
+						,OUT_VALORTOTAL			OUT NUMBER
+						,OUT_FECHACREACION		OUT NUMBER
+						,OUT_NOMBRE				OUT VARCHAR2
+						,OUT_RETURNCODE     	OUT NUMBER) IS
     BEGIN
-        select 
-            ID_USUARIO, 
-            ID_DEPARTAMENTO, 
-            ID_ESTADORESERVA, 
-            ID_PAGO, 
-            FECHADESDE, 
-            FECHAHASTA, 
-            FECHACREACION, 
-            VALORTOTAL
-        into
-            OUT_ID_USR,
-            OUT_ID_DPTO,
-            OUT_ID_ESTADO,
+        SELECT 
+            R.ID_RESERVA,
+            R.ID_USUARIO,
+            R.ID_DEPARTAMENTO,
+            D.DIRECCION,
+            R.ID_ESTADORESERVA,
+            E.NOMBRE ESTADO_RESERVA,
+            P.ID_PAGO,
+            EP.NOMBRE ESTADO_PAGO,
+            R.FECHADESDE,
+            R.FECHAHASTA,
+            R.VALORTOTAL,
+            R.FECHACREACION,
+            U.PRIMERNOMBRE || ' ' || U.PRIMERAPELLIDO
+        INTO
+            OUT_ID_RESERVA,
+            OUT_ID_USUARIO,
+            OUT_ID_DEPARTAMENTO,
+            OUT_DIRECCION,
+            OUT_ID_ESTADORESERVA,
+            OUT_ESTADO_RESERVA,
             OUT_ID_PAGO,
+            OUT_ESTADO_PAGO,
             OUT_FECHADESDE,
             OUT_FECHAHASTA,
+            OUT_VALORTOTAL,
             OUT_FECHACREACION,
-            OUT_VALOR
-        from T_RESERVA
+            OUT_NOMBRE
+        FROM T_RESERVA R
+        INNER JOIN t_departamento D
+        ON D.ID_DEPARTAMENTO = R.ID_DEPARTAMENTO
+        INNER JOIN T_USUARIO U
+        ON U.ID_USUARIO = R.ID_USUARIO
+        INNER JOIN T_ESTADORESERVA E
+        ON E.ID_ESTADORESERVA = R.ID_ESTADORESERVA
+        LEFT OUTER JOIN T_PAGO P
+        ON P.ID_PAGO = R.ID_PAGO
+        LEFT OUTER JOIN T_ESTADOPAGO EP
+        ON EP.ID_ESTADOPAGO = P.ID_ESTADOPAGO 
         WHERE ID_RESERVA = PIN_ID_RSV;
-        
+			       
         OUT_RETURNCODE := 1;
     EXCEPTION
         WHEN OTHERS THEN
