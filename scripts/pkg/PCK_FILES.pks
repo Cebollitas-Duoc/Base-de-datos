@@ -21,8 +21,8 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_FILES IS
                                 ,OUT_ID_CATEGORY    OUT NUMBER
                                 ,OUT_CATEGORY       OUT VARCHAR2
                                 ,OUT_ID_RESERVA     OUT NUMBER
+                                ,OUT_USER_ID        OUT NUMBER
                                 ,OUT_TIPOCONTENIDO  OUT VARCHAR2
-                                ,OUT_USER_ID        OUT VARCHAR2
                                 ,OUT_DATA           OUT CLOB
                                 ,OUT_RETURNCODE     OUT NUMBER);
     

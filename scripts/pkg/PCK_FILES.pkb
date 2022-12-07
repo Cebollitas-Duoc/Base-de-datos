@@ -54,10 +54,10 @@ PROCEDURE P_INSERT_DOCUMENT (PIN_ID_DOCUMENT    IN VARCHAR2
 
 PROCEDURE P_GET_DOCUMENT    (PIN_ID_DOCUMENT    IN VARCHAR2
                             ,OUT_ID_CATEGORY    OUT NUMBER
-                            ,OUT_CATEGORY    OUT VARCHAR2
+                            ,OUT_CATEGORY       OUT VARCHAR2
                             ,OUT_ID_RESERVA     OUT NUMBER
+                            ,OUT_USER_ID        OUT NUMBER
                             ,OUT_TIPOCONTENIDO  OUT VARCHAR2
-                            ,OUT_USER_ID        OUT VARCHAR2
                             ,OUT_DATA           OUT CLOB
                             ,OUT_RETURNCODE     OUT NUMBER) IS
 		BEGIN
@@ -79,8 +79,15 @@ PROCEDURE P_GET_RSV_DOCS    (PIN_ID_RSV     IN NUMBER
                             ,OUT_RETURNCODE OUT NUMBER) IS
 		BEGIN
             OPEN OUT_DOCS FOR
-            SELECT *
-            FROM T_REPORTE
+            SELECT 
+                R.ID_REPORTE,
+                R.ID_CATEGORIA,
+                C.NOMBRE CATEGORIA,
+                R.TIPOCONTENIDO,
+                R.FILEDATA
+            FROM T_REPORTE R
+            INNER JOIN T_CATEGORIAREPORTE C
+            ON C.ID_CATEGORIA = R.ID_CATEGORIA
             WHERE ID_RESERVA = PIN_ID_RSV;
             
             OUT_RETURNCODE := 1;
