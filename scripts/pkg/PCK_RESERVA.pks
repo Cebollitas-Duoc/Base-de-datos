@@ -40,6 +40,11 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_RESERVA IS
     PROCEDURE P_LIST_RESERVA_EXTSRV (PIN_ID_RSV     IN NUMBER
                                     ,OUT_EXTSRV     OUT SYS_REFCURSOR
                                     ,OUT_RETURNCODE OUT NUMBER);
+    -- ADMIN
+    
+    PROCEDURE P_LIST_RESERVAS   (OUT_RESERVAS   OUT SYS_REFCURSOR
+                                ,OUT_RETURNCODE OUT NUMBER);
+                                
    
 END PCK_RESERVA;
 /
