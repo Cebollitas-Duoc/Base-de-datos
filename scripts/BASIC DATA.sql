@@ -61,3 +61,4 @@ INSERT INTO t_sesion (id_usuario, llave, expiracion, fechacreacion)
 VALUES (2, 'sesionPruebasUser', 2209035600000, 0);
 
 Commit;
+
