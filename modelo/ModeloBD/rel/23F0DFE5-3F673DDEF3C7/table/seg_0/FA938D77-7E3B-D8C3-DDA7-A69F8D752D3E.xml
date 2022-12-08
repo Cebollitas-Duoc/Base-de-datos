@@ -95,6 +95,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Descripcion" id="9B8A6D05-1CA1-012F-3360-5F387B7ABA43">
+<createdBy>andres</createdBy>
+<createdTime>2022-12-08 15:09:04 UTC</createdTime>
+<generatorID>F826D15F-E3D9-FD6F-7CB9-28E3CDDAD1B7</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="47BC955A-E549-7F88-AF2A-45A12E57F31C" name="T_ServicioExtra_Departamento_PK">

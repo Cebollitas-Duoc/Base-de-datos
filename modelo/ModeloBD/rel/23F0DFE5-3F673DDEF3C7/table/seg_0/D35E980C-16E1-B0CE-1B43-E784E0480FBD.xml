@@ -92,6 +92,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Comentario" id="EE5585B9-F71F-DD55-8E23-EAB607FDA9A1">
+<createdBy>andres</createdBy>
+<createdTime>2022-12-08 14:23:22 UTC</createdTime>
+<generatorID>9BAFEC61-A1CE-92AE-2B34-9D923781583C</generatorID>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="CD983B39-FE3F-3291-5E4A-FEF548BB21F7" name="T_ServicioExtra_Contratado_PK">

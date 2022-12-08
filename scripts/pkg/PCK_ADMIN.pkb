@@ -288,6 +288,7 @@ PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
                                 ,PIN_ID_ESTADO      IN NUMBER
                                 ,PIN_ID_TRABAJADOR  IN NUMBER
                                 ,PIN_VALOR          IN NUMBER
+                                ,PIN_DESCRIPTION    IN VARCHAR2
                                 ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
         INSERT 
@@ -295,12 +296,14 @@ PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
                             ,ID_CategoriaServicioExtra
                             ,ID_Estado
                             ,ID_Trabajador
-                            ,Valor)
+                            ,Valor
+                            ,descripcion)
 			VALUES  (PIN_ID_DPTO
 					,PIN_ID_CAT_SRV
 					,PIN_ID_ESTADO
                     ,PIN_ID_TRABAJADOR
 					,PIN_VALOR
+                    ,PIN_DESCRIPTION
 					);
         
         COMMIT;
@@ -315,13 +318,15 @@ PROCEDURE P_EDIT_EXTRASERVICE   (PIN_ID_EXTRASRV    IN NUMBER
                                 ,PIN_ID_ESTADO      IN NUMBER
                                 ,PIN_ID_TRABAJADOR  IN NUMBER
                                 ,PIN_VALOR          IN NUMBER
+                                ,PIN_DESCRIPTION    IN VARCHAR2
                                 ,OUT_RETURNCODE     OUT NUMBER) IS
     BEGIN
         UPDATE T_SERVICIOEXTRA
         SET     
                 ID_Estado       = PIN_ID_ESTADO,
                 ID_Trabajador   = PIN_ID_TRABAJADOR,
-                Valor           = PIN_VALOR        	 
+                VALOR           = PIN_VALOR,
+                DESCRIPCION      = PIN_DESCRIPTION
         WHERE ID_ServicioExtra = PIN_ID_EXTRASRV;
         
         COMMIT;

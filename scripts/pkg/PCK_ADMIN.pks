@@ -77,12 +77,14 @@ PROCEDURE P_ADD_EXTRASERVICE    (PIN_ID_DPTO        IN NUMBER
                                 ,PIN_ID_ESTADO      IN NUMBER
                                 ,PIN_ID_TRABAJADOR  IN NUMBER
                                 ,PIN_VALOR          IN NUMBER
+                                ,PIN_DESCRIPTION    IN VARCHAR2
                                 ,OUT_RETURNCODE     OUT NUMBER);
     
 PROCEDURE P_EDIT_EXTRASERVICE   (PIN_ID_EXTRASRV    IN NUMBER
                                 ,PIN_ID_ESTADO      IN NUMBER
                                 ,PIN_ID_TRABAJADOR  IN NUMBER
                                 ,PIN_VALOR          IN NUMBER
+                                ,PIN_DESCRIPTION    IN VARCHAR2
                                 ,OUT_RETURNCODE     OUT NUMBER);
 
 PROCEDURE P_ADD_EXTSRV_CAT  (PIN_DESCRIPCION IN VARCHAR2
