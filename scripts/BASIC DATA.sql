@@ -43,6 +43,7 @@ INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (1, 'Check In');
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (2, 'Check Out');
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (3, 'Boleta');
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (4, 'Factura');
+INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (5, 'Contrato servicio extra');
 
 INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, RUT, EMAIL, PRIMERNOMBRE, PRIMERAPELLIDO, DIRECCION, TELEFONO)
 VALUES ('01#40#asdfasdf#e3e3316c1536b6d21976e118222334778854deeab0ff3f24303ad4f1f6fbffd2', 1, 1, 20100100, 'jose@mrmeme.cl', 'Jose', 'Espinoza', 'Casa Jose', 40402020);
