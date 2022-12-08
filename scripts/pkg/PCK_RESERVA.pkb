@@ -129,12 +129,13 @@ PROCEDURE P_GET_DPTO_RANGES (PIN_ID_DPTO    IN NUMBER
 
 PROCEDURE P_ADD_EXTRA_SRV   (PIN_ID_RSV     IN NUMBER
                             ,PIN_ID_EXTSRV  IN NUMBER
-                            ,PIN_included   IN NUMBER
+                            ,PIN_INCLUDED   IN NUMBER
+                            ,PIN_COMMENT    IN VARCHAR2
                             ,OUT_RETURNCODE OUT NUMBER) IS
     BEGIN
-        INSERT INTO t_servicioextra_contratado 
-        (ID_Reserva, ID_ServicioExtra, Incluido) 
-        VALUES (PIN_ID_RSV, PIN_ID_EXTSRV, PIN_included);
+        INSERT INTO T_SERVICIOEXTRA_CONTRATADO 
+        (ID_RESERVA, ID_SERVICIOEXTRA, INCLUIDO, COMENTARIO) 
+        VALUES (PIN_ID_RSV, PIN_ID_EXTSRV, PIN_INCLUDED, PIN_COMMENT);
 
         OUT_RETURNCODE := 1;
     EXCEPTION
@@ -156,7 +157,8 @@ PROCEDURE P_LIST_RESERVA_EXTSRV (PIN_ID_RSV     IN NUMBER
             SC.ID_PAGO,
             P.ID_ESTADOPAGO,
             CAT.ID_CATEGORIASERVICIOEXTRA,
-            CAT.DESCRIPCION
+            CAT.DESCRIPCION,
+            SC.COMENTARIO
         FROM T_SERVICIOEXTRA_CONTRATADO SC
         INNER JOIN T_SERVICIOEXTRA SE
         ON SE.ID_SERVICIOEXTRA = SC.ID_SERVICIOEXTRA
@@ -170,6 +172,21 @@ PROCEDURE P_LIST_RESERVA_EXTSRV (PIN_ID_RSV     IN NUMBER
     EXCEPTION
         WHEN OTHERS THEN
             OUT_RETURNCODE := 0;
+    END;
+
+PROCEDURE P_EDIT_H_EXTSRV_COM   (PIN_ID_extsrv  IN NUMBER
+                                ,PIN_COMMENT    IN VARCHAR2
+                                ,OUT_RETURNCODE OUT NUMBER) IS
+    BEGIN
+        UPDATE t_servicioextra_contratado
+        SET COMENTARIO = PIN_COMMENT
+        WHERE ID_ServicioExtraContratado = PIN_ID_extsrv;
+
+        OUT_RETURNCODE := 1;
+    EXCEPTION
+        WHEN OTHERS THEN BEGIN
+            OUT_RETURNCODE := 0;
+        END;
     END;
 
 -- ADMIN
