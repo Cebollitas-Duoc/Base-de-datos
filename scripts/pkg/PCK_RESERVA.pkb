@@ -38,19 +38,24 @@ PROCEDURE P_GET_USR_RESERVAS    (PIN_ID_USR     IN NUMBER
 
 PROCEDURE P_GET_RESERVA (PIN_ID_RSV         	IN NUMBER
                         ,OUT_ID_RESERVA			OUT NUMBER
-						,OUT_ID_USUARIO			OUT NUMBER
-						,OUT_ID_DEPARTAMENTO	OUT NUMBER
-						,OUT_DIRECCION			OUT VARCHAR2
-						,OUT_ID_ESTADORESERVA 	OUT NUMBER
-						,OUT_ESTADO_RESERVA 	OUT VARCHAR2
-						,OUT_ID_PAGO 			OUT NUMBER
-						,OUT_ESTADO_PAGO 		OUT VARCHAR2
-						,OUT_FECHADESDE			OUT NUMBER
-						,OUT_FECHAHASTA			OUT NUMBER
-						,OUT_VALORTOTAL			OUT NUMBER
-						,OUT_FECHACREACION		OUT NUMBER
-						,OUT_NOMBRE				OUT VARCHAR2
-						,OUT_RETURNCODE     	OUT NUMBER) IS
+                        ,OUT_ID_USUARIO			OUT NUMBER
+                        ,OUT_ID_DEPARTAMENTO	OUT NUMBER
+                        ,OUT_DIRECCION			OUT VARCHAR2
+                        ,OUT_ID_ESTADORESERVA 	OUT NUMBER
+                        ,OUT_ESTADO_RESERVA 	OUT VARCHAR2
+                        ,OUT_ID_PAGO 			OUT NUMBER
+                        ,OUT_ESTADO_PAGO 		OUT VARCHAR2
+                        ,OUT_FECHADESDE			OUT NUMBER
+                        ,OUT_FECHAHASTA			OUT NUMBER
+                        ,OUT_VALORTOTAL			OUT NUMBER
+                        ,OUT_FECHACREACION		OUT NUMBER
+                        ,OUT_NOMBRE				OUT VARCHAR2
+                        ,OUT_EMAIL				OUT VARCHAR2
+                        ,OUT_PHONE				OUT NUMBER
+                        ,OUT_RUT				OUT NUMBER
+                        ,OUT_ROOMS				OUT NUMBER
+                        ,OUT_BATHROOMS		    OUT NUMBER
+                        ,OUT_RETURNCODE     	OUT NUMBER) IS
     BEGIN
         SELECT 
             R.ID_RESERVA,
@@ -65,7 +70,12 @@ PROCEDURE P_GET_RESERVA (PIN_ID_RSV         	IN NUMBER
             R.FECHAHASTA,
             R.VALORTOTAL,
             R.FECHACREACION,
-            U.PRIMERNOMBRE || ' ' || U.PRIMERAPELLIDO
+            U.PRIMERNOMBRE || ' ' || U.PRIMERAPELLIDO,
+            U.EMAIL,
+            U.TELEFONO,
+            U.RUT,
+            D.HABITACIONES,
+            D.BANIOS
         INTO
             OUT_ID_RESERVA,
             OUT_ID_USUARIO,
@@ -79,7 +89,12 @@ PROCEDURE P_GET_RESERVA (PIN_ID_RSV         	IN NUMBER
             OUT_FECHAHASTA,
             OUT_VALORTOTAL,
             OUT_FECHACREACION,
-            OUT_NOMBRE
+            OUT_NOMBRE,
+            OUT_EMAIL,
+            OUT_PHONE,
+            OUT_RUT,
+            OUT_ROOMS,
+            OUT_BATHROOMS
         FROM T_RESERVA R
         INNER JOIN t_departamento D
         ON D.ID_DEPARTAMENTO = R.ID_DEPARTAMENTO
