@@ -28,6 +28,7 @@ CREATE OR REPLACE PACKAGE USR_TURISMO_REAL.PCK_SESION IS
                                             ,OUT_ID_USUARIO   	OUT NUMBER
                                             ,OUT_ID_PERMISO     OUT NUMBER
                                             ,OUT_ID_ESTADO      OUT NUMBER
+                                            ,OUT_NOMBRE         OUT VARCHAR2
                                             ,OUT_RETURNCODE     OUT NUMBER);
                                             
     PROCEDURE P_UPDATE_PASSWORD             (PIN_ID_USUARIO     IN VARCHAR2
