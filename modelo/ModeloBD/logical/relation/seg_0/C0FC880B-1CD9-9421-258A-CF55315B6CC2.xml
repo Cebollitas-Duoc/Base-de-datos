@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Mensaje_Reserva" directorySegmentName="seg_0" id="C0FC880B-1CD9-9421-258A-CF55315B6CC2">
+<createdBy>andres</createdBy>
+<createdTime>2022-12-12 18:43:26 UTC</createdTime>
+<ownerDesignName>ModeloBD</ownerDesignName>
+<engineerTo>
+<item key="23F0DFE5-C60A-AE6A-1FBE-3F673DDEF3C7" value="true"/>
+</engineerTo>
+<sourcePk>66965462-A710-2B9F-D532-FB35EE9C1BCA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2979F4BF-7F3D-D995-705C-92671936BFFC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2C9D4E36-2CE3-C738-E8F3-AE6658005BC4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
