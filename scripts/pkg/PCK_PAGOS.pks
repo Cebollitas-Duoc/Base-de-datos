@@ -4,6 +4,11 @@ PROCEDURE P_PAGAR_RESERVA   	(PIN_ID_ESTADOPAGO	  	IN 	NUMBER
                               ,PIN_FECHA		     	IN 	NUMBER
                               ,PIN_ID_RESERVA			IN 	NUMBER
                               ,OUT_RETURNCODE			OUT NUMBER);
+							  
+							 
+PROCEDURE P_GET_PAGO_BY_ID		(PIN_ID_RESERVA IN NUMBER
+                              ,OUT_ID_PAGO OUT NUMBER
+                              ,OUT_RETURNCODE OUT NUMBER);
 
 END PCK_PAGOS;
 /
