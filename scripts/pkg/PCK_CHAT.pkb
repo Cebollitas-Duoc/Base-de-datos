@@ -31,6 +31,7 @@ PROCEDURE P_SUBIR_MENSAJE   (PIN_SESION     IN VARCHAR2
                             
 PROCEDURE P_LIST_MSG    (PIN_SESION     IN VARCHAR2
                         ,PIN_ID_RSV     IN NUMBER
+                        ,PIN_DESDE      IN NUMBER
                         ,OUT_MENSAJES   OUT SYS_REFCURSOR
                         ,OUT_RETURNCODE OUT NUMBER) IS
     X_ID_USUARIO    NUMBER;
@@ -54,7 +55,7 @@ PROCEDURE P_LIST_MSG    (PIN_SESION     IN VARCHAR2
         FROM T_MENSAJE M
         INNER JOIN T_USUARIO U
         ON M.ID_USUARIO = U.ID_USUARIO
-        WHERE M.ID_RESERVA = PIN_ID_RSV
+        WHERE M.ID_RESERVA = PIN_ID_RSV AND M.FECHA > PIN_DESDE
         ORDER BY M.FECHA ASC;
         
         OUT_RETURNCODE := 1;
