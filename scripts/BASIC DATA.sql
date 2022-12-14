@@ -46,13 +46,13 @@ INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (4, 'Factura');
 INSERT INTO T_CategoriaReporte (ID_Categoria, Nombre) VALUES (5, 'Contrato servicio extra');
 
 INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, RUT, EMAIL, PRIMERNOMBRE, PRIMERAPELLIDO, DIRECCION, TELEFONO)
-VALUES ('01#40#asdfasdf#e3e3316c1536b6d21976e118222334778854deeab0ff3f24303ad4f1f6fbffd2', 1, 1, 20100100, 'jose@turismoreal.cl', 'Jose', 'Espinoza', 'Casa Jose', 40402020);
+VALUES ('01#40#l3Fh8sFj#547e930f2408757c50c287c568bbc4dcfaa54ad41f6d6731920108b3375f4f46', 1, 1, 20100100, 'jose@turismoreal.cl', 'Jose', 'Espinoza', 'Casa Jose', 40402020);
 
 INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, RUT, EMAIL, PRIMERNOMBRE, PRIMERAPELLIDO, DIRECCION, TELEFONO)
-VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 1, 15164019, 'andres@turismoreal.cl', 'Andres', 'Groselj', '308 Belmont Avenue', 12344321);
+VALUES ('01#40#l3Fh8sFj#547e930f2408757c50c287c568bbc4dcfaa54ad41f6d6731920108b3375f4f46', 0, 1, 15164019, 'andres@turismoreal.cl', 'Andres', 'Groselj', '308 Belmont Avenue', 12344321);
 
 INSERT INTO T_usuario (PASSWORD, ID_PERMISO, ID_ESTADOUSUARIO, RUT, EMAIL, PRIMERNOMBRE, PRIMERAPELLIDO, DIRECCION, TELEFONO)
-VALUES ('01#40#hjkldfgj#247728c323a8f7d2381f809267757adf4e4aa1543fe7feca268b89b0b5232d3a', 0, 2, 20200200, 'diego@turismoreal.cl', 'Diego', 'Soto', 'Casa Diego', 87654321);
+VALUES ('01#40#l3Fh8sFj#547e930f2408757c50c287c568bbc4dcfaa54ad41f6d6731920108b3375f4f46', 0, 2, 20200200, 'diego@turismoreal.cl', 'Diego', 'Soto', 'Casa Diego', 87654321);
 
 INSERT INTO t_sesion (id_usuario, llave, expiracion, fechacreacion) 
 VALUES (1, 'sesionPruebasAdmin', 2209035600000, 0);
